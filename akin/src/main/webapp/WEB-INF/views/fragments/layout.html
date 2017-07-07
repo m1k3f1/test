@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+	<link href="../../../resources/css/menu.css" rel="stylesheet" media="screen" th:href="@{/resources/css/menu.css}"/>
+</head>
+<body>
+
+<!-- Header -->   
+<div  th:fragment="header">
+    <div class="container">
+            <ul class="nav navbar-nav navbar-right">
+                <li th:if="${#authorization.expression('!isAuthenticated()')}">
+                    <a href="/signin" th:href="@{/signin}">
+                        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Sign in
+                    </a>
+                </li>
+                <li th:if="${#authorization.expression('isAuthenticated()')}">
+                    <a href="/logout" th:href="@{#}" onclick="$('#form').submit();">
+                    	<label  th:text="#{layout.logout}" ></label>
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    </a>
+                    <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+</div>
+
+<nav class="navbar navbar-default sidebar" role="navigation" th:fragment="menu">
+    <div class="container-fluid ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li  th:classappend="${module == 'followers' ? 'active' : ''}" >
+        	<a href="#" th:href="@{followers}">
+        		<label th:text="#{menu.followers}"></label>
+        		<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
+        	</a>
+        </li>
+        <li th:classappend="${module == 'publications' ? 'active' : ''}" >
+        	<a href="#" th:href="@{publications}" >
+        		<label th:text="#{menu.publications}"></label>
+        		<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span>
+        	</a>
+        </li>        
+        <li >
+        	<a href="#">
+        		<label th:text="#{menu.benchmark}"></label>
+        		<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list"></span>
+        	</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Footer -->
+<div th:fragment="footer" th:align="center">
+    &copy;&nbsp;<span th:text="${#temporals.format(#temporals.createNow(), 'yyyy')}">2017</span>
+    DANAVIS 
+</div>
+
+</body>
+</html>
