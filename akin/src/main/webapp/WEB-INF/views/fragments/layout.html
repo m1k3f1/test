@@ -27,6 +27,7 @@
         <!--/.nav-collapse -->
 </div>
 
+<!-- Menu -->
 <nav class="navbar navbar-default sidebar" role="navigation" th:fragment="menu">
     <div class="container-fluid ">
     <div class="navbar-header">
@@ -61,6 +62,82 @@
     </div>
   </div>
 </nav>
+
+<!-- Counts and social media -->
+<div  th:fragment="counts">
+
+<div class="dropdown kebab-dropdown dropdown-sm" id="dropdown1">
+				<div class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item" href="#"> <img
+						src="resources/images/generic-friend.png" class="kebab-user-image">
+						<label class="kebab-user-text">Cuenta de usuario N</label>
+					</a>
+					<hr>
+					<a class="dropdown-item" href="#"> <img
+						src="resources/images/twitter-logo.png" class="kebab-user-image">
+						<label class="kebab-user-text">Twitter</label>
+					</a>
+				</div>
+			</div>
+			
+			<div class="col-md-1 col-sm-1 col-xs-1" style="width: 2px;">
+				<a class="kebab-link" data-toggle="dropdown"
+					data-target="#dropdown1"><i class="fa fa-ellipsis-v"></i></a>
+
+			</div>
+
+			<div class="col-md-1 col-sm-1 col-xs-1" style="width: 65px;left: 0px;">
+				<div class="panel-user">
+					<div>
+						<span class="pull-right clickable" data-effect="fadeOut"><i
+							class="fa fa-times fa-times-user"></i></span> <img
+							src="resources/images/facebook-logo.png"
+							style="width: 30px; height: 40px;">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-1 col-sm-1 col-xs-1" >
+				<div class="panel-user">
+					<div>
+						<span class="pull-right clickable" data-effect="fadeOut"><i
+							class="fa fa-times fa-times-user"></i></span> <img
+							src="resources/images/generic-friend.png"
+							class="panel-user-image"> <label class="panel-user-text">Cuenta
+							de usuario 1</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1 col-sm-1 col-xs-1" >
+				<div class="panel-user">
+					<div>
+						<span class="pull-right clickable" data-effect="fadeOut"><i
+							class="fa fa-times fa-times-user"></i></span> <img
+							src="resources/images/generic-friend.png"
+							class="panel-user-image"> <label class="panel-user-text">Cuenta
+							de usuario 2</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1 col-sm-1 col-xs-1" >
+				<div class="panel-user">
+					<div>
+						<span class="pull-right clickable" data-effect="fadeOut"><i
+							class="fa fa-times fa-times-user"></i></span> <img
+							src="resources/images/generic-friend.png"
+							class="panel-user-image"> <label class="panel-user-text">Cuenta
+							de usuario 3</label>
+					</div>
+				</div>
+			</div>
+
+
+
+</div>
+
+
+
+
 
 
 <!-- Footer -->

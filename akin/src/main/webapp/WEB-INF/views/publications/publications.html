@@ -17,6 +17,10 @@
 <!-- Menu Css -->
 <link href="../../../resources/css/menu.css" rel="stylesheet"
 	media="screen" th:href="@{/resources/css/menu.css}" />
+	
+	<!-- Efects counts Css -->
+<link href="../../../resources/css/effects.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/effects.css}" />
 
 
 <!-- Custom CSS -->
@@ -46,6 +50,9 @@
 <div th:replace="fragments/layout :: header"></div>
 <div th:replace="fragments/layout :: menu"></div>
 <div id="page-wrapper">
+		<div class="row">
+			<div th:replace="fragments/layout :: counts"></div>
+		</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Publicaciones</h1>
@@ -102,7 +109,10 @@
     <script src="resources/plugin/vendor/flot/jquery.flot.time.js" th:href="@{/resources/plugin/vendor/flot/jquery.flot.time.js}"></script>
     <script src="resources/plugin/vendor/flot-tooltip/jquery.flot.tooltip.min.js" th:href="@{/resources/plugin/vendor/flot-tooltip/jquery.flot.tooltip.min.js}"></script>
     <script src="resources/plugin/data/flot-data.js" th:href="@{/resources/plugin/data/flot-data.js}"></script>	
-		
+
+	<!-- effects panel -->
+	<script src="resources/js/effects.js"
+		th:href="@{/resources/js/effects.js}"></script>		
 
 </body>
 </html>

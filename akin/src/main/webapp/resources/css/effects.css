@@ -1,0 +1,112 @@
+/*
+.panel-heading span
+{
+    margin-top: -26px;
+    font-size: 15px;
+    margin-right: -12px;
+}
+*/
+.panel-user-image{
+	position: relative;
+	right: 20%;
+	left: 30%;
+	top: 1%;
+    width: 28px;
+    height: 30px;
+   /*border: 1px solid green;*/
+    
+}
+.panel-user-text{
+	text-align: center;
+	font-size:8px;
+	
+}
+
+.panel-user{
+	display: inline-block;
+	padding:0px;
+	width: 50px;
+	height: 60px;
+	/*border-color: gray;
+	border-width: 1px;
+	border-style: solid;*/
+	
+	
+}
+
+
+.fa-times-user:hover{
+	color: #000;
+   	/*text-shadow: 1px 1px 1px #ccc;*/
+    /*font-size: 1.5em;*/
+}
+
+.fa-times-user{
+	color: #fff;
+   /* text-shadow: 1px 1px 1px #ccc;*/
+    /*font-size: 1.5em;*/
+}
+
+
+
+.clickable {
+    background: white;
+    display: inline-block;
+    padding: 0.5px 1px;
+    /*border-radius: 1px;*/
+    
+}
+
+.clickable:hover {
+	/*background: rgba(0, 0, 0, 0.15);*/
+	cursor: pointer;
+	/*visibility: visible;*/
+}
+
+/**************************************/
+
+.kebab-user-image{
+	position: relative;
+	top:10%
+	left: 10%;
+	width: 30px;
+    height: 35px;
+}
+
+.kebab-user-text{
+	font-size:8px;
+	left: 15%;
+}
+
+.kebab-link i{
+	background: black;
+	color:white;
+	font-size: 1.5rem;
+}
+.kebab-link i:active, .kebab-link i:hover {
+ color:white;
+  cursor: pointer;
+   background: gray;
+}
+
+.kebab-dropdown {
+  position: absolute;
+  left: 18%;
+}
+
+/* Material design for dropdowns 
+.dropdown-sm>.dropdown-menu>.dropdown-item {
+  padding: 5px;
+  margin-right: 0;
+}
+.dropdown-menu>.dropdown-item {
+  padding: 1rem;
+  margin-right: 0;
+}
+.dropdown-menu>.dropdown-item:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  color: white;
+  background: #4285F4;
+}
+
+

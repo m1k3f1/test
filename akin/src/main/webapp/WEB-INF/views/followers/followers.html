@@ -26,6 +26,9 @@
 <link href="../../../resources/css/menu.css" rel="stylesheet"
 	media="screen" th:href="@{/resources/css/menu.css}" />
 
+<!-- Efects counts Css -->
+<link href="../../../resources/css/effects.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/effects.css}" />
 
 <!-- Custom CSS -->
 <link href="../../../resources/plugin/dist/css/sb-admin-2.css"
@@ -55,60 +58,61 @@
 <body>
 	<div th:replace="fragments/layout :: header"></div>
 	<div th:replace="fragments/layout :: menu"></div>
-	
-	
+
+
 	<div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Seguidores</h1>
-                </div>
-            </div>
-             <div class="panel-body">
-                            <div id="morris-area-chart"></div>
-                        </div>
-            
-    </div>
-	
-	
-	
-	
+		<div class="row">
+			<div th:replace="fragments/layout :: counts"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Seguidores</h1>
+			</div>
+		</div>
+		<div class="panel-body">
+			<div id="morris-area-chart"></div>
+		</div>
+
+	</div>
+
+
+
+
 
 	<div th:replace="fragments/layout :: footer"></div>
 
 
-	
+
 
 	<!-- jQuery -->
 
-	<script
-		src="resources/plugin/vendor/jquery/jquery.min.js"
+	<script src="resources/plugin/vendor/jquery/jquery.min.js"
 		th:href="@{/resources/plugin/vendor/jquery/jquery.min.js}"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script 
-		src="resources/plugin/vendor/bootstrap/js/bootstrap.min.js"
+	<script src="resources/plugin/vendor/bootstrap/js/bootstrap.min.js"
 		th:href="@{/resources/plugin/vendor/bootstrap/js/bootstrap.min.js}"></script>
 
 	<!-- Metis Menu Plugin JavaScript -->
-	<script
-		src="resources/plugin/vendor/metisMenu/metisMenu.min.js"
+	<script src="resources/plugin/vendor/metisMenu/metisMenu.min.js"
 		th:href="@{/resources/plugin/vendor/metisMenu/metisMenu.min.js}"></script>
 
 	<!-- Morris Charts JavaScript -->
-	<script
-		src="resources/plugin/vendor/raphael/raphael.min.js"
+	<script src="resources/plugin/vendor/raphael/raphael.min.js"
 		th:href="@{/resources/plugin/vendor/raphael/raphael.min.js}"></script>
-	<script
-		src="resources/plugin/vendor/morrisjs/morris.min.js"
+	<script src="resources/plugin/vendor/morrisjs/morris.min.js"
 		th:href="@{/resources/plugin/vendor/morrisjs/morris.min.js}"></script>
-	<script
-		src="resources/plugin/data/morris-data.js"
+	<script src="resources/plugin/data/morris-data.js"
 		th:href="@{/resources/plugin/data/morris-data.js}"></script>
 
 	<!-- Custom Theme JavaScript -->
-	<script
-		src="resources/plugin/dist/js/sb-admin-2.js"
+	<script src="resources/plugin/dist/js/sb-admin-2.js"
 		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
+
+	<!-- effects panel -->
+	<script src="resources/js/effects.js"
+		th:href="@{/resources/js/effects.js}"></script>
 
 </body>
 
