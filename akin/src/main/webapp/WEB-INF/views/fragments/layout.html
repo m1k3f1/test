@@ -17,8 +17,8 @@
                 </li>
                 <li th:if="${#authorization.expression('isAuthenticated()')}">
                     <a href="/logout" th:href="@{#}" onclick="$('#form').submit();">
-                    	<label  th:text="#{layout.logout}" ></label>
-                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    	<label  th:text="#{layout.logout}" style="color: black;" ></label>
+                        <span class="glyphicon glyphicon-log-out" style="color: black;" aria-hidden="true"></span>
                     </a>
                     <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
                 </li>

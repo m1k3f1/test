@@ -15,7 +15,6 @@ body,html{
     padding: 10px 10px 0 10px;
   }
 
- @media (min-width: 765px) {
 
     .main{
       position: absolute;
@@ -70,11 +69,13 @@ body,html{
     }
 
     nav.sidebar{
-      width: 200px;
-      height: 100%;
-      margin-left: -160px;
-      float: left;
-      margin-bottom: 0px;
+    
+     position:absolute;
+     top:0px;
+     left:-150px;
+     width: 200px;
+     height: 100%;
+     margin-bottom: 0px; 
     }
 
     nav.sidebar li {
@@ -83,15 +84,14 @@ body,html{
 
     nav.sidebar:hover{
       margin-left: 0px;
+      left:0%;
     }
 
     .forAnimate{
       opacity: 0;
     }
-  }
-   
- @media (min-width: 1330px) {
-
+  
+ 
     .main{
       width: calc(100% - 200px);
       margin-left: 200px;
@@ -105,8 +105,8 @@ body,html{
     nav.sidebar .forAnimate{
       opacity: 1;
     }
-  }
-
+    
+ 
   nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #CCC;
     background-color: transparent;
