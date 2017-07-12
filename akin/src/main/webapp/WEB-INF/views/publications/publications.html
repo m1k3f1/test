@@ -49,20 +49,93 @@
 <body>
 <div th:replace="fragments/layout :: header"></div>
 <div th:replace="fragments/layout :: menu"></div>
+
 <div id="page-wrapper">
 		<div class="row">
 			<div th:replace="fragments/layout :: counts"></div>
 		</div>
             <div class="row">
                 <div class="col-lg-12">
+                
                     <h1 class="page-header">Publicaciones</h1>
+                    
+                    <!-- /. column -->
                 </div>
+                <!-- /. row -->
             </div>
-             <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart-multi"></div>
-                            </div>
-                        </div>
+            
+            <div class="row">
+			 <div class="col-lg-12">
+			
+			
+			
+			
+			 
+			 <!-- panel   -->
+			 	<div class="tabs-below panel-body">
+			 	
+			 		 <div class="tab-content">
+         				<div class="tab-pane fade in active" id="relevant-tab">
+         					<div th:insert="publications/relevant :: relevant-page"></div>
+         				</div>
+         				<div class="tab-pane fade" id="reactions-tab">
+         					<div th:insert="publications/reactions :: reactions-page"></div>
+         				</div>
+         				<div class="tab-pane fade" id="sentiment-tab">
+         					<div th:insert="publications/sentiment :: sentiment-page"></div>
+         				</div>
+         				<div class="tab-pane fade" id="video-tab">
+         					<div th:insert="publications/video :: video-page"></div>
+         				</div>
+         				<div class="tab-pane fade" id="evento-tab">
+         					<div th:insert="publications/evento :: evento-page"></div>
+         				</div>
+        			</div>
+        			
+        			<ul class="nav nav-tabs">
+          				<li>
+          					<a href="#relevant-tab" data-toggle="tab" >
+          						<span style="color: black;" class="fa fa-list-alt fa-3x"></span>
+          						<span style="color: black;" class="fa fa-star fa-2x"></span>
+          						<span style="color: black;" class="fa fa-star-o fa-2x"></span>
+          						
+          					</a>
+          				</li>
+          				<li>
+          					<a href="#reactions-tab" data-toggle="tab">
+          						<span style="color: black;" class="fa fa-list-alt fa-3x"></span>
+          						<span style="color: black;" class="fa fa-smile-o fa-2x"></span>
+          						<span style="color: black;" class="fa fa-frown-o fa-2x"></span>
+          					</a>
+          				</li>
+          				<li><a href="#sentiment-tab" data-toggle="tab">
+          						<span style="color: black;" class="fa fa-list-alt fa-3x"></span>
+          						<span style="color: black;" class="fa fa-thumbs-o-up fa-2x"></span>
+          						<span style="color: black;" class="fa fa-thumbs-o-down fa-2x"></span>
+          					</a>
+          				</li>
+          				<li><a href="#video-tab" data-toggle="tab">
+          						<span style="color: black;" class="fa fa-film fa-3x"></span>
+          						<span style="color: black;" class="fa fa-star fa-2x"></span>
+          						<span style="color: black;" class="fa fa-star-o fa-2x"></span>
+          					</a>
+          				</li>
+          				<li><a href="#evento-tab" data-toggle="tab">
+          						<span style="color: black;" class="fa fa-calendar fa-3x"></span>
+          						<span style="color: black;" class="fa fa-star fa-2x"></span>
+          						<span style="color: black;" class="fa fa-star-o fa-2x"></span>
+          					</a>
+          				</li>
+        			</ul>
+        			
+        			
+      			</div>
+			 
+			 <!-- /. column -->
+			 </div>
+			  <!-- /. row -->
+			</div> 
+            
             
     </div>
 	
@@ -99,20 +172,16 @@
 	<script
 		src="resources/plugin/dist/js/sb-admin-2.js"
 		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
-		
 	
-	<!-- Flot Charts JavaScript -->
-    <script src="resources/plugin/vendor/flot/excanvas.min.js" th:href="@{/resources/plugin/vendor/flot/excanvas.min.js}"></script>
-    <script src="resources/plugin/vendor/flot/jquery.flot.js" th:href="@{/resources/plugin/vendor/flot/jquery.flot.js}"></script>
-    <script src="resources/plugin/vendor/flot/jquery.flot.pie.js" th:href="@{/resources/plugin/vendor/flot/jquery.flot.pie.js}"></script>
-    <script src="resources/plugin/vendor/flot/jquery.flot.resize.js" th:href="@{/resources/plugin/vendor/flot/jquery.flot.resize.js}"></script>
-    <script src="resources/plugin/vendor/flot/jquery.flot.time.js" th:href="@{/resources/plugin/vendor/flot/jquery.flot.time.js}"></script>
-    <script src="resources/plugin/vendor/flot-tooltip/jquery.flot.tooltip.min.js" th:href="@{/resources/plugin/vendor/flot-tooltip/jquery.flot.tooltip.min.js}"></script>
-    <script src="resources/plugin/data/flot-data.js" th:href="@{/resources/plugin/data/flot-data.js}"></script>	
-
+	
 	<!-- effects panel -->
 	<script src="resources/js/effects.js"
-		th:href="@{/resources/js/effects.js}"></script>		
-
+		th:href="@{/resources/js/effects.js}"></script>	
+	
+	<!-- data demo - graphic  -->
+	<script
+		src="resources/plugin/data/publications-data.js"
+		th:href="@{/resources/plugin/data/publications-data.js}"></script>	
+	
 </body>
 </html>
