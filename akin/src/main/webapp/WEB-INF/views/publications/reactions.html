@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
+
+<div th:fragment="reactions-page">
+
+<div class="container">
+		<h3 class="page-header" align="center">Reacciones por Publicaciones</h3>
+
+		
+		<div id="reactions"></div>
+		
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Publicacion</th>
+						<th>Me gusta</th>
+						<th>Me entrsitece</th>
+						<th>Me enoja</th>
+						<th>Me sorprende</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Publicacion 1</td>
+						<td>55</td>
+						<td>100</td>
+						<td>200</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Publicacion 2</td>
+						<td>55</td>
+						<td>100</td>
+						<td>200</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Publicacion 3</td>
+						<td>55</td>
+						<td>100</td>
+						<td>200</td>
+						<td>40</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<!-- /.table-responsive -->
+		</div>
+
+</div>
+
+	</div>
+
 
 </body>
 </html>
