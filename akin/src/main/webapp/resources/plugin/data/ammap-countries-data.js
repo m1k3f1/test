@@ -126,7 +126,7 @@ $(function( ) {
     	  /**
     	   * let's say we want a small map to be displayed, so let's create it
     	   */
-    	  "smallMap": {}
+
     	} ); 
 
       var valueLegend = new AmCharts.ValueLegend();
