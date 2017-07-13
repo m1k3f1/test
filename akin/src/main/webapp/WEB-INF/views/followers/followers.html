@@ -25,6 +25,15 @@
 <!-- Menu Css -->
 <link href="../../../resources/css/menu.css" rel="stylesheet"
 	media="screen" th:href="@{/resources/css/menu.css}" />
+	
+<!-- Slider -->
+	
+<link href="../../../resources/css/jquery-ui.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/jquery-ui.css}" />	
+
+	
+<link href="../../../resources/css/jquery-ui-slider-pips.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/jquery-ui-slider-pips.css}" />		
 
 <!-- Efects counts Css -->
 <link href="../../../resources/css/effects.css" rel="stylesheet"
@@ -214,51 +223,59 @@
         	<div class="col-lg-6">
 			 
 			 	<div class="panel panel-default">
-                        <div class="panel-heading" th:text="#{followers.demographicDatas}"></div>
+                    <div class="panel-heading" th:text="#{followers.demographicDatas}"></div>
                         <!-- /.panel-heading -->
-                        <div >
-                            <div class="tab-content">
-                            	<div class="tab-pane active" id="one_"></div>
-                            	<div class="tab-pane" id="two_"></div>
-                            	<div class="tab-pane" id="three_"></div>
-                            	<div class="tab-pane" id="four_"></div>
-                            	<div class="tab-pane" id="five_"></div>
-                            </div>
-                            <!-- <div id="followers-top-ten2" ></div>  -->
-                            <ul class="nav nav-tabs" >
-  								<li><a href="#one_" data-toggle="tab">Home</a></li>
-                            	<li><a href="#two_" data-toggle="tab">Menu 2</a></li>
- 	 							<li><a href="#three_" data-toggle="tab">Menu 3</a></li>
- 	 							<li><a href="#four_" data-toggle="tab">Menu 2</a></li>
- 	 							<li><a href="#five_" data-toggle="tab">Menu 3</a></li>
-							</ul>
-                        </div>
-                        <!-- Table -->
-                        	<div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>PPPP</th>
-                                            <th>PPPP</th>
-                                            <th>PPPP</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>YYYY</td>
-                                            <td>55</td>
-                                            <td>55</td>
-                                        </tr>
-                                        <tr>
-                                            <td>RRRR</td>
-                                            <td>25</td>
-                                            <td>25</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                		<!-- /.table-responsive -->                
-                       	</div> 
+                        <!-- -->
                         
+                     <div class="tabs-below panel-body" >
+			 	
+			 		 	<div class="tab-content" >
+         					<div class="tab-pane fade in active" id="education-tab"  >
+         						<div th:insert="followers/educationLevel :: education-page"></div>
+         					</div>
+         					<div class="tab-pane fade" id="occupation-tab">
+         						<div th:insert="followers/occupation :: occupation-page"></div>
+         					</div>
+         					<div class="tab-pane fade" id="civilStatus-tab">
+         						<div th:insert="followers/civilStatus :: civilStatus-page"></div>
+         					</div>
+         					<div class="tab-pane" id="religion-tab">
+         						<div th:insert="followers/religion :: religion-page"></div>
+         					</div>
+         					<div class="tab-pane fade" id="political-tab">
+         						<div th:insert="followers/politicalPreferences :: political-page"></div>
+         					</div>
+        				</div>
+        			
+        				<ul class="nav nav-tabs">
+          					<li>
+          						<a href="#education-tab" data-toggle="tab" data-placement="bottom" title="Información Académica" >
+          							<span style="color: black;" class="glyphicon glyphicon-education glyphicon-align-center fa-3x"></span>          						
+          						</a>
+          					</li>
+          					<li>
+          						<a href="#occupation-tab" data-toggle="tab" data-placement="bottom" title="Empleo">
+          							<span style="color: black;" class="fa fa-user-md fa-align-center fa-3x"></span>
+          						</a>
+          					</li>
+          					<li>
+          						<a href="#civilStatus-tab" data-toggle="tab" data-placement="bottom" title="Estado Civil">
+          							<span style="color: black;" class="	fa fa-heart fa-3x"></span>
+          						</a>
+          					</li>
+          					<li>
+          						<a href="#religion-tab" data-toggle="tab" data-placement="bottom" title="Creencias Religiosas">
+          							<span style="color: black;" class="glyphicon glyphicon-king glyphicon-align-center fa-3x"></span>
+          						</a>
+          					</li>
+          					<li>
+          						<a href="#political-tab" data-toggle="tab" data-placement="bottom" title="Ideologías Politicas">
+          							<span style="color: black;" class="fa fa-black-tie fa-align-center fa-3x"></span>
+          						</a>
+          					</li>
+        				</ul>
+        			
+      				</div>
                         
                 <!-- /.panel-body -->
                 </div>
@@ -318,6 +335,10 @@
 	<script src="resources/plugin/data/morris-data.js"
 		th:href="@{/resources/plugin/data/morris-data.js}"></script>
 	
+	
+	<script src="resources/plugin/data/demographic-data.js"
+		th:href="@{/resources/plugin/data/demographic-data.js}"></script>
+		 
 	<script
 		src="resources/plugin/data/followers-data.js"
 		th:href="@{/resources/plugin/data/followers-data.js}"></script>
@@ -325,6 +346,17 @@
 	<!-- Custom Theme JavaScript -->
 	<script src="resources/plugin/dist/js/sb-admin-2.js"
 		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
+		
+	<!-- slider js --> 
+	
+	<script
+		src="resources/js/jquery-ui.js"
+		th:href="@{/resources/js/jquery-ui.js}"></script>
+
+	<script
+		src="resources/js/jquery-ui-slider-pips.js"
+		th:href="@{/resources/js/jquery-ui-slider-pips.js}"></script>	
+		
 
 	<!-- effects panel -->
 	<script src="resources/js/effects.js"
