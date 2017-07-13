@@ -8,8 +8,21 @@
 
 <!-- Header -->   
 <div  th:fragment="header"  style="background-color: white;">
-    <div class="container">
-            <ul class="nav navbar-nav navbar-right" style="background-color: white;" >
+<div class="row">
+	<div class="col-md-1 col-sm-1 col-xs-1" style="left: 100px;" >
+		<br/>
+		<select class="form-control" style="width: 55px;height: 20px; font-size: 10px;padding: 0px;"  >
+ 			<option>2017</option>
+ 		 	<option>2018</option>
+		</select>
+	</div>
+	<div class="col-md-6 col-sm-6 col-xs-6" style="width: 80%; left: 50px;">
+		<br/>
+		<div id="scale-slider"></div>
+	</div>
+	<div class="col-md-1 col-sm-1 col-xs-1" >
+		<br/>
+    	<ul class="nav navbar-nav navbar-right" style="background-color: white;" >
                 <li th:if="${#authorization.expression('!isAuthenticated()')}">
                     <a href="/signin" th:href="@{/signin}">
                         <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Sign in
@@ -22,9 +35,9 @@
                     </a>
                     <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
                 </li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
+        </ul>
+    </div>
+</div>  
 </div>
 
 <!-- Menu -->
