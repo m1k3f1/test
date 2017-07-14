@@ -6,7 +6,7 @@
 <body>
 
 	<div th:fragment="followersTopten-page" >
-<div class="container" style="width:100%; height:50%; ">
+<div class="container" >
 
 	<div class="panel-heading" >
 		<h4 th:text="#{followers.topten}" ></h4>
@@ -14,11 +14,11 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             
-                            <div id="followers-top-ten"></div>
+                            <div id="followers-top-ten" style="height: 150px"></div>
                             
                         </div>
                         <!-- Table -->
-                        	<div class="table-responsive">
+                        	<div class="table-responsive" style="height: 150px">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>

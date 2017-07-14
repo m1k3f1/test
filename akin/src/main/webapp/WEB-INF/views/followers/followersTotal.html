@@ -2,22 +2,23 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+
 </head>
 <body>
 
 	<div th:fragment="followersTotal-page" >
-<div class="container" style="width:100%; height:40%; ">
+<div class="container"  >
 
-		           <div class="panel-heading"> 
+		           <div class="panel-heading" > 
 		           		<h4 th:text="#{followers.totalFollowers}" ></h4>
 		           	</div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
+                        <div class="panel-body" >
                             <!-- grafica -->
-                            <div id="followers-bar-chart"></div>
+                            <div id="followers-bar-chart" style="height: 150px"></div>
                         </div>
                         	<!-- Table -->
-                        	<div class="table-responsive">
+                        	<div class="table-responsive" style="height: 150px">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
