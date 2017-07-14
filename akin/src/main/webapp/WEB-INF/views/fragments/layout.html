@@ -65,8 +65,8 @@
         		<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span>
         	</a>
         </li>        
-        <li >
-        	<a href="#">
+        <li th:classappend="${module == 'benchmark' ? 'active' : ''}" >
+        	<a href="#" th:href="@{benchmark}" >
         		<label th:text="#{menu.benchmark}"></label>
         		<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list"></span>
         	</a>
