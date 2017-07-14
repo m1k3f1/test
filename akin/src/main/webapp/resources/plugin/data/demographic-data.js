@@ -143,26 +143,6 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 	  var target = $(e.target).attr("href") // activated tab
 
 	  switch (target) {
-	    case "#education-tab":
-	    	educationBar.redraw();
-	      $(window).trigger('resize');
-	      break;
-	    case "#occupation-tab":
-	    	occupationBar.redraw();
-	      $(window).trigger('resize');
-	      break;
-	    case "#civilStatus-tab":
-	    	civilStatusBar.redraw();
-	      $(window).trigger('resize');
-	      break;
-	    case "#religion-tab":
-	    	religionBar.redraw();
-	      $(window).trigger('resize');
-	      break;
-	    case "#political-tab":
-	    	politicalPreferencesBar.redraw();
-	      $(window).trigger('resize');
-	      break;
 	    case "#followersTotal-tab":
 	    	followersTotal.redraw();
 	      $(window).trigger('resize');
@@ -172,5 +152,36 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 	      $(window).trigger('resize');
 	      break;
 	  
+	    case "#followersDemographic-tab":
+	    	educationBar.redraw();
+		      $(window).trigger('resize');
+		     // $('#tab a[href="#education-tab"]').tab('show');
+
+	    	$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+	    		  var target = $(e.target).attr("href")
+	    		   switch (target) {
+					    case "#education-tab":
+					    	educationBar.redraw();
+					      $(window).trigger('resize');
+					      break;
+					    case "#occupation-tab":
+					    	occupationBar.redraw();
+					      $(window).trigger('resize');
+					      break;
+					    case "#civilStatus-tab":
+					    	civilStatusBar.redraw();
+					      $(window).trigger('resize');
+					      break;
+					    case "#religion-tab":
+					    	religionBar.redraw();
+					      $(window).trigger('resize');
+					      break;
+					    case "#political-tab":
+					    	politicalPreferencesBar.redraw();
+					      $(window).trigger('resize');
+					      break;
+	    		   }
+	    	});
+	      break;
 	  }
 	});
