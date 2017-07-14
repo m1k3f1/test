@@ -84,218 +84,63 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header" th:text="#{followers.followers}"></h1>
+				<h3 class="page-header" th:text="#{followers.followers}"></h3>
 			</div>
 		</div>
 		
-		<div class="row">
-			 <div class="col-lg-6">
-			 
-			 	<div class="panel panel-default">
-                        <div class="panel-heading" th:text="#{followers.totalFollowers}"></div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- grafica -->
-                            <div id="followers-bar-chart"></div>
-                        </div>
-                        	<!-- Table -->
-                        	<div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th th:text="#{followers.totalFollowers}"></th>
-                                            <th>715700</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td th:text="#{followers.new}"></td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td th:text="#{followers.leave}"></td>
-                                            <td>9000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                		<!-- /.table-responsive -->                
-                       	</div> 
-                <!-- /.panel-body -->
-                </div>
-                <!-- /. column -->
-             </div>  
-             <div class="col-lg-6">
-			 
-			 	<div class="panel panel-default">
-                        <div class="panel-heading" th:text="#{followers.topten}"></div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                            <div id="followers-top-ten"></div>
-                            
-                        </div>
-                        <!-- Table -->
-                        	<div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th th:text="#{followers.totalReactionsMyPost}"></th>
-                                            <th>108</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td th:text="#{followers.totalCommentsMyPost}"></td>
-                                            <td>55</td>
-                                        </tr>
-                                        <tr>
-                                            <td th:text="#{followers.totalSharesMyPost}"></td>
-                                            <td>25</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                		<!-- /.table-responsive -->                
-                       	</div> 
-                        
-                        
-                <!-- /.panel-body -->
-                </div>
-                <!-- /. column -->
-             </div>  
-             
-        <!-- /. row -->     
-		</div>
-		
-		<div class="row">
-			 <div class="col-lg-6">
-			 
-			 	<div class="panel panel-default">
-                        <div class="panel-heading" th:text="#{followers.geographicLocation}"></div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Mapa -->
-                            <div id="mapdiv" style="width: 600px; height: 350px; ">  </div>
-                        </div>
-                        	<!-- Table -->
-                        	<div >
-                                <table class="table table-hover" >
-                                    <thead>
-                                        <tr>
-                                            <th th:text="#{followers.states}"></th>
-                                            <th th:text="#{followers.followers}"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td th:text="#{followers.queretaro}"></td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td th:text="#{followers.hidalgo}"></td>
-                                            <td>9000</td>
-                                        </tr>
-                                         <tr>
-                                            <td th:text="#{followers.zacatecas}"></td>
-                                            <td>900</td>
-                                        </tr>
-                                         <tr>
-                                            <td th:text="#{followers.durango}"></td>
-                                            <td>2000</td>
-                                        </tr>
-                                         <tr>
-                                            <td th:text="#{followers.veracruz}"></td>
-                                            <td>1000</td>
-                                        </tr>
-                                        <tr>
-                                            <td th:text="#{followers.chiapas}"></td>
-                                            <td>800</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                		<!-- /.table-responsive -->                
-                       	</div> 
-                <!-- /.panel-body -->
-                </div>
-                <!-- /. column -->
-             </div>
-        	
-        	<!-- Datos demograficos de los seguidores -->
-        	<div class="col-lg-6">
-			 
-			 	<div class="panel panel-default">
-                    <div class="panel-heading" th:text="#{followers.demographicDatas}"></div>
-                        <!-- /.panel-heading -->
-                        <!-- -->
-                        
-                     <div class="tabs-below panel-body" >
+	
+		 <div class="tabs-below panel-body" style="width:90%; height:70%; ">
 			 	
 			 		 	<div class="tab-content" >
-         					<div class="tab-pane fade in active" id="education-tab"  >
-         						<div th:insert="followers/educationLevel :: education-page"></div>
+         					<div class="tab-pane fade in active" id="followersTotal-tab"  >
+         						<div th:insert="followers/followersTotal :: followersTotal-page"></div>
          					</div>
-         					<div class="tab-pane fade" id="occupation-tab">
-         						<div th:insert="followers/occupation :: occupation-page"></div>
+         					<div class="tab-pane fade" id="followersTopten-tab">
+         						<div th:insert="followers/followersTopten :: followersTopten-page"></div>
          					</div>
-         					<div class="tab-pane fade" id="civilStatus-tab">
-         						<div th:insert="followers/civilStatus :: civilStatus-page"></div>
+         					<div class="tab-pane fade" id="followersGeographic-tab">
+         						<div th:insert="followers/followersGeographic :: followersGeographic-page"></div>
          					</div>
-         					<div class="tab-pane" id="religion-tab">
-         						<div th:insert="followers/religion :: religion-page"></div>
-         					</div>
-         					<div class="tab-pane fade" id="political-tab">
-         						<div th:insert="followers/politicalPreferences :: political-page"></div>
+         					<div class="tab-pane" id="followersDemographic-tab">
+         						<div th:insert="followers/followersDemographic :: followersDemographic-page"></div>
          					</div>
         				</div>
         			
-        				<ul class="nav nav-tabs">
+        				<ul class="nav nav-tabs ">
           					<li>
-          						<a href="#education-tab" data-toggle="tab" data-placement="bottom" title="Información Académica" >
-          							<span style="color: black;" class="glyphicon glyphicon-education glyphicon-align-center fa-3x"></span>          						
+          						<a href="#followersTotal-tab" data-toggle="tab" data-placement="bottom" title="Total de Seguidores" >
+          							<span style="color: black;" class="fa fa-group fa-3x"></span>
+          							<span style="color: black;" class="fa fa-group fa-3x"></span>
           						</a>
           					</li>
           					<li>
-          						<a href="#occupation-tab" data-toggle="tab" data-placement="bottom" title="Empleo">
-          							<span style="color: black;" class="fa fa-user-md fa-align-center fa-3x"></span>
+          						<a href="#followersTopten-tab" data-toggle="tab" data-placement="bottom" title="TopTen de Seguidores">
+          							<span style="color: black;" class="fa fa-child fa-3x"></span>
+          							<span style="color: black;" class="fa fa-star fa-2x"></span>
+          							<span style="color: black;" class="fa fa-child fa-3x"></span>
           						</a>
           					</li>
           					<li>
-          						<a href="#civilStatus-tab" data-toggle="tab" data-placement="bottom" title="Estado Civil">
-          							<span style="color: black;" class="	fa fa-heart fa-3x"></span>
+          						<a href="#followersGeographic-tab" data-toggle="tab" data-placement="bottom" title="Información Geográfica de Seguidores">
+          							<span style="color: black;" class="glyphicon glyphicon-globe fa-3x"></span>
           						</a>
           					</li>
           					<li>
-          						<a href="#religion-tab" data-toggle="tab" data-placement="bottom" title="Creencias Religiosas">
-          							<span style="color: black;" class="glyphicon glyphicon-king glyphicon-align-center fa-3x"></span>
+          						<a href="#followersDemographic-tab" data-toggle="tab" data-placement="bottom" title="Información Demográfica de Seguidores">
+          							<span style="color: black;" class="	fa fa-female fa-3x"></span>
+          							<span style="color: black;" class="fa fa-male fa-3x"></span>
           						</a>
           					</li>
-          					<li>
-          						<a href="#political-tab" data-toggle="tab" data-placement="bottom" title="Ideologías Politicas">
-          							<span style="color: black;" class="fa fa-black-tie fa-align-center fa-3x"></span>
-          						</a>
-          					</li>
+          					
         				</ul>
         			
       				</div>
                         
-                <!-- /.panel-body -->
-                </div>
-                <!-- /. column -->
-             </div>  
-             <!-- Fin datos demograficos -->
-        </div>
 
 	<!-- /. page-wrapper -->
 	</div>
 	
-
-
-
-
-
 	<div th:replace="fragments/layout :: footer"></div>
-
-
-
 
 	<!-- jQuery -->
 
@@ -339,10 +184,10 @@
 	<script src="resources/plugin/data/demographic-data.js"
 		th:href="@{/resources/plugin/data/demographic-data.js}"></script>
 		 
-	<script
+<!-- 	<script
 		src="resources/plugin/data/followers-data.js"
 		th:href="@{/resources/plugin/data/followers-data.js}"></script>
-
+ -->
 	<!-- Custom Theme JavaScript -->
 	<script src="resources/plugin/dist/js/sb-admin-2.js"
 		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
