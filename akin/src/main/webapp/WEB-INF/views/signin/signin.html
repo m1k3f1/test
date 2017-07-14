@@ -5,9 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
     <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+	<!-- Custom CSS -->
+	<link href="../../../resources/plugin/dist/css/sb-admin-2.css"
+	th:href="@{resources/plugin/dist/css/sb-admin-2.css}" rel="stylesheet">
 </head>
 <body>
-<form class="form-narrow form-horizontal" action="#" method="post" th:action="@{/authenticate}">
+<div id="page-wrapper" >
+<br/>
+<form class="form-narrow form-horizontal" action="#" method="post" th:action="@{/authenticate}" style="background-color: white;">
     <th:block th:if="${param.error != null}">
         <div th:replace="fragments/components :: alert (type='danger', message='Sign in error. Please try again.')">Alert</div>
     </th:block>
@@ -43,5 +48,7 @@
     </fieldset>
 </form>
 <div th:replace="fragments/layout :: footer"></div>
+</div>
+
 </body>
 </html>

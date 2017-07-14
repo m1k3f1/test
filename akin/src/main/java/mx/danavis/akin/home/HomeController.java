@@ -16,6 +16,6 @@ class HomeController {
 
 	@GetMapping("/")
 	String index(Principal principal) {
-		return principal != null ? "home/home" : "signin/signin";
+		return principal != null ? "followers/followers" : "signin/signin";
 	}
 }
