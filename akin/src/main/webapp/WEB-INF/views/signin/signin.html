@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Sign In</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
-    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
-	<!-- Custom CSS -->
-	<link href="../../../resources/plugin/dist/css/sb-admin-2.css"
-	th:href="@{resources/plugin/dist/css/sb-admin-2.css}" rel="stylesheet">
+<title>Sign In</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div id="page-wrapper" >
-<br/>
-<form class="form-narrow form-horizontal" action="#" method="post" th:action="@{/authenticate}" style="background-color: white;">
+
+	<div th:replace="fragments/layout :: header"></div>
+
+	<div id="wrapper">
+	
+	<div class="row">
+	
+	<br/><br/>
+	
+	 <div class="col-md-6 col-md-offset-3">
+	
+	
+	<div class="ibox float-e-margins">
+	
+	
+	
+	<div class="ibox-title">
+                            <h5 th:text="#{signin.title}">Horizontal form</h5>
+                           
+                        </div>
+	
+	
+	
+	
+<div class="ibox-content">
+
+		<form class="form-horizontal" action="#" method="post" th:action="@{/authenticate}" >
     <th:block th:if="${param.error != null}">
-        <div th:replace="fragments/components :: alert (type='danger', message='Sign in error. Please try again.')">Alert</div>
+        <div th:replace="fragments/components :: alert (type='danger', message='Por favor intente de nuevo.')">Alert</div>
     </th:block>
     <fieldset>
-        <legend th:text="#{signin.title}" ></legend>
+    
+        
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-4 control-label" th:text="#{signin.user}" ></label>
-            <div class="col-lg-8">
+        	<div class="col-lg-2 col-md-offset-3 ">
+            	<label for="inputEmail" class="control-label " th:text="#{signin.user}" ></label>
+            </div>
+            <div class="col-lg-6 ">
                 <input type="text" class="form-control" id="inputEmail" name="username" />
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword" class="col-lg-4 control-label" th:text="#{signin.password}"></label>
-            <div class="col-lg-8">
+        	<div class="col-lg-2 col-md-offset-3 ">
+            	<label for="inputPassword" class="control-label" th:text="#{signin.password}"></label>
+            </div>
+            <div class="col-lg-6 ">
                 <input type="password" class="form-control" id="inputPassword"  name="password" />
             </div>
         </div>
         <div class="form-group">
-            <div class="col-lg-offset-2 col-lg-10">
+            <div class="col-lg-6 control-label col-md-offset-3">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" name="_spring_security_remember_me" th:text="#{signin.remember}" />
@@ -40,15 +64,22 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="col-lg-offset-2 col-lg-10">
+            <div class="col-lg-offset-5 col-lg-10 ">
                 <button type="submit" class="btn btn-default" th:text="#{signin.signin}" ></button>
             </div>
         </div>
         
     </fieldset>
 </form>
-<div th:replace="fragments/layout :: footer"></div>
 </div>
 
+</div>
+	</div>
+
+</div>
+</div>
+
+	<div th:replace="fragments/layout :: footer"></div>
+	
 </body>
 </html>
