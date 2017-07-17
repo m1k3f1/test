@@ -10,57 +10,7 @@
 
 <title th:text="#{view.index.title}">Welcome!</title>
 
-<!-- Bootstrap Core CSS -->
-<link
-	href="../../../resources/plugin/vendor/bootstrap/css/bootstrap.min.css"
-	th:href="@{resources/plugin/vendor/bootstrap/css/bootstrap.min.css}"
-	rel="stylesheet">
 
-<!-- MetisMenu CSS -->
-<link
-	href="../../../resources/plugin/vendor/metisMenu/metisMenu.min.css"
-	th:href="@{resources/plugin/vendor/metisMenu/metisMenu.min.css}"
-	rel="stylesheet">
-
-<!-- Menu Css -->
-<link href="../../../resources/css/menu.css" rel="stylesheet"
-	media="screen" th:href="@{/resources/css/menu.css}" />
-	
-<!-- Slider -->
-	
-<link href="../../../resources/css/jquery-ui.css" rel="stylesheet"
-	media="screen" th:href="@{/resources/css/jquery-ui.css}" />	
-
-	
-<link href="../../../resources/css/jquery-ui-slider-pips.css" rel="stylesheet"
-	media="screen" th:href="@{/resources/css/jquery-ui-slider-pips.css}" />		
-
-<!-- Efects counts Css -->
-<link href="../../../resources/css/effects.css" rel="stylesheet"
-	media="screen" th:href="@{/resources/css/effects.css}" />
-
-<!-- Custom CSS -->
-<link href="../../../resources/plugin/dist/css/sb-admin-2.css"
-	th:href="@{resources/plugin/dist/css/sb-admin-2.css}" rel="stylesheet">
-
-<!-- Morris Charts CSS -->
-<link href="../../../resources/plugin/vendor/morrisjs/morris.css"
-	th:href="@{resources/plugin/vendor/morrisjs/morris.css}"
-	rel="stylesheet">
-
-<!-- Custom Fonts -->
-<link
-	href="../../../resources/plugin/vendor/font-awesome/css/font-awesome.min.css"
-	th:href="@{resources/plugin/vendor/font-awesome/css/font-awesome.min.css}"
-	rel="stylesheet" type="text/css">
-	
-<!-- amchart resources -->
-<link href="../../../resources/plugin-jvectormap/ammap/plugins/export/export.css" 
-		th:href="@{resources/plugin-jvectormap/ammap/plugins/export/export.css}"
-		rel="stylesheet" type="text/css" media="all" />
-		
-<link rel="stylesheet" href="../../../resources/plugin-jvectormap/ammap/ammap.css" 
-		th:href="@{resources/plugin-jvectormap/ammap/ammap.css}" type="text/css" media="all" />
 		
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,22 +21,18 @@
 
 </head>
 
-<body>
+
 <body>
 	<div th:replace="fragments/layout :: header"></div>
 	<div th:replace="fragments/layout :: menu"></div>
 
 
-	<div id="page-wrapper" >
-		<div class="row" >
-			<div th:replace="fragments/layout :: counts"></div>
-		</div>
-
-		<div class="row" > 
-			<div class="col-lg-12">
-				<h3 class="page-header" th:text="#{followers.followers}"></h3>
-			</div>
-	 	</div> 
+	<div id="page-wrapper" class="gray-bg sidebar-content" >
+		
+		<div th:replace="fragments/layout :: title (title_page= #{followers.followers})"></div>
+		
+		<div th:replace="fragments/layout :: counts"></div>
+	
 		
 	
 		 <div class="tabs-below panel-body" >
@@ -143,70 +89,8 @@
 	<div th:replace="fragments/layout :: footer"></div>
 
 	<!-- jQuery -->
-
-	<script src="resources/plugin/vendor/jquery/jquery.min.js"
-		th:href="@{/resources/plugin/vendor/jquery/jquery.min.js}"></script>
-
-
-		
-		<script src="resources/plugin-jvectormap/ammap/ammap.js" type="text/javascript"
-			th:href="@{/resources/plugin-jvectormap/ammap/ammap.js}"></script>
-
-		<script src="resources/plugin-jvectormap/ammap/plugins/export/export.min.js" type="text/javascript"
-		th:href="@{/resources/plugin-jvectormap/ammap/plugins/export/export.min.js}"></script>
-
-		<script src="resources/plugin-jvectormap/ammap/themes/dark.js" type="text/javascript"
-		th:href="@{/resources/plugin-jvectormap/ammap/themes/dark.js}"></script>
-		<!-- Countries Map -->
-		<script src="resources/plugin/data/ammap-countries-data.js" type="text/javascript"
-		th:href="@{/resources/plugin/data/ammap-countries-data.js}"></script>
-
-		<script src="resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js" type="text/javascript"
-		th:href="@{/resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js}" ></script>
-		
-	<!-- Bootstrap Core JavaScript -->
-	<script src="resources/plugin/vendor/bootstrap/js/bootstrap.min.js"
-		th:href="@{/resources/plugin/vendor/bootstrap/js/bootstrap.min.js}"></script>
-
-	<!-- Metis Menu Plugin JavaScript -->
-	<script src="resources/plugin/vendor/metisMenu/metisMenu.min.js"
-		th:href="@{/resources/plugin/vendor/metisMenu/metisMenu.min.js}"></script>
-
-	<!-- Morris Charts JavaScript -->
-	<script src="resources/plugin/vendor/raphael/raphael.min.js"
-		th:href="@{/resources/plugin/vendor/raphael/raphael.min.js}"></script>
-	<script src="resources/plugin/vendor/morrisjs/morris.min.js"
-		th:href="@{/resources/plugin/vendor/morrisjs/morris.min.js}"></script>
-	<script src="resources/plugin/data/morris-data.js"
-		th:href="@{/resources/plugin/data/morris-data.js}"></script>
 	
-	
-	<script src="resources/plugin/data/demographic-data.js"
-		th:href="@{/resources/plugin/data/demographic-data.js}"></script>
-		 
-<!-- 	<script
-		src="resources/plugin/data/followers-data.js"
-		th:href="@{/resources/plugin/data/followers-data.js}"></script>
- -->
-	<!-- Custom Theme JavaScript -->
-	<script src="resources/plugin/dist/js/sb-admin-2.js"
-		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
-		
-	<!-- slider js --> 
-	
-	<script
-		src="resources/js/jquery-ui.js"
-		th:href="@{/resources/js/jquery-ui.js}"></script>
-
-	<script
-		src="resources/js/jquery-ui-slider-pips.js"
-		th:href="@{/resources/js/jquery-ui-slider-pips.js}"></script>	
-		
-
-	<!-- effects panel -->
-	<script src="resources/js/effects.js"
-		th:href="@{/resources/js/effects.js}"></script>
-
+	<div th:replace="fragments/layout :: script-general"></div>
 
 
 </body>

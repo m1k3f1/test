@@ -71,10 +71,11 @@
 	<div th:replace="fragments/layout :: menu"></div>
 
 
-	<div id="page-wrapper">
-		<div class="row">
-			<div th:replace="fragments/layout :: counts"></div>
-		</div>
+	<div id="page-wrapper" class="gray-bg sidebar-content" >
+		
+		<div th:replace="fragments/layout :: title (title_page= #{benchmark.benchmark})"></div>
+		<div th:replace="fragments/layout :: counts"></div>
+		
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -93,36 +94,7 @@
 
 	<!-- jQuery -->
 
-	<script src="resources/plugin/vendor/jquery/jquery.min.js"
-		th:href="@{/resources/plugin/vendor/jquery/jquery.min.js}"></script>
-		
-		
-	<!-- Bootstrap Core JavaScript -->
-	<script src="resources/plugin/vendor/bootstrap/js/bootstrap.min.js"
-		th:href="@{/resources/plugin/vendor/bootstrap/js/bootstrap.min.js}"></script>
-
-	<!-- Metis Menu Plugin JavaScript -->
-	<script src="resources/plugin/vendor/metisMenu/metisMenu.min.js"
-		th:href="@{/resources/plugin/vendor/metisMenu/metisMenu.min.js}"></script>
-	
-	<!-- Custom Theme JavaScript -->
-	<script src="resources/plugin/dist/js/sb-admin-2.js"
-		th:href="@{/resources/plugin/dist/js/sb-admin-2.js}"></script>
-		
-	<!-- slider js --> 
-	
-	<script
-		src="resources/js/jquery-ui.js"
-		th:href="@{/resources/js/jquery-ui.js}"></script>
-
-	<script
-		src="resources/js/jquery-ui-slider-pips.js"
-		th:href="@{/resources/js/jquery-ui-slider-pips.js}"></script>	
-		
-
-	<!-- effects panel -->
-	<script src="resources/js/effects.js"
-		th:href="@{/resources/js/effects.js}"></script>
+	<div th:replace="fragments/layout :: script-general"></div>
 	
 	
 </body>
