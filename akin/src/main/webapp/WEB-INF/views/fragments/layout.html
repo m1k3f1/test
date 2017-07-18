@@ -16,6 +16,9 @@
     	
   <link href="../../../resources/css/style.css" rel="stylesheet"
     	th:href="@{resources/css/style.css}">
+    	
+   <link href="../../../resources/css/akin.css" rel="stylesheet"
+    	th:href="@{resources/css/akin.css}"> 	
 </head>
 <body>
 
@@ -93,7 +96,7 @@
 
 <!-- Counts and social media -->
 <div  th:fragment="counts">
-<div class="wrapper wrapper-content">
+<div>
 
 <div class="row">
 
@@ -105,11 +108,24 @@
                             	</span>
                                 <h5>Ricardo Anaya Cortes</h5>
                             </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">22 285,400</h1>
-                                <div class="stat-percent font-bold text-navy">20% <i class="fa fa-level-up"></i></div>
-                                <small>Seguidores</small>
+                            <div class="ibox-content" style="height: 85px; " >
+                            	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">22 285,400</h1>
+                                	<div class="stat-percent font-bold text-navy">20% <i class="fa fa-level-up"></i></div>
+                                	<small>Seguidores</small>
+                                </div>
+                                <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">5,000</h1>
+                                	<div class="stat-percent font-bold text-navy">20% <i class="fa fa-level-up"></i></div>
+                                	<small>Publicaciones</small>
+                            	</div>
+                            	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">22 285,400</h1>
+                                	<div class="stat-percent font-bold text-navy">20% <i class="fa fa-level-up"></i></div>
+                                	<small>Popularidad</small>
+                            	</div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -120,11 +136,25 @@
                             	</span>
                                 <h5>Margarita Zavala</h5>
                             </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">60 420,600</h1>
+                            
+                            <div class="ibox-content" style="height: 85px; " >
+                            	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">60 420,600</h1>
                                 <div class="stat-percent font-bold text-info">40% <i class="fa fa-level-up"></i></div>
-                                <small>Seguidores</small>
+                                <small >Seguidores</small>
+                                </div>
+                                <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">8,000</h1>
+                                	<div class="stat-percent font-bold text-info">40% <i class="fa fa-level-up"></i></div>
+                                	<small>Publicaciones</small>
+                            	</div>
+                            	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">60 420,6000</h1>
+                                	<div class="stat-percent font-bold text-info">45% <i class="fa fa-level-up"></i></div>
+                                	<small>Popularidad</small>
+                            	</div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -135,11 +165,25 @@
                             	</span>
                                 <h5>Rafael Moreno Valle</h5>
                             </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">120 430,800</h1>
+                            
+                            <div class="ibox-content" style="height: 85px; " >
+                            	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">60 420,600</h1>
                                 <div class="stat-percent font-bold text-warning">16% <i class="fa fa-level-up"></i></div>
-                                <small>Seguidores</small>
+                                <small >Seguidores</small>
+                                </div>
+                                <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">10,000</h1>
+                                	<div class="stat-percent font-bold text-warning">16% <i class="fa fa-level-up"></i></div>
+                                	<small>Publicaciones</small>
+                            	</div>
+                            	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">60 420,6000</h1>
+                                	<div class="stat-percent font-bold text-warning">16% <i class="fa fa-level-up"></i></div>
+                                	<small>Popularidad</small>
+                            	</div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -233,58 +277,16 @@
     <script src="resources/js/plugins/chartJs/Chart.min.js"
     	th:href="@{/resources/js/plugins/chartJs/Chart.min.js}"></script>
 
-    <script>
-        $(document).ready(function() {
+<!-- Followers Data -->
+	<script src="resources/js/data/followers-data.js"
+    		th:href="@{/resources/js/data/followers-data.js}"></script>
 
-            var lineData = {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-                    {
-                        label: "Example dataset",
-                        fillColor: "rgba(220,220,220,0.5)",
-                        strokeColor: "rgba(220,220,220,1)",
-                        pointColor: "rgba(220,220,220,1)",
-                        pointStrokeColor: "#fff",
-                        pointHighlightFill: "#fff",
-                        pointHighlightStroke: "rgba(220,220,220,1)",
-                        data: [65, 59, 80, 81, 56, 55, 40]
-                    },
-                    {
-                        label: "Example dataset",
-                        fillColor: "rgba(26,179,148,0.5)",
-                        strokeColor: "rgba(26,179,148,0.7)",
-                        pointColor: "rgba(26,179,148,1)",
-                        pointStrokeColor: "#fff",
-                        pointHighlightFill: "#fff",
-                        pointHighlightStroke: "rgba(26,179,148,1)",
-                        data: [28, 48, 40, 19, 86, 27, 90]
-                    }
-                ]
-            };
+    		
+<!-- Followers Data -->
+	<script src="resources/js/data/followers-data.js"
+    		th:href="@{/resources/js/data/followers-data.js}"></script>
 
-            var lineOptions = {
-                scaleShowGridLines: true,
-                scaleGridLineColor: "rgba(0,0,0,.05)",
-                scaleGridLineWidth: 1,
-                bezierCurve: true,
-                bezierCurveTension: 0.4,
-                pointDot: true,
-                pointDotRadius: 4,
-                pointDotStrokeWidth: 1,
-                pointHitDetectionRadius: 20,
-                datasetStroke: true,
-                datasetStrokeWidth: 2,
-                datasetFill: true,
-                responsive: true,
-            };
-
-
-            var ctx = document.getElementById("lineChart").getContext("2d");
-            var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
-
-        });
-    </script>
-
+    		
 
 
 </div>
