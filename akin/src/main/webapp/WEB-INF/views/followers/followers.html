@@ -52,9 +52,10 @@
                             <div class="ibox-content">
                                 <div class="row">
 	                                <div class="col-lg-9">
-	                                    <div class="flot-chart">
-	                                        <div class="flot-chart-content" id="flot-dashboard-chart"></div>
-	                                    </div>
+	                                    <div>
+	                                   		<div id="js-legend" class="chart-legend"></div>
+			                                <canvas id="lineChart" height="80px"></canvas>
+			                            </div>
 	                                </div>
                              
                              		<div class="col-lg-3">
@@ -68,7 +69,7 @@
                                             </div>
                                             
                                             <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy"></i></div>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div style="width: 5%;" class="progress-bar"></div>
                                             </div>
@@ -82,7 +83,7 @@
                                             </div>
                                             
                                              <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy"></i></div>
+                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div style="width: 10%;" class="progress-bar"></div>
                                             </div>
@@ -96,7 +97,7 @@
                                             </div>
                                             
                                              <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy"></i></div>
+                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div style="width: 7%;" class="progress-bar"></div>
                                             </div>
@@ -317,7 +318,7 @@ var barData = {
         datasets: [
             {
                 label: "My First dataset",
-                fillColor: "#9A9AA9",
+                fillColor: "rgba(220,220,220,0.5)",
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
                 highlightStroke: "rgba(220,220,220,1)",
@@ -333,10 +334,10 @@ var barData = {
             },
             {
                 label: "My Third dataset",
-                fillColor: "rgba(100,200,148,0.5)",
-                strokeColor: "rgba(100,200,148,0.8)",
-                highlightFill: "rgba(100,200,148,0.75)",
-                highlightStroke: "rgba(100,200,148,1)",
+                fillColor: "rgba(234,171,237,0.7)",
+                strokeColor: "rgba(216,111,221,0.7)",
+                highlightFill: "rgba(191,59,198,0.75)",
+                highlightStroke: "rgba(191,59,198,1)",
                 data: [35, 68, 60]
             }
         ]
