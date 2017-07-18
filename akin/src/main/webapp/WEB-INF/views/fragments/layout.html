@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="header">
@@ -292,4 +293,303 @@
 </div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet"
+ 	th:href="@{resources/css/bootstrap.min.css}" >
+ 
+ <link href="../../../resources/font-awesome/css/font-awesome.css" rel="stylesheet"
+ 	th:href="@{resources/font-awesome/css/font-awesome.css}">
+
+    <!-- Morris -->
+ <link href="../../../resources/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet"
+   	th:href="@{resources/css/plugins/morris/morris-0.4.3.min.css}">
+
+  <link href="../../../resources/css/animate.css" rel="stylesheet" 
+    	th:href="@{resources/css/animate.css}">
+    	
+  <link href="../../../resources/css/style.css" rel="stylesheet"
+    	th:href="@{resources/css/style.css}">
+</head>
+<body>
+
+<!-- Header -->   
+<div  th:fragment="title (title_page)"  >
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2 th:text="${title_page}"></h2>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+
+
+</div>
+
+<!-- Menu -->
+<div th:fragment="menu">
+<nav class="navbar-default navbar-static-side" role="navigation" >
+	
+			<div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                	
+                    <li class="nav-header">
+                    	 
+                    	<div class="profile-element">
+                    	 	<a class="navbar-minimalize btn-primary" href="#">
+                    			<span class="text-muted text-xs block">
+                    				<i class="fa fa-bars"></i>
+                    				&nbsp;<span class="nav-label">Administrador</span>
+                    			</span>
+                    		</a> 
+                        </div>
+                         
+                        <div class="logo-element">
+                        	<div class="navbar-minimalize" style="cursor: pointer;">
+                        		<i class="fa fa-bars"></i>
+                        	</div>
+                        </div>
+                        
+                    </li>
+                    <li  th:classappend="${module == 'followers' ? 'active' : ''}">
+                    	<a href="#" th:href="@{followers}">
+                    		<i class="fa fa-user"></i> <span class="nav-label" th:text="#{menu.followers}" ></span> <span class="fa arrow"></span>
+        				</a>
+                    </li>
+                    <li th:classappend="${module == 'publications' ? 'active' : ''}">
+                        <a href="#" th:href="@{publications}" >
+                        	<i class="fa fa-comments"></i> <span class="nav-label" th:text="#{menu.publications}" ></span> <span class="fa arrow"></span>
+        				</a>
+                    </li>
+                    <li th:classappend="${module == 'benchmark' ? 'active' : ''}">
+                      	<a href="#" th:href="@{benchmark}" >
+                      		<i class="fa fa-tasks"></i> <span class="nav-label" th:text="#{menu.benchmark}" ></span> <span class="fa arrow"></span>
+        				</a>
+                    </li>
+                    <li>
+                    	<a href="/logout" th:href="@{#}" onclick="$('#form').submit();" >
+                    		<i class="fa fa-sign-out"></i> <span class="nav-label" th:text="#{layout.logout}" ></span>
+                        </a>
+                        <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/logout}"></form>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+</div>
+
+
+
+
+<!-- Counts and social media -->
+<div  th:fragment="counts">
+<div class="wrapper wrapper-content">
+
+<div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                            	<span class="pull-right no-top-border">
+                            		<img alt="image" class="img-circle" src="resources/images/cuenta_1.jpg" style="width: 30px;size: 20px;" />
+                            	</span>
+                                <h5>Ricardo Anaya Cortes</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">22 285,400</h1>
+                                <div class="stat-percent font-bold text-navy">20% <i class="fa fa-level-up"></i></div>
+                                <small>Seguidores</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="pull-right no-top-border">
+                            		<img alt="image" class="img-circle" src="resources/images/cuenta_2.jpg" style="width: 30px;size: 20px;" />
+                            	</span>
+                                <h5>Margarita Zavala</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">60 420,600</h1>
+                                <div class="stat-percent font-bold text-info">40% <i class="fa fa-level-up"></i></div>
+                                <small>Seguidores</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="pull-right no-top-border">
+                            		<img alt="image" class="img-circle" src="resources/images/cuenta_3.jpg" style="width: 30px;size: 20px;" />
+                            	</span>
+                                <h5>Rafael Moreno Valle</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">120 430,800</h1>
+                                <div class="stat-percent font-bold text-warning">16% <i class="fa fa-level-up"></i></div>
+                                <small>Seguidores</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<div th:fragment="footer" th:align="center" >
+   <strong> &copy;&nbsp;<span th:text="${#temporals.format(#temporals.createNow(), 'yyyy')}">2017</span>
+    DANAVIS</strong> 
+</div>
+
+<!-- Script -->
+
+
+<div th:fragment="script-general" >
+
+
+ <!-- Mainly scripts -->
+    <script src="resources/js/jquery-2.1.1.js"
+    	th:href="@{/resources/js/jquery-2.1.1.js}"></script>
+    	
+    <script src="resources/js/bootstrap.min.js"
+    	th:href="@{/resources/js/bootstrap.min.js}"></script>
+    	
+    <script src="resources/js/plugins/metisMenu/jquery.metisMenu.js"
+    	th:href="@{/resources/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+    	
+    <script src="resources/js/plugins/slimscroll/jquery.slimscroll.min.js"
+    	th:href="@{/resources/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+
+    <!-- Flot -->
+    <script src="resources/js/plugins/flot/jquery.flot.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/jquery.flot.tooltip.min.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.tooltip.min.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/jquery.flot.spline.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.spline.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/jquery.flot.resize.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.resize.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/jquery.flot.pie.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.pie.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/jquery.flot.symbol.js"
+    	th:href="@{/resources/js/plugins/flot/jquery.flot.symbol.js}"></script>
+    	
+    <script src="resources/js/plugins/flot/curvedLines.js"
+    	th:href="@{/resources/js/plugins/flot/curvedLines.js}"></script>
+
+    <!-- Peity -->
+    <script src="resources/js/plugins/peity/jquery.peity.min.js"
+    	th:href="@{resources/js/plugins/peity/jquery.peity.min.js}"></script>
+    	
+    <script src="resources/js/demo/peity-demo.js"
+    	th:href="@{/resources/js/demo/peity-demo.js}"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="resources/js/inspinia.js"
+    	th:href="@{/resources/js/inspinia.js}"></script>
+    	
+    <script src="resources/js/plugins/pace/pace.min.js"
+    	th:href="@{/resources/js/plugins/pace/pace.min.js}"></script>
+
+    <!-- jQuery UI -->
+    <script src="resources/js/plugins/jquery-ui/jquery-ui.min.js"
+    	th:href="@{/resources/js/plugins/jquery-ui/jquery-ui.min.js}"></script>
+
+    <!-- Jvectormap -->
+    <script src="resources/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"
+    	th:href="@{/resources/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js}"></script>
+    	
+    <script src="resources/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"
+    	th:href="@{/resources/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js}"></script>
+
+    <!-- Sparkline -->
+    <script src="resources/js/plugins/sparkline/jquery.sparkline.min.js"
+    	th:href="@{/resources/js/plugins/sparkline/jquery.sparkline.min.js}"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="resources/js/demo/sparkline-demo.js"
+    	th:href="@{/resources/js/demo/sparkline-demo.js}"></script>
+
+    <!-- ChartJS-->
+    <script src="resources/js/plugins/chartJs/Chart.min.js"
+    	th:href="@{/resources/js/plugins/chartJs/Chart.min.js}"></script>
+
+<!-- Followers Data -->
+	<script src="resources/js/data/followers-data.js"
+    		th:href="@{/resources/js/data/followers-data.js}"></script>
+
+    		
+    <script>
+        $(document).ready(function() {
+
+            var lineData = {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [
+                    {
+                        label: "Example dataset",
+                        fillColor: "rgba(220,220,220,0.5)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+                    {
+                        label: "Example dataset",
+                        fillColor: "rgba(26,179,148,0.5)",
+                        strokeColor: "rgba(26,179,148,0.7)",
+                        pointColor: "rgba(26,179,148,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(26,179,148,1)",
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    }
+                ]
+            };
+
+            var lineOptions = {
+                scaleShowGridLines: true,
+                scaleGridLineColor: "rgba(0,0,0,.05)",
+                scaleGridLineWidth: 1,
+                bezierCurve: true,
+                bezierCurveTension: 0.4,
+                pointDot: true,
+                pointDotRadius: 4,
+                pointDotStrokeWidth: 1,
+                pointHitDetectionRadius: 20,
+                datasetStroke: true,
+                datasetStrokeWidth: 2,
+                datasetFill: true,
+                responsive: true,
+            };
+
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+
+        });
+    </script>
+
+
+
+</div>
+
+</body>
+>>>>>>> branch 'master' of https://github.com/danavis/akin.git
 </html>
