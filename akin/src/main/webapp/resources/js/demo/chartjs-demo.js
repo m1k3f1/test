@@ -200,8 +200,61 @@
     var myNewChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
 
 */
+
+
+
+var barData = {
+        labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
+        datasets: [
+            {
+                label: "Ricando Anaya Cortés",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data: [3140469,	111881,	14452,	213639,	6988,	61628,	1084]
+            },
+            {
+                label: "Margarita Zavala",
+                fillColor: "rgba(26,179,148,0.5)",
+                strokeColor: "rgba(26,179,148,0.8)",
+                highlightFill: "rgba(26,179,148,0.75)",
+                highlightStroke: "rgba(26,179,148,1)",
+                data: [2020938,	107510,	7107,	21484,	3970,	7026,	1359]
+            },
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,0.8)",
+                highlightFill: "rgba(108,116,238,0.75)",
+                highlightStroke: "rgba(108,116,238,1)",
+                data: [6169639,	216464	,73998	,83249	,6635	,47663	,2622]
+            }
+        ]
+    };
+/*
+    var barOptions = {
+        scaleBeginAtZero: true,
+        scaleShowGridLines: false,
+        scaleGridLineColor: "rgba(0,0,0,.05)",
+        scaleGridLineWidth: 1,
+        barShowStroke: false,
+        barStrokeWidth: 2,
+        barValueSpacing: 10,
+        barDatasetSpacing: 1,
+        responsive: true,
+        
+        
+    }
+
+
+    var ctx = document.getElementById("barChart").getContext("2d");
+    var myNewChart = new Chart(ctx).Bar(barData, barOptions);
+
+*/
+
     var radarData = {
-        labels: ["Me encanta", "Me gusta", "Me entristece", "Me enoja", "Me sorprende", "Otra"],
+    	labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
         datasets: [
             {
                 label: "Ricando Anaya Cortés",
@@ -211,7 +264,7 @@
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 90, 81, 56, 55]
+                data: [3140469,	111881,	14452,	213639,	6988,	61628,	1084]
             },
             {
                 label: "Margarita Zavala",
@@ -221,7 +274,7 @@
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [28, 48, 40, 19, 96, 27]
+                data: [2020938,	107510,	7107,	21484,	3970,	7026,	1359]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -231,37 +284,68 @@
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [100, 100, 105, 20, 100, 10]
+                data: [6169639,	216464	,73998	,83249	,6635	,47663	,2622]
             }
         ]
     };
+    
+    var radarDataVideo = {
+    		labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
+    		datasets: [
+                {
+                	label: "Ricando Anaya Cortés",
+                    fillColor: "rgba(220,220,220,0.2)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220,220,220,1)",
+                    data: [1081372	,75274	,10885	,43079	,1622	,25747	,4462]
+                },
+                {
+                	 label: "Margarita Zavala",
+                     fillColor: "rgba(26,179,148,0.2)",
+                     strokeColor: "rgba(26,179,148,1)",
+                     pointColor: "rgba(26,179,148,1)",
+                     pointStrokeColor: "#fff",
+                     pointHighlightFill: "#fff",
+                     pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [725105	,62823	,3874,	32915	,1976,	13710,	970]
+                },
+                {
+                	 label: "Rafael Moreno Valle",
+                     fillColor: "rgba(108,116,238,0.2)",
+                     strokeColor: "rgba(108,116,238,1)",
+                     pointColor: "rgba(108,116,238,1)",
+                     pointStrokeColor: "#fff",
+                     pointHighlightFill: "#fff",
+                     pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [2372114	,130700	,54665	,26196	,4731	,33812,	719]
+                }
+            ]
+        };
 
     var radarOptions = {
-        scaleShowLine: true,
-        angleShowLineOut: true,
-        scaleShowLabels: false,
-        scaleBeginAtZero: true,
-        angleLineColor: "rgba(0,0,0,.1)",
-        angleLineWidth: 1,
-        pointLabelFontFamily: "'Arial'",
-        pointLabelFontStyle: "normal",
-        pointLabelFontSize: 10,
-        pointLabelFontColor: "#666",
-        pointDot: true,
-        pointDotRadius: 3,
-        pointDotStrokeWidth: 1,
-        pointHitDetectionRadius: 20,
-        datasetStroke: true,
-        datasetStrokeWidth: 2,
-        datasetFill: true,
-        responsive: true,
+    		scaleBeginAtZero: true,
+            scaleShowGridLines: false,
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+            scaleGridLineWidth: 1,
+            barShowStroke: false,
+            barStrokeWidth: 2,
+            barValueSpacing: 10,
+            barDatasetSpacing: 1,
+            responsive: true,
         percentageInnerCutout: 50,
         tooltipTemplate: "<%= value %>%"
             
     }
 
     var ctx = document.getElementById("radarChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Radar(radarData, radarOptions);
+    var myNewChart = new Chart(ctx).Bar(barData, radarOptions);
     document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
+    
+    var ctx2 = document.getElementById("radarChart-video").getContext("2d");
+    var myNewChart2 = new Chart(ctx2).Bar(radarDataVideo, radarOptions);
+    document.getElementById('js-legend-2').innerHTML = myNewChart2.generateLegend();
 
 /*});*/
