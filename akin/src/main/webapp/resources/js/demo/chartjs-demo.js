@@ -1,5 +1,6 @@
-$(function () {
+/*$(function () {*/
 
+	/*
     var lineData = {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [
@@ -47,37 +48,72 @@ $(function () {
     var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
 
     var barData = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["Ricardo Anaya Cortes", "Margarita Zavala", "Rafael Moreno Valle"],
         datasets: [
             {
-                label: "My First dataset",
+                label: "Mejor publicacion 1",
                 fillColor: "rgba(220,220,220,0.5)",
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
                 highlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81, 56, 55, 40]
+                data: [65, 59, 80]
             },
             {
-                label: "My Second dataset",
+                label: "Mejor publicacion 2",
                 fillColor: "rgba(26,179,148,0.5)",
                 strokeColor: "rgba(26,179,148,0.8)",
                 highlightFill: "rgba(26,179,148,0.75)",
                 highlightStroke: "rgba(26,179,148,1)",
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
+                data: [28, 48, 40]
+            },
+            {
+                label: "Mejor publicacion 3",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data: [50, 50, 60]
+            },
+            
+            {
+                label: "Menos pipular 1",
+                fillColor: "rgba(26,179,148,0.5)",
+                strokeColor: "rgba(26,179,148,0.8)",
+                highlightFill: "rgba(26,179,148,0.75)",
+                highlightStroke: "rgba(26,179,148,1)",
+                data: [-28, -48, -40]
+            },
+            {
+                label: "Menos pipular 2",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data: [-28, -48, -40]
+            },
+            {
+            label: "Menos pipular 3",
+            fillColor: "rgba(26,179,148,0.5)",
+            strokeColor: "rgba(26,179,148,0.8)",
+            highlightFill: "rgba(26,179,148,0.75)",
+            highlightStroke: "rgba(26,179,148,1)",
+            data: [-50, -50, -60]
+        }
         ]
     };
 
     var barOptions = {
         scaleBeginAtZero: true,
-        scaleShowGridLines: true,
+        scaleShowGridLines: false,
         scaleGridLineColor: "rgba(0,0,0,.05)",
         scaleGridLineWidth: 1,
-        barShowStroke: true,
+        barShowStroke: false,
         barStrokeWidth: 2,
-        barValueSpacing: 5,
+        barValueSpacing: 10,
         barDatasetSpacing: 1,
         responsive: true,
+        
+        
     }
 
 
@@ -163,29 +199,39 @@ $(function () {
     var ctx = document.getElementById("doughnutChart").getContext("2d");
     var myNewChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
 
-
+*/
     var radarData = {
-        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        labels: ["Me encanta", "Me gusta", "Me entristece", "Me enoja", "Me sorprende", "Otra"],
         datasets: [
             {
-                label: "My First dataset",
+                label: "Ricando Anaya Cortés",
                 fillColor: "rgba(220,220,220,0.2)",
                 strokeColor: "rgba(220,220,220,1)",
                 pointColor: "rgba(220,220,220,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 90, 81, 56, 55, 40]
+                data: [65, 59, 90, 81, 56, 55]
             },
             {
-                label: "My Second dataset",
+                label: "Margarita Zavala",
                 fillColor: "rgba(26,179,148,0.2)",
                 strokeColor: "rgba(26,179,148,1)",
                 pointColor: "rgba(26,179,148,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [28, 48, 40, 19, 96, 27, 100]
+                data: [28, 48, 40, 19, 96, 27]
+            },
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [100, 100, 105, 20, 100, 10]
             }
         ]
     };
@@ -209,9 +255,13 @@ $(function () {
         datasetStrokeWidth: 2,
         datasetFill: true,
         responsive: true,
+        percentageInnerCutout: 50,
+        tooltipTemplate: "<%= value %>%"
+            
     }
 
     var ctx = document.getElementById("radarChart").getContext("2d");
     var myNewChart = new Chart(ctx).Radar(radarData, radarOptions);
+    document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
 
-});
+/*});*/
