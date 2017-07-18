@@ -10,8 +10,13 @@
 
 <title th:text="#{view.index.title}">Welcome!</title>
 
-
-		
+<link href="../../../resources/plugin-jvectormap/ammap/plugins/export/export.css" 
+ 		th:href="@{resources/plugin-jvectormap/ammap/plugins/export/export.css}"
+ 		rel="stylesheet" type="text/css" media="all" />
+ 		
+ <link rel="stylesheet" href="../../../resources/plugin-jvectormap/ammap/ammap.css" 
+ 		th:href="@{resources/plugin-jvectormap/ammap/ammap.css}" type="text/css" media="all" />
+	
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -42,7 +47,6 @@
                                 <h5>Seguidores</h5>
                                 <div class="pull-right">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-xs btn-white active">Hoy</button>
                                         <button type="button" class="btn btn-xs btn-white">Mensual</button>
                                         <button type="button" class="btn btn-xs btn-white">Trimestral</button>
                                         <button type="button" class="btn btn-xs btn-white">Semestral</button>
@@ -134,8 +138,8 @@
                                     <div class="ibox-content">
 
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <table class="table table-hover margin bottom">
+                                            <div class="col-lg-6" >
+                                                <table class="table table-hover margin bottom" style="height: 300px;">
                                                     <thead>
                                                     <tr>
                                                         <th style="width: 1%" class="text-center">No.</th>
@@ -173,13 +177,67 @@
                                                         <td class="text-center small">15</td>
 
                                                     </tr>
-                                                   
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td> Chihuahua
+                                                            </td>
+                                                        <td class="text-center small">85</td>
+                                                        <td class="text-center small">45</td>
+                                                        <td class="text-center small">60</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td> Colima
+                                                        </td>
+                                                        <td class="text-center small">50</td>
+                                                        <td class="text-center small">18</td>
+                                                        <td class="text-center small">25</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">6</td>
+                                                        <td> Coahuila
+                                                        </td>
+                                                        <td class="text-center small">34</td>
+                                                        <td class="text-center small">21</td>
+                                                        <td class="text-center small">15</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">7</td>
+                                                        <td> Chiapas
+                                                            </td>
+                                                        <td class="text-center small">85</td>
+                                                        <td class="text-center small">45</td>
+                                                        <td class="text-center small">60</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">8</td>
+                                                        <td> Michoacan
+                                                        </td>
+                                                        <td class="text-center small">50</td>
+                                                        <td class="text-center small">18</td>
+                                                        <td class="text-center small">25</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">9</td>
+                                                        <td> Jalisco
+                                                        </td>
+                                                        <td class="text-center small">34</td>
+                                                        <td class="text-center small">21</td>
+                                                        <td class="text-center small">15</td>
+
+                                                    </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div id="world-map" style="height: 300px;"></div>
+                                             <div class="col-lg-6">
+                                                <div id="mapdiv" style="height: 300px;"></div>
                                             </div>
+                                            
                                     </div>
                                     </div>
                                 </div>
@@ -287,6 +345,7 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox-content">
+                                                	<div id="demo-legend" class="chart-legend" align="left" style="display: inline;"></div>
 					                               	<canvas id="barChart" height="80"></canvas>
 					                        	</div>
                                             </div>
@@ -312,12 +371,24 @@
 	
 	<div th:replace="fragments/layout :: script-general"></div>
 
+		<script src="resources/plugin-jvectormap/ammap/ammap.js" type="text/javascript"
+			th:href="@{/resources/plugin-jvectormap/ammap/ammap.js}"></script>
+
+		<script src="resources/plugin-jvectormap/ammap/plugins/export/export.min.js" type="text/javascript"
+		th:href="@{/resources/plugin-jvectormap/ammap/plugins/export/export.min.js}"></script>
+
+		<script src="resources/plugin-jvectormap/ammap/themes/dark.js" type="text/javascript"
+		th:href="@{/resources/plugin-jvectormap/ammap/themes/dark.js}"></script>
+
+		<script src="resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js" type="text/javascript"
+		th:href="@{/resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js}" ></script>
+
 <script type="text/javascript">
 var barData = {
         labels: ["Ricando Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
         datasets: [
             {
-                label: "My First dataset",
+                label: "Hombres",
                 fillColor: "rgba(220,220,220,0.5)",
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
@@ -325,7 +396,7 @@ var barData = {
                 data: [65, 59, 80]
             },
             {
-                label: "My Second dataset",
+                label: "Mujeres",
                 fillColor: "rgba(26,179,148,0.5)",
                 strokeColor: "rgba(26,179,148,0.8)",
                 highlightFill: "rgba(26,179,148,0.75)",
@@ -333,7 +404,7 @@ var barData = {
                 data: [28, 48, 40]
             },
             {
-                label: "My Third dataset",
+                label: "Otros",
                 fillColor: "rgba(234,171,237,0.7)",
                 strokeColor: "rgba(216,111,221,0.7)",
                 highlightFill: "rgba(191,59,198,0.75)",
@@ -358,7 +429,7 @@ var barData = {
 
     var ctx = document.getElementById("barChart").getContext("2d");
     var myNewChart = new Chart(ctx).Bar(barData, barOptions);
-
+    document.getElementById('demo-legend').innerHTML = myNewChart.generateLegend();
 
 
 </script>
