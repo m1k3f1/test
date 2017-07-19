@@ -9,16 +9,18 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 @Controller
 public class FollowersController {
 	
+	private String module;
 	
 	@ModelAttribute("module")
 	String module() {
-		return "followers";
+		return module;
 	}
 
 	@GetMapping("followers")
 	String followers(Principal principal) {
+		module="followers";
 		return "followers/followers";
 	}
-
+	
 
 }
