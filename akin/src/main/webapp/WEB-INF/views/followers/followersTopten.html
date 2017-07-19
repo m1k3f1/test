@@ -1,50 +1,112 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 </head>
+
 <body>
+	<div th:replace="fragments/layout :: header"></div>
+	<div th:replace="fragments/layout :: menu"></div>
 
-	<div th:fragment="followersTopten-page" >
-<div class="container" >
 
-	<div class="panel-heading" align="center">
-		<h4 th:text="#{followers.topten}" ></h4>
-	</div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                            <div id="followers-top-ten" style="height: 150px"></div>
-                            
+	<div id="page-wrapper" class="gray-bg sidebar-content" >
+		<div th:replace="fragments/layout :: title (title_page= #{followers.topten})"></div>
+		<div th:replace="fragments/layout :: counts"></div>
+		
+		 <!-- INICIO DE TOPTEN SEGUIDORES -->
+        <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Top de Seguidores</h5>
+                                &nbsp;
+                                <span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
+                                <div class="pull-right">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-xs btn-white">Mensual</button>
+                                        <button type="button" class="btn btn-xs btn-white">Trimestral</button>
+                                        <button type="button" class="btn btn-xs btn-white">Semestral</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+	                                <div class="col-lg-9">
+	                                    <div>
+	                                   		 <div id="toptenlegend" class="chart-legend"></div>
+			                                <canvas id="barChartTopTen" height="80px" ></canvas>
+			                              <!--   -->
+			                            </div>
+	                                </div>
+                             
+                             		<div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
+                                            
+                                            <small>Comportamiento Positivo</small>
+                                            <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 48%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                            <small>Comportamiento Negativo</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Margarita Zavala</h3>
+                                            
+                                            <small>Comportamiento Positivo</small>
+                                            <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Comportamiento Negativo</small>
+                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 10%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Rafael Moreno Valle</h3>
+                                            
+                                            <small>Comportamiento Positivo</small>
+                                            <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 40%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Comportamiento Negativo</small>
+                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 7%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
                         </div>
-                        <!-- Table -->
-                        	<div class="table-responsive" style="height: 150px">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th th:text="#{followers.totalReactionsMyPost}"></th>
-                                            <th>108</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td th:text="#{followers.totalCommentsMyPost}"></td>
-                                            <td>55</td>
-                                        </tr>
-                                        <tr>
-                                            <td th:text="#{followers.totalSharesMyPost}"></td>
-                                            <td>25</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                		<!-- /.table-responsive -->                
-                       	</div> 
-                        
-                        
-                <!-- /.panel-body -->
-</div>
-
+                    </div>
+		
 	</div>
-
+	<div th:replace="fragments/layout :: footer"></div>
+	<div th:replace="fragments/layout :: script-general"></div>
+	<script src="resources/js/data/followersTopten-data.js" type="text/javascript"
+			th:href="@{/resources/js/data/followersTopten-data.js}"></script>
 </body>
 </html>

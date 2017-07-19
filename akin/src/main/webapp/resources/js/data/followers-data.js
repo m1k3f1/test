@@ -5,7 +5,7 @@
 		        labels: ["Ene 04", "Ene 07", "Ene 10", "Ene 13", "Ene 16", "Ene 19", "Ene 22", "Ene 25", "Ene 28" ,"Ene 31"],
 		        datasets: [
 		            {
-		                label: "Ricando Anaya Cortés",
+		                label: "Ricardo Anaya Cortés",
 		                fillColor: "rgba(220,220,220,0.5)",
 		                strokeColor: "rgba(220,220,220,1)",
 		                pointColor: "rgba(220,220,220,1)",
@@ -190,29 +190,42 @@
 		     	  },
 		     	  "titles": titles,
 		     	  "areasSettings": {
-		     	    "autoZoom": true,
-		     	    "selectedColor": "#F1AFF1"
+		     		"alpha": 0.8,
+		     	    "unlistedAreasAlpha": 0.1,
+		     	  },
+		     	  "legend": {
+		     		    "width": "100%",
+		     		    "divId": "legenddiv",
+		     		    "marginRight": 27,
+		     		    "marginLeft": 27,
+		     		    "equalWidths": false,
+		     		    "backgroundAlpha": 0.7,
+		     		    "backgroundColor": "#FFFFFF",
+		     		    "borderColor": "#ffffff",
+		     		    "borderAlpha": 1,
+		     		    "top": 450,
+		     		    "left": 0,
+		     		    "horizontalGap": 10,
+		     		    "data": [{
+		     		      "title": "Ricardo Anaya Cortés",
+		     		      "color": "#DCDCDC"
+		     		    }, {
+		     		      "title": "Margarita Zavala",
+		     		      "color": "#1AB394"
+		     		    }, {
+		     		      "title": "Rafael Moreno Valle",
+		     		      "color": "#EAABED"
+		     		    }]
 		     	  }
-		     	 /*"imagesSettings": {
-		     	            balloonText: "[[title]]: [[value]]",
-		     	            alpha: 0.7
-		     	        }*/
-		 
+		     	 
 		     	} ); 
-		 
-		       var valueLegend = new AmCharts.ValueLegend();
-		 	    valueLegend.right = 10;
-		 	    valueLegend.minValue = "little";
-		 	    valueLegend.maxValue = "a lot!";
-		 	    map.valueLegend = valueLegend;
-		 
-		 	    map.write("mapdiv");
-
 		 	 }
 		 	 catch( e ) {
 		 	   console.log( e );
 		 	 }
+		 	 
 	 
 //END MEXICO MAP
-	 
+ 	 
+		 	 
 });

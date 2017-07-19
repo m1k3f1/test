@@ -24,6 +24,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 
@@ -45,6 +46,8 @@
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <h5>Seguidores</h5>
+                                &nbsp;
+                                <span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                                 <div class="pull-right">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-xs btn-white">Mensual</button>
@@ -65,7 +68,7 @@
                              		<div class="col-lg-3">
                                     <ul class="stat-list">
                                         <li>
-                                            <h3 class="no-margins">Ricando Anaya Cortés</h3>
+                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
                                             <small>Ganados</small>
                                             <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
@@ -126,12 +129,11 @@
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
                                         <h5>Geolocalización de Seguidores</h5>
+                                        &nbsp;
+                                		<span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                                         <div class="ibox-tools">
                                             <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -235,6 +237,7 @@
                                                 </table>
                                             </div>
                                              <div class="col-lg-6">
+                                             	<div id="legenddiv"></div>
                                                 <div id="mapdiv" style="height: 300px;"></div>
                                             </div>
                                             
@@ -259,98 +262,95 @@
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
                                         <h5>Datos Demógraficos de Seguidores</h5>
+                                        &nbsp;
+                                		
                                         <div class="ibox-tools">
                                             <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
                                             </a>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
-                                            </a>
                                         </div>
                                     </div>
-                                    <div class="ibox-content" align="center">
+                                    <div class="ibox-content" >
 										<!-- INICIO RESUMEN DE DATOS DEMO-->
                                         <div class="row" >
-                                        	 <div class="col-lg-3">
-						                        <div class="ibox float-e-margins">
-						                            <div class="ibox-title">
-						                                <h5>Ricando Anaya Cortés</h5>
-						                            </div>
-						                            <div class="ibox-content">
-						                                <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-male"></i></div>
-						                                	<small>Hombres</small>
-						                                </div>
-						                                 <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-female"></i></div>
-						                                	<small>Mujeres</small>
-						                                </div>
-						                                 <div class="row">
-						                                 	<div class="stat-percent font-bold text-info">20% <i class="fa fa-child"></i></div>
-						                                	<small>Otros</small>
-						                                </div>
-						                                
-						                            </div>
-						                        </div>
-                    						</div>
-						                    <div class="col-lg-3">
-						                        <div class="ibox float-e-margins">
-						                            <div class="ibox-title">
-						                                <h5>Margarita Zavala</h5>
-						                            </div>
-						                             <div class="ibox-content">
-						                                <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-male"></i></div>
-						                                	<small>Hombres</small>
-						                                </div>
-						                                 <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-female"></i></div>
-						                                	<small>Mujeres</small>
-						                                </div>
-						                                 <div class="row">
-						                                 	<div class="stat-percent font-bold text-info">20% <i class="fa fa-child"></i></div>
-						                                	<small>Otros</small>
-						                                </div>
-						                                
-						                            </div>
-						                        </div>
-						                    </div>
-					                    <div class="col-lg-3">
-					                        <div class="ibox float-e-margins">
-					                            <div class="ibox-title">
-					                                <h5>Rafael Moreno Valle</h5>
-					                            </div>
-					                             <div class="ibox-content">
-						                                <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-male"></i></div>
-						                                	<small>Hombres</small>
-						                                </div>
-						                                 <div class="row">
-						                                	<div class="stat-percent font-bold text-info">20% <i class="fa fa-female"></i></div>
-						                                	<small>Mujeres</small>
-						                                </div>
-						                                 <div class="row">
-						                                 	<div class="stat-percent font-bold text-info">20% <i class="fa fa-child"></i></div>
-						                                	<small>Otros</small>
-						                                </div>
-						                                
-						                            </div>
-					                        </div>
-					                    </div>
-                                        	
-                                        </div>
-                                        <!-- FIN RESUMEN DE DATOS DEMO-->	
                                         
-                                        <!-- INICIO GRÁFICAS-->
-                                        <div class="row">
-                                            <div class="col-lg-12">
+						                    <div class="col-lg-9">
                                                 <div class="ibox-content">
                                                 	<div id="demo-legend" class="chart-legend" align="left" style="display: inline;"></div>
 					                               	<canvas id="barChart" height="80"></canvas>
 					                        	</div>
                                             </div>
-                                    	</div>
-                                    	<!-- FIN GRAFICAS-->
+					                  		<div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 48%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                            <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                            <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Margarita Zavala</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 10%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                             <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Rafael Moreno Valle</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 40%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 7%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                             <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                        </div>
+                                        <!-- FIN RESUMEN DE DATOS DEMO-->	
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -385,7 +385,7 @@
 
 <script type="text/javascript">
 var barData = {
-        labels: ["Ricando Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
+        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
         datasets: [
             {
                 label: "Hombres",
@@ -421,8 +421,8 @@ var barData = {
         scaleGridLineWidth: 1,
         barShowStroke: true,
         barStrokeWidth: 2,
-        barValueSpacing: 5,
-        barDatasetSpacing: 1,
+        barValueSpacing: 25,
+        barDatasetSpacing: 5,
         responsive: true,
     }
 

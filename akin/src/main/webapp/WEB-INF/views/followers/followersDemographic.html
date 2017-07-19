@@ -1,73 +1,141 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 </head>
+
+
 <body>
 
-	<div th:fragment="followersDemographic-page" >
-<div class="container" 	>
+	<div th:replace="fragments/layout :: header"></div>
+	<div th:replace="fragments/layout :: menu"></div>
 
-		<div class="panel-heading" align="center">
-			<h4 th:text="#{followers.demographicDatas}" ></h4>
-		</div>
-                        <!-- /.panel-heading -->
-                        <!-- -->
-                        
-                     <div class="tabs-below panel-body" style="height: 150px">
-			 	
-			 		 	<div class="tab-content" >
-         					<div class="tab-pane fade in active" id="education-tab"  >
-         						<div th:insert="followers/educationLevel :: education-page"></div>
-         					</div>
-         					<div class="tab-pane fade" id="occupation-tab">
-         						<div th:insert="followers/occupation :: occupation-page"></div>
-         					</div>
-         					<div class="tab-pane fade" id="civilStatus-tab">
-         						<div th:insert="followers/civilStatus :: civilStatus-page"></div>
-         					</div>
-         					<div class="tab-pane" id="religion-tab">
-         						<div th:insert="followers/religion :: religion-page"></div>
-         					</div>
-         					<div class="tab-pane fade" id="political-tab">
-         						<div th:insert="followers/politicalPreferences :: political-page"></div>
-         					</div>
-        				</div>
-        			
-        				<ul class="nav nav-tabs">
-          					<li class="active">
-          						<a href="#education-tab" data-toggle="tab" data-placement="bottom" title="Información Académica" >
-          							<span style="color: black;" class="glyphicon glyphicon-education glyphicon-align-center fa-2x"></span>          						
-          						</a>
-          					</li>
-          					<li>
-          						<a href="#occupation-tab" data-toggle="tab" data-placement="bottom" title="Empleo">
-          							<span style="color: black;" class="fa fa-user-md fa-align-center fa-2x"></span>
-          						</a>
-          					</li>
-          					<li>
-          						<a href="#civilStatus-tab" data-toggle="tab" data-placement="bottom" title="Estado Civil">
-          							<span style="color: black;" class="	fa fa-heart fa-2x"></span>
-          						</a>
-          					</li>
-          					<li>
-          						<a href="#religion-tab" data-toggle="tab" data-placement="bottom" title="Creencias Religiosas">
-          							<span style="color: black;" class="glyphicon glyphicon-king glyphicon-align-center fa-2x"></span>
-          						</a>
-          					</li>
-          					<li>
-          						<a href="#political-tab" data-toggle="tab" data-placement="bottom" title="Ideologías Politicas">
-          							<span style="color: black;" class="fa fa-black-tie fa-align-center fa-2x"></span>
-          						</a>
-          					</li>
-        				</ul>
-        			
-      				</div>
-                        
-                <!-- /.panel-body -->
-</div>
 
+	<div id="page-wrapper" class="gray-bg sidebar-content" >
+		<div th:replace="fragments/layout :: title (title_page= #{followers.topten})"></div>
+		<div th:replace="fragments/layout :: counts"></div>
+		
+		<!-- INICIO DATOS DEMOGRAFICOS NIVEL EDUCATIVO-->
+                
+                <div class="row">
+                   
+                    <div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="col-lg-12" >
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>Datos Demógraficos del Nivel Educativo</h5>
+                                        &nbsp;
+                                		<span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
+                                		<div class="pull-right">
+		                                    <div class="btn-group">
+		                                        <button type="button" class="btn btn-xs btn-white">Mensual</button>
+		                                        <button type="button" class="btn btn-xs btn-white">Trimestral</button>
+		                                        <button type="button" class="btn btn-xs btn-white">Semestral</button>
+		                                    </div>
+		                                </div>
+
+                                    </div>
+                                    <div class="ibox-content">
+										<!-- INICIO RESUMEN DE DATOS DEMO-->
+                                        <div class="row" >
+                                        	<div class="col-lg-9">
+			                                   		<!-- iconos -->
+			                                   		<div id="demo-legend" class="chart-legend" align="left" style="display: inline;"></div>
+							                        <canvas id="barChart" height="80"></canvas>
+	                                		</div>
+                             
+                             		<div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 48%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                            <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                            <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Margarita Zavala</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 10%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                             <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins ">Rafael Moreno Valle</h3>
+                                            
+                                            <small>Hombres</small>
+                                            <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 40%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Mujeres</small>
+                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 7%;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                             <small>Otros</small>
+                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 5%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                        <!-- FIN RESUMEN DE DATOS DEMO-->	
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- FIN DATOS DEMOGAFICOS -->
+		
+		
 	</div>
-
+	<div th:replace="fragments/layout :: footer"></div>
+	<div th:replace="fragments/layout :: script-general"></div>
+	<script src="resources/js/data/followersDemographic-data.js" type="text/javascript"
+			th:href="@{/resources/js/data/Demographic-data.js}"></script>
 </body>
 </html>

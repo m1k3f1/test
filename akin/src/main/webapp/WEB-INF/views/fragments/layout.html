@@ -60,8 +60,8 @@
         				
         				<ul class="nav nav-second-level">
                             <li th:classappend="${module == 'followers' ? 'active' : ''}"><a href="#" th:href="@{followers}">General</a></li>
-                            <li><a >Top ten</a></li>
-                            
+                            <li th:classappend="${module == 'followersTopten' ? 'active' : ''}"><a href="#" th:href="@{followersTopten}">Top ten</a></li>
+                            <li th:classappend="${module == 'followersDemographic' ? 'active' : ''}"><a href="#" th:href="@{followersDemographic}">Demograficos</a></li>
                         </ul>
         				
         				

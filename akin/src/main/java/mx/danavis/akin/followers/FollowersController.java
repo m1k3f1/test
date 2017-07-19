@@ -22,5 +22,15 @@ public class FollowersController {
 		return "followers/followers";
 	}
 	
+	@GetMapping("followersTopten")
+	String followersTopten(Principal principal) {
+		module="followers";
+		return "followers/followersTopten";
+	}
 
+	@GetMapping("followersDemographic")
+	String followersDemographic(Principal principal) {
+		module="followers";
+		return "followers/followersDemographic";
+	}
 }
