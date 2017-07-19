@@ -288,10 +288,10 @@ var barData = {
 
     var ctx = document.getElementById("radarChart").getContext("2d");
     var myNewChart = new Chart(ctx).Line(barData, radarOptions);
-    document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
+    //document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
     
-    var ctx2 = document.getElementById("radarChart-video").getContext("2d");
-    var myNewChart2 = new Chart(ctx2).Line(radarDataVideo, radarOptions);
-    document.getElementById('js-legend-2').innerHTML = myNewChart2.generateLegend();
+    //var ctx2 = document.getElementById("radarChart-video").getContext("2d");
+    //var myNewChart2 = new Chart(ctx2).Line(radarDataVideo, radarOptions);
+    //document.getElementById('js-legend-2').innerHTML = myNewChart2.generateLegend();
 
 /*});*/

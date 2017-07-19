@@ -20,3 +20,17 @@
     height: 12px;
     margin-right: 5px;
 }
+
+.label-gray{
+  background-color: #606060;
+}
+
+.label-purple {
+  background-color: #6C74EE;
+}
+
+.tab-pane-scroll{
+  height:400px;
+  overflow-y:scroll;
+  width:100%;
+}
