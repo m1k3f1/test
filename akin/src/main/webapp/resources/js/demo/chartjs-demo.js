@@ -204,7 +204,8 @@
 
 
 var barData = {
-        labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
+        labels: [  "Me asombra" , "Me divierte","Me encanta", "Me gusta","Me entristece", "Me enoja", "Otra"],
+       // labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
         datasets: [
             {
                 label: "Ricando Anaya Cortés",
@@ -212,7 +213,7 @@ var barData = {
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
                 highlightStroke: "rgba(220,220,220,1)",
-                data: [3140469,	111881,	14452,	213639,	6988,	61628,	1084]
+                data: [	14452,	213639,111881,3140469,	6988,	61628,	1084]
             },
             {
                 label: "Margarita Zavala",
@@ -220,7 +221,7 @@ var barData = {
                 strokeColor: "rgba(26,179,148,0.8)",
                 highlightFill: "rgba(26,179,148,0.75)",
                 highlightStroke: "rgba(26,179,148,1)",
-                data: [2020938,	107510,	7107,	21484,	3970,	7026,	1359]
+                data: [		7107,	21484,107510,2020938 ,3970,	7026,	1359]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -228,69 +229,14 @@ var barData = {
                 strokeColor: "rgba(108,116,238,0.8)",
                 highlightFill: "rgba(108,116,238,0.75)",
                 highlightStroke: "rgba(108,116,238,1)",
-                data: [6169639,	216464	,73998	,83249	,6635	,47663	,2622]
+                data: [	73998	,83249,216464,6169639,6635	,47663	,2622]
             }
         ]
     };
-/*
-    var barOptions = {
-        scaleBeginAtZero: true,
-        scaleShowGridLines: false,
-        scaleGridLineColor: "rgba(0,0,0,.05)",
-        scaleGridLineWidth: 1,
-        barShowStroke: false,
-        barStrokeWidth: 2,
-        barValueSpacing: 10,
-        barDatasetSpacing: 1,
-        responsive: true,
-        
-        
-    }
 
-
-    var ctx = document.getElementById("barChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Bar(barData, barOptions);
-
-*/
-
-    var radarData = {
-    	labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cortés",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [3140469,	111881,	14452,	213639,	6988,	61628,	1084]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [2020938,	107510,	7107,	21484,	3970,	7026,	1359]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [6169639,	216464	,73998	,83249	,6635	,47663	,2622]
-            }
-        ]
-    };
-    
     var radarDataVideo = {
-    		labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
+    		labels: [  "Me asombra" , "Me divierte","Me encanta", "Me gusta","Me entristece", "Me enoja", "Otra"],
+    		//labels: ["Me gusta", "Me encanta" , "Me asombra" , "Me divierte", "Me entristece", "Me enoja", "Otra"],
     		datasets: [
                 {
                 	label: "Ricando Anaya Cortés",
@@ -300,7 +246,7 @@ var barData = {
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [1081372	,75274	,10885	,43079	,1622	,25747	,4462]
+                    data: [10885	,43079	,75274,1081372,1622	,25747	,4462]
                 },
                 {
                 	 label: "Margarita Zavala",
@@ -310,7 +256,7 @@ var barData = {
                      pointStrokeColor: "#fff",
                      pointHighlightFill: "#fff",
                      pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [725105	,62823	,3874,	32915	,1976,	13710,	970]
+                    data: [	3874,	32915,62823,725105	,1976,	13710,	970]
                 },
                 {
                 	 label: "Rafael Moreno Valle",
@@ -320,7 +266,7 @@ var barData = {
                      pointStrokeColor: "#fff",
                      pointHighlightFill: "#fff",
                      pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [2372114	,130700	,54665	,26196	,4731	,33812,	719]
+                    data: [54665	,26196,130700,2372114	,4731	,33812,	719]
                 }
             ]
         };
@@ -341,11 +287,11 @@ var barData = {
     }
 
     var ctx = document.getElementById("radarChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Bar(barData, radarOptions);
+    var myNewChart = new Chart(ctx).Line(barData, radarOptions);
     document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
     
     var ctx2 = document.getElementById("radarChart-video").getContext("2d");
-    var myNewChart2 = new Chart(ctx2).Bar(radarDataVideo, radarOptions);
+    var myNewChart2 = new Chart(ctx2).Line(radarDataVideo, radarOptions);
     document.getElementById('js-legend-2').innerHTML = myNewChart2.generateLegend();
 
 /*});*/
