@@ -1,3 +1,4 @@
+Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 
 //START TOP TEN FOLLOWERS
 		 	var barToptenData = {
@@ -93,6 +94,7 @@
 		 	        barValueSpacing: 25,
 		 	        barDatasetSpacing: 5,
 		 	        responsive: true,
+		 	       multiTooltipTemplate: "<%= datasetLabel%>: <%= value %>"
 		 	    }
 
 
