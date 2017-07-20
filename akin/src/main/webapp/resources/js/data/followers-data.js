@@ -1,5 +1,228 @@
  $(document).ready(function() {
 	 
+
+	  //START WOMEN AND MEN DEMOGRAPHIC
+		 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
+		 
+		var barData = {
+		        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
+		        datasets: [
+		            {
+		                label: "Hombres",
+		                fillColor: "rgba(220,220,220,0.5)",
+		                strokeColor: "rgba(220,220,220,0.8)",
+		                highlightFill: "rgba(220,220,220,0.75)",
+		                highlightStroke: "rgba(220,220,220,1)",
+		                data: [65, 59, 80]
+		            },
+		            {
+		                label: "Mujeres",
+		                fillColor: "rgba(26,179,148,0.5)",
+		                strokeColor: "rgba(26,179,148,0.8)",
+		                highlightFill: "rgba(26,179,148,0.75)",
+		                highlightStroke: "rgba(26,179,148,1)",
+		                data: [28, 48, 40]
+		            },
+		            {
+		                label: "Otros",
+		                fillColor: "rgba(234,171,237,0.7)",
+		                strokeColor: "rgba(216,111,221,0.7)",
+		                highlightFill: "rgba(191,59,198,0.75)",
+		                highlightStroke: "rgba(191,59,198,1)",
+		                data: [35, 68, 60]
+		            }
+		        ]
+		    };
+
+		    var barOptions = {
+		        scaleBeginAtZero: true,
+		        scaleShowGridLines: true,
+		        scaleGridLineColor: "rgba(0,0,0,.05)",
+		        scaleGridLineWidth: 1,
+		        barShowStroke: true,
+		        barStrokeWidth: 2,
+		        barValueSpacing: 25,
+		        barDatasetSpacing: 5,
+		        responsive: true,
+		       multiTooltipTemplate: "<%= datasetLabel%>: <%= value %>"
+		    }
+
+
+		    var ctx = document.getElementById("barChart").getContext("2d");
+		    var myNewChart = new Chart(ctx).Bar(barData, barOptions);
+
+	//END WOMEN AND MEN DEMOGRAPHIC
+		 
+	 	 
+	
+	 
+	//MEXICO MAP 
+		 try {
+			 var latlong = {};
+			 latlong["MX-QUE-G"] = {"latitude":20.5888184,"longitude":-100.3898876000};			//Queretaro
+			 latlong["MX-VER-G"] = {"latitude":19.173773,"longitude":-96.13422409999998};		//Veracruz
+			 latlong["MX-HID-G"] = {"latitude":20.0910963,"longitude":-98.76238739999997};		//Hidalgo
+			 latlong["MX-CHH-G"] = {"latitude":28.6329957,"longitude":-106.06910040000002};		//Chihuahua
+			 latlong["MX-COL-G"] = {"latitude":19.1222634,"longitude":-104.00723479999999};		//Colima
+			 latlong["MX-COA-G"] = {"latitude":27.058676,"longitude":-101.7068294};				//Coahuila
+			 latlong["MX-CHP-G"] = {"latitude":16.7569318,"longitude":-93.1292353};				//Chiapas
+			 latlong["MX-MIC-G"] = {"latitude":19.5665192,"longitude":-101.7068294};			//Michoacan
+			 latlong["MX-JAL-G"] = {"latitude":20.6595382,"longitude":-103.34943759999999};		//Jalisco
+			 
+			 latlong["MX-QUE-GR"] = {"latitude":20.5988184,"longitude":-100.2898876000};		//Queretaro
+			 latlong["MX-VER-GR"] = {"latitude":19.173773,"longitude":-96.23422409999998};		//Veracruz
+			 latlong["MX-HID-GR"] = {"latitude":20.0910963,"longitude":-98.66238739999997};		//Hidalgo
+			 latlong["MX-CHH-GR"] = {"latitude":28.6329957,"longitude":-106.16910040000002};	//Chihuahua
+			 latlong["MX-COL-GR"] = {"latitude":19.1222634,"longitude":-104.10723479999999};	//Colima
+			 latlong["MX-COA-GR"] = {"latitude":27.058676,"longitude":-101.8068294};			//Coahuila
+			 latlong["MX-CHP-GR"] = {"latitude":16.7569318,"longitude":-93.2292353};			//Chiapas
+			 latlong["MX-MIC-GR"] = {"latitude":19.5665192,"longitude":-101.8068294};			//Michoacan
+			 latlong["MX-JAL-GR"] = {"latitude":20.6595382,"longitude":-103.44943759999999};	//Jalisco
+			 
+			 latlong["MX-QUE-PR"] = {"latitude":20.5888184,"longitude":-100.1898876000};		//Queretaro
+			 latlong["MX-VER-PR"] = {"latitude":19.173773,"longitude":-96.33422409999998};		//Veracruz
+			 latlong["MX-HID-PR"] = {"latitude":20.0910963,"longitude":-98.56238739999997};		//Hidalgo
+			 latlong["MX-CHH-PR"] = {"latitude":28.6329957,"longitude":-106.26910040000002};	//Chihuahua
+			 latlong["MX-COL-PR"] = {"latitude":19.1222634,"longitude":-104.20723479999999};	//Colima
+			 latlong["MX-COA-PR"] = {"latitude":27.058676,"longitude":-101.9068294};			//Coahuila
+			 latlong["MX-CHP-PR"] = {"latitude":16.7569318,"longitude":-93.3292353};			//Chiapas
+			 latlong["MX-MIC-PR"] = {"latitude":19.5665192,"longitude":-101.9068294};			//Michoacan
+			 latlong["MX-JAL-PR"] = {"latitude":20.6595382,"longitude":-103.54943759999999};	//Jalisco
+			 //################### #DCDCDC gray / #1AB394 green / #EAABED purple
+			 var mapData = [
+			                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#DCDCDC"},
+			                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#DCDCDC"},
+			                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#DCDCDC"},
+			                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#DCDCDC"},
+			                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#DCDCDC"},
+			                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#DCDCDC"},
+			                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#DCDCDC"},
+			                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#DCDCDC"},
+			                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#DCDCDC"},
+			                
+			                {"code":"MX-QUE-GR" , "name":"Queretaro", "value":9938444, "color":"#1AB394"},
+			                {"code":"MX-VER-GR" , "name":"Veracruz", "value":8414350, "color":"#1AB394"},
+			                {"code":"MX-HID-GR" , "name":"Hidalgo", "value":12419293, "color":"#1AB394"},
+			                {"code":"MX-CHH-GR" , "name":"Chihuahua", "value":4301261, "color":"#1AB394"},
+			                {"code":"MX-COL-GR" , "name":"Colima", "value":783600, "color":"#1AB394"},
+			                {"code":"MX-COA-GR" , "name":"Coahuila", "value":3405565, "color":"#1AB394"},
+			                {"code":"MX-CHP-GR" , "name":"Chiapas", "value":33871648, "color":"#1AB394"},
+			                {"code":"MX-MIC-GR" , "name":"Michoacan", "value":2688418, "color":"#1AB394"},
+			                {"code":"MX-JAL-GR" , "name":"Jalisco", "value":6080485, "color":"#1AB394"},
+			                
+			                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#EAABED"},
+			                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#EAABED"},
+			                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#EAABED"},
+			                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#EAABED"},
+			                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#EAABED"},
+			                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#EAABED"},
+			                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#EAABED"},
+			                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#EAABED"},
+			                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#EAABED"}
+			                ];
+
+			// get min and max values
+			var minBulletSize = 7;
+			var maxBulletSize = 10;
+			var min = Infinity;
+			var max = -Infinity;
+			for ( var i = 0; i < mapData.length; i++ ) {
+			  var value = mapData[ i ].value;
+			  if ( value < min ) {
+			    min = value;
+			  }
+			  if ( value > max ) {
+			    max = value;
+			  }
+			}
+
+			// it's better to use circle square to show difference between values, not a radius
+			var maxSquare = maxBulletSize * maxBulletSize * 2 * Math.PI;
+			var minSquare = minBulletSize * minBulletSize * 2 * Math.PI;
+
+			// create circle for each country
+			var images = [];
+			for ( var i = 0; i < mapData.length; i++ ) {
+			  var dataItem = mapData[ i ];
+			  var value = dataItem.value;
+			  // calculate size of a bubble
+			  var square = ( value - min ) / ( max - min ) * ( maxSquare - minSquare ) + minSquare;
+			  if ( square < minSquare ) {
+			    square = minSquare;
+			  }
+			  var size = Math.sqrt( square / ( Math.PI * 2 ) );
+			  var id = dataItem.code;
+
+			  images.push( {
+			    "type": "circle",
+			    "theme": "dark",
+
+			    "width": size,
+			    "height": size,
+			    "color": dataItem.color,
+			    "longitude": latlong[ id ].longitude,
+			    "latitude": latlong[ id ].latitude,
+			    "title": dataItem.name,
+			    "value": value
+			  } );
+			}
+
+			 //###################
+			   var titles = [];
+			 
+			       titles.push( {
+			         "text": "Mexico"
+			       } );
+			 
+			       AmCharts.makeChart( "mapdiv", {
+			     	  "type": "map",
+			     	  "theme": "dark",
+			     	  "getAreasFromMap": true,
+			     	  "dataProvider": {
+			     	    "map": "mexicoLow",
+			 			  "images": images
+			     	  },
+			     	  "titles": titles,
+			     	  "areasSettings": {
+			     		"alpha": 0.8,
+			     	    "unlistedAreasAlpha": 0.1,
+			     	  },
+			     	  "legend": {
+			     		    "width": "80%",
+			     		    "divId": "legenddiv",
+			     		    "marginRight": 27,
+			     		    "marginLeft": 27,
+			     		    "equalWidths": true,
+			     		    "backgroundAlpha": 0.7,
+			     		    "backgroundColor": "#FFFFFF",
+			     		    "borderColor": "#ffffff",
+			     		    "borderAlpha": 1,
+			     		    "top": 450,
+			     		    "left": 0,
+			     		    "horizontalGap": 10,
+			     		    "data": [{
+			     		      "title": "Ricardo Anaya Cortés",
+			     		      "color": "#DCDCDC"
+			     		    }, {
+			     		      "title": "Margarita Zavala",
+			     		      "color": "#1AB394"
+			     		    }, {
+			     		      "title": "Rafael Moreno Valle",
+			     		      "color": "#EAABED"
+			     		    }]
+			     	  }
+			     	 
+			     	} ); 
+			 	 }
+			 	 catch( e ) {
+			 	   console.log( e );
+			 	 }
+			 	 
+		 
+	//END MEXICO MAP
+	 
+	 
+	 
 	//Data for main line chart
 	 var lineData = {
 		        labels: ["Ene 04", "Ene 07", "Ene 10", "Ene 13", "Ene 16", "Ene 19", "Ene 22", "Ene 25", "Ene 28" ,"Ene 31"],
@@ -7,7 +230,7 @@
 		            {
 		                label: "Ricardo Anaya Cortés",
 		                fillColor: "rgba(220,220,220,0.5)",
-		                strokeColor: "rgba(220,220,220,1)",
+		                strokeColor: "gray",
 		                pointColor: "rgba(220,220,220,1)",
 		                pointStrokeColor: "#fff",
 		                pointHighlightFill: "#fff",
@@ -17,7 +240,7 @@
 		            {
 		                label: "Margarita Zavala",
 		                fillColor: "rgba(26,179,148,0.5)",
-		                strokeColor: "rgba(26,179,148,0.7)",
+		                strokeColor: "green",
 		                pointColor: "rgba(26,179,148,1)",
 		                pointStrokeColor: "#fff",
 		                pointHighlightFill: "#fff",
@@ -27,7 +250,7 @@
 		            {
 		                label: "Rafael Moreno Valle",
 		                fillColor: "rgba(234,171,237,0.7)",
-		                strokeColor: "rgba(216,111,221,0.7)",
+		                strokeColor: "purple",
 		                pointColor: "rgba(191,59,198,1)",
 		                pointStrokeColor: "#fff",
 		                pointHighlightFill: "#fff",
@@ -61,171 +284,5 @@
 		    document.getElementById('js-legend').innerHTML = myNewChart.generateLegend();
 
 		    //END Data for main line chart
- 
-//MEXICO MAP 
-	 try {
-		 var latlong = {};
-		 latlong["MX-QUE-G"] = {"latitude":20.5888184,"longitude":-100.3898876000};			//Queretaro
-		 latlong["MX-VER-G"] = {"latitude":19.173773,"longitude":-96.13422409999998};		//Veracruz
-		 latlong["MX-HID-G"] = {"latitude":20.0910963,"longitude":-98.76238739999997};		//Hidalgo
-		 latlong["MX-CHH-G"] = {"latitude":28.6329957,"longitude":-106.06910040000002};		//Chihuahua
-		 latlong["MX-COL-G"] = {"latitude":19.1222634,"longitude":-104.00723479999999};		//Colima
-		 latlong["MX-COA-G"] = {"latitude":27.058676,"longitude":-101.7068294};				//Coahuila
-		 latlong["MX-CHP-G"] = {"latitude":16.7569318,"longitude":-93.1292353};				//Chiapas
-		 latlong["MX-MIC-G"] = {"latitude":19.5665192,"longitude":-101.7068294};			//Michoacan
-		 latlong["MX-JAL-G"] = {"latitude":20.6595382,"longitude":-103.34943759999999};		//Jalisco
-		 
-		 latlong["MX-QUE-GR"] = {"latitude":20.5988184,"longitude":-100.2898876000};		//Queretaro
-		 latlong["MX-VER-GR"] = {"latitude":19.173773,"longitude":-96.23422409999998};		//Veracruz
-		 latlong["MX-HID-GR"] = {"latitude":20.0910963,"longitude":-98.66238739999997};		//Hidalgo
-		 latlong["MX-CHH-GR"] = {"latitude":28.6329957,"longitude":-106.16910040000002};	//Chihuahua
-		 latlong["MX-COL-GR"] = {"latitude":19.1222634,"longitude":-104.10723479999999};	//Colima
-		 latlong["MX-COA-GR"] = {"latitude":27.058676,"longitude":-101.8068294};			//Coahuila
-		 latlong["MX-CHP-GR"] = {"latitude":16.7569318,"longitude":-93.2292353};			//Chiapas
-		 latlong["MX-MIC-GR"] = {"latitude":19.5665192,"longitude":-101.8068294};			//Michoacan
-		 latlong["MX-JAL-GR"] = {"latitude":20.6595382,"longitude":-103.44943759999999};	//Jalisco
-		 
-		 latlong["MX-QUE-PR"] = {"latitude":20.5888184,"longitude":-100.1898876000};		//Queretaro
-		 latlong["MX-VER-PR"] = {"latitude":19.173773,"longitude":-96.33422409999998};		//Veracruz
-		 latlong["MX-HID-PR"] = {"latitude":20.0910963,"longitude":-98.56238739999997};		//Hidalgo
-		 latlong["MX-CHH-PR"] = {"latitude":28.6329957,"longitude":-106.26910040000002};	//Chihuahua
-		 latlong["MX-COL-PR"] = {"latitude":19.1222634,"longitude":-104.20723479999999};	//Colima
-		 latlong["MX-COA-PR"] = {"latitude":27.058676,"longitude":-101.9068294};			//Coahuila
-		 latlong["MX-CHP-PR"] = {"latitude":16.7569318,"longitude":-93.3292353};			//Chiapas
-		 latlong["MX-MIC-PR"] = {"latitude":19.5665192,"longitude":-101.9068294};			//Michoacan
-		 latlong["MX-JAL-PR"] = {"latitude":20.6595382,"longitude":-103.54943759999999};	//Jalisco
-		 //################### #DCDCDC gray / #1AB394 green / #EAABED purple
-		 var mapData = [
-		                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#DCDCDC"},
-		                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#DCDCDC"},
-		                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#DCDCDC"},
-		                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#DCDCDC"},
-		                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#DCDCDC"},
-		                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#DCDCDC"},
-		                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#DCDCDC"},
-		                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#DCDCDC"},
-		                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#DCDCDC"},
-		                
-		                {"code":"MX-QUE-GR" , "name":"Queretaro", "value":9938444, "color":"#1AB394"},
-		                {"code":"MX-VER-GR" , "name":"Veracruz", "value":8414350, "color":"#1AB394"},
-		                {"code":"MX-HID-GR" , "name":"Hidalgo", "value":12419293, "color":"#1AB394"},
-		                {"code":"MX-CHH-GR" , "name":"Chihuahua", "value":4301261, "color":"#1AB394"},
-		                {"code":"MX-COL-GR" , "name":"Colima", "value":783600, "color":"#1AB394"},
-		                {"code":"MX-COA-GR" , "name":"Coahuila", "value":3405565, "color":"#1AB394"},
-		                {"code":"MX-CHP-GR" , "name":"Chiapas", "value":33871648, "color":"#1AB394"},
-		                {"code":"MX-MIC-GR" , "name":"Michoacan", "value":2688418, "color":"#1AB394"},
-		                {"code":"MX-JAL-GR" , "name":"Jalisco", "value":6080485, "color":"#1AB394"},
-		                
-		                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#EAABED"},
-		                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#EAABED"},
-		                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#EAABED"},
-		                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#EAABED"},
-		                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#EAABED"},
-		                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#EAABED"},
-		                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#EAABED"},
-		                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#EAABED"},
-		                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#EAABED"}
-		                ];
 
-		// get min and max values
-		var minBulletSize = 7;
-		var maxBulletSize = 10;
-		var min = Infinity;
-		var max = -Infinity;
-		for ( var i = 0; i < mapData.length; i++ ) {
-		  var value = mapData[ i ].value;
-		  if ( value < min ) {
-		    min = value;
-		  }
-		  if ( value > max ) {
-		    max = value;
-		  }
-		}
-
-		// it's better to use circle square to show difference between values, not a radius
-		var maxSquare = maxBulletSize * maxBulletSize * 2 * Math.PI;
-		var minSquare = minBulletSize * minBulletSize * 2 * Math.PI;
-
-		// create circle for each country
-		var images = [];
-		for ( var i = 0; i < mapData.length; i++ ) {
-		  var dataItem = mapData[ i ];
-		  var value = dataItem.value;
-		  // calculate size of a bubble
-		  var square = ( value - min ) / ( max - min ) * ( maxSquare - minSquare ) + minSquare;
-		  if ( square < minSquare ) {
-		    square = minSquare;
-		  }
-		  var size = Math.sqrt( square / ( Math.PI * 2 ) );
-		  var id = dataItem.code;
-
-		  images.push( {
-		    "type": "circle",
-		    "theme": "dark",
-
-		    "width": size,
-		    "height": size,
-		    "color": dataItem.color,
-		    "longitude": latlong[ id ].longitude,
-		    "latitude": latlong[ id ].latitude,
-		    "title": dataItem.name,
-		    "value": value
-		  } );
-		}
-
-		 //###################
-		   var titles = [];
-		 
-		       titles.push( {
-		         "text": "Mexico"
-		       } );
-		 
-		       AmCharts.makeChart( "mapdiv", {
-		     	  "type": "map",
-		     	  "theme": "dark",
-		     	  "getAreasFromMap": true,
-		     	  "dataProvider": {
-		     	    "map": "mexicoLow",
-		 			  "images": images
-		     	  },
-		     	  "titles": titles,
-		     	  "areasSettings": {
-		     		"alpha": 0.8,
-		     	    "unlistedAreasAlpha": 0.1,
-		     	  },
-		     	  "legend": {
-		     		    "width": "100%",
-		     		    "divId": "legenddiv",
-		     		    "marginRight": 27,
-		     		    "marginLeft": 27,
-		     		    "equalWidths": false,
-		     		    "backgroundAlpha": 0.7,
-		     		    "backgroundColor": "#FFFFFF",
-		     		    "borderColor": "#ffffff",
-		     		    "borderAlpha": 1,
-		     		    "top": 450,
-		     		    "left": 0,
-		     		    "horizontalGap": 10,
-		     		    "data": [{
-		     		      "title": "Ricardo Anaya Cortés",
-		     		      "color": "#DCDCDC"
-		     		    }, {
-		     		      "title": "Margarita Zavala",
-		     		      "color": "#1AB394"
-		     		    }, {
-		     		      "title": "Rafael Moreno Valle",
-		     		      "color": "#EAABED"
-		     		    }]
-		     	  }
-		     	 
-		     	} ); 
-		 	 }
-		 	 catch( e ) {
-		 	   console.log( e );
-		 	 }
-		 	 
-	 
-//END MEXICO MAP
- 	 
-		 	 
 });

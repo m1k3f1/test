@@ -30,7 +30,7 @@
 }
 
 .tab-pane-scroll{
-  height:425px !important;
+  height:360px !important;
   overflow-y:scroll;
   width:100%;
 }

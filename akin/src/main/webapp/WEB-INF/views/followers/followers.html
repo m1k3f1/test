@@ -56,68 +56,75 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ibox-content">
+                            <div class="ibox-content tab-pane-scroll">
                                 <div class="row">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>Seguidores Ganados y Perdidos</h5>
+                                        &nbsp;
+                                    </div>
 	                                <div class="col-lg-9">
 	                                    <div>
-	                                   		<div id="js-legend" class="chart-legend"></div>
 			                                <canvas id="lineChart" height="80px"></canvas>
 			                            </div>
 	                                </div>
                              
-                             		<div class="col-lg-3">
+                             		<div class="col-lg-3" >
                                     <ul class="stat-list">
                                         <li>
-                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
+                                        
+                                            <h3 class="no-margins" th:text="#{demo.cuenta1}">
+	                                            <small class="label label-gray">&nbsp;</small>
+	                                        </h3>
                                             <small>Ganados</small>
                                             <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 48%;" class="progress-bar"></div>
+                                                <div style="width: 48%;" class="progress-bar label-gray"></div>
                                             </div>
                                             
                                             <small>Perdidos</small>
                                             <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar"></div>
+                                                <div style="width: 5%;" class="progress-bar label-gray"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3 class="no-margins ">Margarita Zavala</h3>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta2}">
+	                                            <small class="label label-primary" >&nbsp;</small>
+	                                        </h3>
                                             <small>Ganados</small>
                                             <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 60%;" class="progress-bar"></div>
+                                                <div style="width: 60%;" class="progress-bar label-primary"></div>
                                             </div>
                                             
                                              <small>Perdidos</small>
                                             <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 10%;" class="progress-bar"></div>
+                                                <div style="width: 10%;" class="progress-bar label-primary"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3 class="no-margins ">Rafael Moreno Valle</h3>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta3}">
+	                                            <small class="label label-purple">&nbsp;</small>
+	                                        </h3>
                                             <small>Ganados</small>
                                             <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 40%;" class="progress-bar"></div>
+                                                <div style="width: 40%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
                                              <small>Perdidos</small>
                                             <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 7%;" class="progress-bar"></div>
+                                                <div style="width: 7%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+                                </div>
+                                
 				<!-- INICIO DATOS GEOGRAFICOS -->
                 <div class="row">
                    
@@ -130,7 +137,6 @@
                                     <div class="ibox-title">
                                         <h5>Geolocalización de Seguidores</h5>
                                         &nbsp;
-                                		<span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                                         <div class="ibox-tools">
                                             <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
@@ -146,9 +152,9 @@
                                                     <tr>
                                                         <th style="width: 1%" class="text-center">No.</th>
                                                         <th>Estado</th>
-                                                        <th class="text-center">Ricardo Anaya Cortés</th>
-                                                        <th class="text-center">Margarita Zavala</th>
-                                                        <th class="text-center">Rafael Moreno Valle</th>
+                                                        <th class="text-center" th:text="#{demo.cuenta1}"></th>
+                                                        <th class="text-center" th:text="#{demo.cuenta2}"></th>
+                                                        <th class="text-center" th:text="#{demo.cuenta3}"></th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -283,29 +289,29 @@
 					                  		<div class="col-lg-3">
                                     <ul class="stat-list">
                                         <li>
-                                            <h3 class="no-margins">Ricardo Anaya Cortés</h3>
+                                            <h3 class="no-margins" th:text="#{demo.cuenta1}"></h3>
                                             
                                             <small>Hombres</small>
                                             <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 48%;" class="progress-bar"></div>
+                                                <div style="width: 48%;" class="progress-bar label-gray"></div>
                                             </div>
                                             
                                             <small>Mujeres</small>
                                             <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar"></div>
+                                                <div style="width: 5%;" class="progress-bar label-primary"></div>
                                             </div>
                                             
                                             <small>Otros</small>
                                             <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar"></div>
+                                                <div style="width: 5%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
                                         </li>
                                         <li>
-                                            <h3 class="no-margins ">Margarita Zavala</h3>
+                                            <h3 class="no-margins" th:text="#{demo.cuenta2}"></h3>
                                             
                                             <small>Hombres</small>
                                             <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
@@ -326,7 +332,7 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <h3 class="no-margins ">Rafael Moreno Valle</h3>
+                                            <h3 class="no-margins" th:text="#{demo.cuenta3}"></h3>
                                             
                                             <small>Hombres</small>
                                             <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
@@ -360,6 +366,12 @@
                 </div>
                 
                 <!-- FIN DATOS DEMOGAFICOS -->
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
 	
 
 	<!-- /. page-wrapper -->
@@ -383,56 +395,7 @@
 		<script src="resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js" type="text/javascript"
 		th:href="@{/resources/plugin-jvectormap/ammap/maps/js/mexicoLow.js}" ></script>
 
-<script type="text/javascript">
-var barData = {
-        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
-        datasets: [
-            {
-                label: "Hombres",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80]
-            },
-            {
-                label: "Mujeres",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
-                data: [28, 48, 40]
-            },
-            {
-                label: "Otros",
-                fillColor: "rgba(234,171,237,0.7)",
-                strokeColor: "rgba(216,111,221,0.7)",
-                highlightFill: "rgba(191,59,198,0.75)",
-                highlightStroke: "rgba(191,59,198,1)",
-                data: [35, 68, 60]
-            }
-        ]
-    };
 
-    var barOptions = {
-        scaleBeginAtZero: true,
-        scaleShowGridLines: true,
-        scaleGridLineColor: "rgba(0,0,0,.05)",
-        scaleGridLineWidth: 1,
-        barShowStroke: true,
-        barStrokeWidth: 2,
-        barValueSpacing: 25,
-        barDatasetSpacing: 5,
-        responsive: true,
-    }
-
-
-    var ctx = document.getElementById("barChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Bar(barData, barOptions);
-    document.getElementById('demo-legend').innerHTML = myNewChart.generateLegend();
-
-
-</script>
 	
 </body>
 
