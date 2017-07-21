@@ -1,14 +1,14 @@
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 //Education Datas
-var barData = {
+var barEducationData = {
         labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
         datasets: [
             {
                 label: "Secundaria",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)",
+                fillColor: "rgba(70,72,232,0.5)",
+                strokeColor: "rgba(70,72,232,0.8)",
+                highlightFill: "rgba(70,72,232,0.75)",
+                highlightStroke: "rgba(70,72,232,1)",
                 data: [65, 59, 80]
             },
             {
@@ -21,10 +21,10 @@ var barData = {
             },
             {
                 label: "Universidad",
-                fillColor: "rgba(234,171,237,0.7)",
-                strokeColor: "rgba(216,111,221,0.7)",
-                highlightFill: "rgba(191,59,198,0.75)",
-                highlightStroke: "rgba(191,59,198,1)",
+                fillColor: "rgba(181,84,237,0.7)",
+                strokeColor: "rgba(181,84,237,0.7)",
+                highlightFill: "rgba(181,84,237,0.75)",
+                highlightStroke: "rgba(181,84,237,1)",
                 data: [35, 68, 60]
             }
         ]
@@ -40,10 +40,10 @@ var barOccupationData = {
       datasets: [
           {
               label: "Profesionista",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
+              fillColor: "rgba(70,72,232,0.5)",
+              strokeColor: "rgba(70,72,232,0.8)",
+              highlightFill: "rgba(70,72,232,0.75)",
+              highlightStroke: "rgba(70,72,232,1)",
               data: [20, 34, 12]
           },
           {
@@ -56,10 +56,10 @@ var barOccupationData = {
           },
           {
               label: "Ama de Casa",
-              fillColor: "rgba(234,171,237,0.7)",
-              strokeColor: "rgba(216,111,221,0.7)",
-              highlightFill: "rgba(191,59,198,0.75)",
-              highlightStroke: "rgba(191,59,198,1)",
+              fillColor: "rgba(181,84,237,0.7)",
+              strokeColor: "rgba(181,84,237,0.7)",
+              highlightFill: "rgba(181,84,237,0.75)",
+              highlightStroke: "rgba(181,84,237,1)",
               data: [35, 22, 11]
           }
       ]
@@ -74,10 +74,10 @@ var barCivilStatusData = {
       datasets: [
           {
               label: "Soltero",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
+              fillColor: "rgba(70,72,232,0.5)",
+              strokeColor: "rgba(70,72,232,0.8)",
+              highlightFill: "rgba(70,72,232,0.75)",
+              highlightStroke: "rgba(70,72,232,1)",
               data: [45, 36, 34]
           },
           {
@@ -90,10 +90,10 @@ var barCivilStatusData = {
           },
           {
               label: "Otro",
-              fillColor: "rgba(234,171,237,0.7)",
-              strokeColor: "rgba(216,111,221,0.7)",
-              highlightFill: "rgba(191,59,198,0.75)",
-              highlightStroke: "rgba(191,59,198,1)",
+              fillColor: "rgba(181,84,237,0.7)",
+              strokeColor: "rgba(181,84,237,0.7)",
+              highlightFill: "rgba(181,84,237,0.75)",
+              highlightStroke: "rgba(181,84,237,1)",
               data: [34, 23, 34]
           }
       ]
@@ -108,10 +108,10 @@ var barReligionData = {
       datasets: [
           {
               label: "Cristiano",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
+              fillColor: "rgba(70,72,232,0.5)",
+              strokeColor: "rgba(70,72,232,0.8)",
+              highlightFill: "rgba(70,72,232,0.75)",
+              highlightStroke: "rgba(70,72,232,1)",
               data: [23, 16, 26]
           },
           {
@@ -124,10 +124,10 @@ var barReligionData = {
           },
           {
               label: "Otro",
-              fillColor: "rgba(234,171,237,0.7)",
-              strokeColor: "rgba(216,111,221,0.7)",
-              highlightFill: "rgba(191,59,198,0.75)",
-              highlightStroke: "rgba(191,59,198,1)",
+              fillColor: "rgba(181,84,237,0.7)",
+              strokeColor: "rgba(181,84,237,0.7)",
+              highlightFill: "rgba(181,84,237,0.75)",
+              highlightStroke: "rgba(181,84,237,1)",
               data: [34, 22, 24]
           }
       ]
@@ -143,10 +143,10 @@ var barPoliticsData = {
       datasets: [
           {
               label: "PAN",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
+              fillColor: "rgba(70,72,232,0.5)",
+              strokeColor: "rgba(70,72,232,0.8)",
+              highlightFill: "rgba(70,72,232,0.75)",
+              highlightStroke: "rgba(70,72,232,1)",
               data: [55, 59, 32]
           },
           {
@@ -159,10 +159,10 @@ var barPoliticsData = {
           },
           {
               label: "PRI",
-              fillColor: "rgba(234,171,237,0.7)",
-              strokeColor: "rgba(216,111,221,0.7)",
-              highlightFill: "rgba(191,59,198,0.75)",
-              highlightStroke: "rgba(191,59,198,1)",
+              fillColor: "rgba(181,84,237,0.7)",
+              strokeColor: "rgba(181,84,237,0.7)",
+              highlightFill: "rgba(181,84,237,0.75)",
+              highlightStroke: "rgba(181,84,237,1)",
               data: [24, 23, 12]
           }
       ]
@@ -184,8 +184,8 @@ var barPoliticsData = {
     }
 
 
-    var ctx = document.getElementById("barChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Bar(barData, barOptions);
+    var ctxEducation = document.getElementById("barEducation").getContext("2d");
+    var educationChart = new Chart(ctxEducation).Bar(barEducationData, barOptions);
 
     
     var ctxOccupation = document.getElementById("barOccupation").getContext("2d");

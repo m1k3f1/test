@@ -9,10 +9,10 @@
 		        datasets: [
 		            {
 		                label: "Hombres",
-		                fillColor: "rgba(220,220,220,0.5)",
-		                strokeColor: "rgba(220,220,220,0.8)",
-		                highlightFill: "rgba(220,220,220,0.75)",
-		                highlightStroke: "rgba(220,220,220,1)",
+		                fillColor: "rgba(70,72,232,0.5)",
+		                strokeColor: "rgba(70,72,232,0.8)",
+		                highlightFill: "rgba(70,72,232,0.75)",
+		                highlightStroke: "rgba(70,72,232,1)",
 		                data: [65, 59, 80]
 		            },
 		            {
@@ -25,10 +25,10 @@
 		            },
 		            {
 		                label: "Otros",
-		                fillColor: "rgba(234,171,237,0.7)",
-		                strokeColor: "rgba(216,111,221,0.7)",
-		                highlightFill: "rgba(191,59,198,0.75)",
-		                highlightStroke: "rgba(191,59,198,1)",
+		                fillColor: "rgba(181,84,237,0.7)",
+		                strokeColor: "rgba(181,84,237,0.7)",
+		                highlightFill: "rgba(181,84,237,0.75)",
+		                highlightStroke: "rgba(181,84,237,1)",
 		                data: [35, 68, 60]
 		            }
 		        ]
@@ -88,17 +88,17 @@
 			 latlong["MX-CHP-PR"] = {"latitude":16.7569318,"longitude":-93.3292353};			//Chiapas
 			 latlong["MX-MIC-PR"] = {"latitude":19.5665192,"longitude":-101.9068294};			//Michoacan
 			 latlong["MX-JAL-PR"] = {"latitude":20.6595382,"longitude":-103.54943759999999};	//Jalisco
-			 //################### #DCDCDC gray / #1AB394 green / #EAABED purple
+			 //################### #4648E8 azul / #1AB394 green / #B554ED purple
 			 var mapData = [
-			                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#DCDCDC"},
-			                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#DCDCDC"},
-			                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#DCDCDC"},
-			                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#DCDCDC"},
-			                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#DCDCDC"},
-			                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#DCDCDC"},
-			                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#DCDCDC"},
-			                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#DCDCDC"},
-			                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#DCDCDC"},
+			                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#4648E8"},
+			                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#4648E8"},
+			                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#4648E8"},
+			                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#4648E8"},
+			                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#4648E8"},
+			                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#4648E8"},
+			                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#4648E8"},
+			                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#4648E8"},
+			                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#4648E8"},
 			                
 			                {"code":"MX-QUE-GR" , "name":"Queretaro", "value":9938444, "color":"#1AB394"},
 			                {"code":"MX-VER-GR" , "name":"Veracruz", "value":8414350, "color":"#1AB394"},
@@ -110,15 +110,15 @@
 			                {"code":"MX-MIC-GR" , "name":"Michoacan", "value":2688418, "color":"#1AB394"},
 			                {"code":"MX-JAL-GR" , "name":"Jalisco", "value":6080485, "color":"#1AB394"},
 			                
-			                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#EAABED"},
-			                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#EAABED"},
-			                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#EAABED"},
-			                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#EAABED"},
-			                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#EAABED"},
-			                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#EAABED"},
-			                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#EAABED"},
-			                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#EAABED"},
-			                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#EAABED"}
+			                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#B554ED"},
+			                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#B554ED"},
+			                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#B554ED"},
+			                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#B554ED"},
+			                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#B554ED"},
+			                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#B554ED"},
+			                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#B554ED"},
+			                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#B554ED"},
+			                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#B554ED"}
 			                ];
 
 			// get min and max values
@@ -202,13 +202,13 @@
 			     		    "horizontalGap": 10,
 			     		    "data": [{
 			     		      "title": "Ricardo Anaya Cortés",
-			     		      "color": "#DCDCDC"
+			     		      "color": "#4648E8"
 			     		    }, {
 			     		      "title": "Margarita Zavala",
 			     		      "color": "#1AB394"
 			     		    }, {
 			     		      "title": "Rafael Moreno Valle",
-			     		      "color": "#EAABED"
+			     		      "color": "#B554ED"
 			     		    }]
 			     	  }
 			     	 
@@ -229,12 +229,12 @@
 		        datasets: [
 		            {
 		                label: "Ricardo Anaya Cortés",
-		                fillColor: "rgba(220,220,220,0.5)",
+		                fillColor: "rgba(70,72,232,0.5)",
 		                strokeColor: "gray",
-		                pointColor: "rgba(220,220,220,1)",
+		                pointColor: "rgba(70,72,232,1)",
 		                pointStrokeColor: "#fff",
 		                pointHighlightFill: "#fff",
-		                pointHighlightStroke: "rgba(220,220,220,1)",
+		                pointHighlightStroke: "rgba(70,72,232,1)",
 		                data: [21, 30,45,65, 59, 80, 75, 56, 55, 40]
 		            },
 		            {
@@ -249,12 +249,12 @@
 		            },
 		            {
 		                label: "Rafael Moreno Valle",
-		                fillColor: "rgba(234,171,237,0.7)",
+		                fillColor: "rgba(181,84,237,0.7)",
 		                strokeColor: "purple",
-		                pointColor: "rgba(191,59,198,1)",
+		                pointColor: "rgba(181,84,237,1)",
 		                pointStrokeColor: "#fff",
 		                pointHighlightFill: "#fff",
-		                pointHighlightStroke: "rgba(191,59,198,1)",
+		                pointHighlightStroke: "rgba(181,84,237,1)",
 		                data: [11,15,28,15, 28, 30, 49,76, 37, 60]
 		            }
 		        ]
