@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
-public class FollowersController {
-
+public class DemographicController {
+	
 	@ModelAttribute("module")
 	String module() {
 		return "followers";
@@ -16,12 +16,12 @@ public class FollowersController {
 	
 	@ModelAttribute("page")
 	String page() {
-		return "followers";
-	}
-
-	@GetMapping("followers")
-	String followers(Principal principal) {
-		return "followers/followers";
+		return "followersDemographic";
 	}
 	
+	@GetMapping("followersDemographic")
+	String followersDemographic(Principal principal) {
+		return "followers/followersDemographic";
+	}
+
 }
