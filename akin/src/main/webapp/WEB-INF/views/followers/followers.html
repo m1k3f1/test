@@ -50,9 +50,9 @@
                                 <span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                                 <div class="pull-right">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-xs btn-white">Mensual</button>
-                                        <button type="button" class="btn btn-xs btn-white">Trimestral</button>
-                                        <button type="button" class="btn btn-xs btn-white">Semestral</button>
+                                        <button id="btnMensual" type="button" class="btn btn-xs btn-white">Mensual</button>
+                                        <button id="btnTrimestral" type="button" class="btn btn-xs btn-white">Trimestral</button>
+                                        <button id="btnSemestral" type="button" class="btn btn-xs btn-white">Semestral</button>
                                     </div>
                                 </div>
                             </div>
@@ -77,15 +77,15 @@
 	                                            <small class="label label-gray">&nbsp;</small>
 	                                        </h3>
                                             <small>Ganados</small>
-                                            <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta1_a" class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 48%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta1_numa" style="width: 48%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                             <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta1_b" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta1_numb" style="width: 5%;" class="progress-bar label-blue"></div>
                                             </div>
                                         </li>
                                         <li>
@@ -93,15 +93,15 @@
 	                                            <small class="label label-primary" >&nbsp;</small>
 	                                        </h3>
                                             <small>Ganados</small>
-                                            <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta2_a" class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 60%;" class="progress-bar label-primary"></div>
+                                                <div id="percCuenta2_numa" style="width: 60%;" class="progress-bar label-primary"></div>
                                             </div>
                                             
                                              <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta2_b" class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 10%;" class="progress-bar label-primary"></div>
+                                                <div id="percCuenta2_numb" style="width: 10%;" class="progress-bar label-primary"></div>
                                             </div>
                                         </li>
                                         <li>
@@ -109,15 +109,15 @@
 	                                            <small class="label label-purple">&nbsp;</small>
 	                                        </h3>
                                             <small>Ganados</small>
-                                            <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta3_a" class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 40%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta3_numa" style="width: 40%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
                                              <small>Perdidos</small>
-                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta3_b" class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 7%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta3_numb" style="width: 7%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         </ul>
@@ -292,21 +292,21 @@
                                             <h3 class="no-margins" th:text="#{demo.cuenta1}"></h3>
                                             
                                             <small>Hombres</small>
-                                            <div class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta1_h" class="stat-percent font-bold">48% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 48%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta1_numh" style="width: 48%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                             <small>Mujeres</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta1_m" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar"></div>
+                                                <div id="percCuenta1_numm" style="width: 5%;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small>Otros</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta1_o" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta1_numo" style="width: 5%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
                                         </li>
@@ -314,42 +314,42 @@
                                             <h3 class="no-margins" th:text="#{demo.cuenta2}"></h3>
                                             
                                             <small>Hombres</small>
-                                            <div class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta2_h" class="stat-percent font-bold">60% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 60%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta2_numh" style="width: 60%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                              <small>Mujeres</small>
-                                            <div class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta2_m"  class="stat-percent font-bold">10% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 10%;" class="progress-bar"></div>
+                                                <div id="percCuenta2_numm" style="width: 10%;" class="progress-bar"></div>
                                             </div>
                                              
                                              <small>Otros</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta2_o"  class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta2_numo" style="width: 5%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         <li>
                                             <h3 class="no-margins" th:text="#{demo.cuenta3}"></h3>
                                             
                                             <small>Hombres</small>
-                                            <div class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta3_h" class="stat-percent font-bold">40% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 40%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta3_numh" style="width: 40%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                              <small>Mujeres</small>
-                                            <div class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta3_m" class="stat-percent font-bold">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 7%;" class="progress-bar"></div>
+                                                <div id="percCuenta3_numm" style="width: 7%;" class="progress-bar"></div>
                                             </div>
                                              
                                              <small>Otros</small>
-                                            <div class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta3_o" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 5%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta3_numo" style="width: 5%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         </ul>
