@@ -53,24 +53,28 @@
                         </div>
                         
                     </li>
-                    <li  th:classappend="${module == 'followers' ? 'active' : ''}">
-                    	<a href="#" th:href="@{followers}">
+                    <li th:classappend="${module == 'followers' ? 'active' : ''}" >
+                    	<a href="#">
                     		<i class="fa fa-user"></i> <span class="nav-label" th:text="#{menu.followers}" ></span> <span class="fa arrow"></span>
         				</a>
         				
         				<ul class="nav nav-second-level">
-                            <li th:classappend="${module == 'followers' ? 'active' : ''}"><a href="#" th:href="@{followers}">General</a></li>
-                            <li th:classappend="${module == 'followersTopten' ? 'active' : ''}"><a href="#" th:href="@{followersTopten}">Top ten</a></li>
-                            <li th:classappend="${module == 'followersDemographic' ? 'active' : ''}"><a href="#" th:href="@{followersDemographic}">Demograficos</a></li>
+                            <li th:classappend="${page == 'followers' ? 'active' : ''}"><a href="#" th:href="@{followers}">General</a></li>
+                            <li th:classappend="${page == 'followersTopten' ? 'active' : ''}"><a href="#" th:href="@{followersTopten}">Top ten</a></li>
+                            <li th:classappend="${page == 'followersDemographic' ? 'active' : ''}"><a href="#" th:href="@{followersDemographic}">Demograficos</a></li>
                         </ul>
-        				
-        				
         				
                     </li>
                     <li th:classappend="${module == 'publications' ? 'active' : ''}">
-                        <a href="#" th:href="@{publications}" >
+                        <a href="#">
                         	<i class="fa fa-comments"></i> <span class="nav-label" th:text="#{menu.publications}" ></span> <span class="fa arrow"></span>
         				</a>
+        				
+        				<ul class="nav nav-second-level">
+        					<li th:classappend="${page == 'publications' ? 'active' : ''}">
+        					<a href="#" th:href="@{publications}">Post</a></li>
+                            <li th:classappend="${page == 'video' ? 'active' : ''}"><a href="#" th:href="@{video}">Videos</a></li>
+                        </ul>
                     </li>
                     <li th:classappend="${module == 'benchmark' ? 'active' : ''}">
                       	<a href="#" th:href="@{benchmark}" >

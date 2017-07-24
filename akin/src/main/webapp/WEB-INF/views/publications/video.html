@@ -37,78 +37,122 @@
                                     </div>
                                 </div>
                             </div>    
-             <div class="ibox-content">
-                                <div class="row">
-	                                <div class="col-lg-9">
-	                                	<div id="js-legend" class="chart-legend"></div>
-	                                	<canvas id="radarChart" ></canvas>
-	                                </div>
-                             
-                             		<div class="col-lg-3">
+			<div class="ibox-content tab-pane-scroll">
+              <div class="row">                  
+	            <div class="col-lg-12">
+                    <div class="ibox">
+                        <div >
+                            <h5>Reacciones</h5>
+                        </div>
+                        <div class="ibox-content text-center">
+                            <div class="col-lg-4 ">
+                            	<canvas id="reactionsChart1" height="200" ></canvas>
+                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
+                            </div>
+                            <div class="col-lg-4 ">
+                            	<canvas id="reactionsChart2" height="200" ></canvas>
+                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
+                            </div>
+                            <div class="col-lg-4 ">
+                            	<canvas id="reactionsChart3"  height="200"></canvas>
+                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 <div class="row">
+                <div class="col-lg-12">
+                <br/><br/>
+                </div>
+                </div>
+                
+               <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox">
+                        <div>
+                            <h5>Publicaciones por semana</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div>
+                            	 <div class="col-lg-9">
+                            
+                            		<canvas id="periodChart"></canvas>
+                            	</div>
+                            	
+                            	<div class="col-lg-3">
                                     <ul class="stat-list">
                                         <li>
-                                        	<h3 class="no-margins" >
-                                            <small class="label label-gay">&nbsp;</small>
-                                            <strong>Ricando Anaya Cortés</strong></h3>
+                                        	<h3 class="no-margins"  th:text="#{demo.cuenta1}" >
+                                            <small class="label label-blue">&nbsp;</small>
+                                            </h3>
                                             <small>Comentarios positivos</small>
-                                            <div class="stat-percent">93% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="stat-percent">92% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 93%;" class="progress-bar"></div>
+                                                <div style="width: 92%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                             <small>Comentarios negativos</small>
+                                            <div class="stat-percent ">8% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 8%;" class="progress-bar label-blue"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins"  th:text="#{demo.cuenta2}" >
+                                            <small class="label label-primary" >&nbsp;</small>
+                                            </h3>
+                                            <small>Comentarios positivos</small>
+                                            <div class="stat-percent">98% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 98%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                             <small>Comentarios negativos</small>
+                                            <div class="stat-percent ">2% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 2%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins"  th:text="#{demo.cuenta3}">
+                                            <small class="label label-purple">&nbsp;</small>
+                                            </h3>
+                                            <small>Comentarios positivos</small>
+                                            <div class="stat-percent">93% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 93%;" class="progress-bar label-purple"></div>
+                                            </div>
+                                            
+                                             <small>Comentarios negativos</small>
                                             <div class="stat-percent ">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 7%;" class="progress-bar"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3 class="no-margins " >
-                                            <small class="label label-primary" >&nbsp;</small>
-                                            <strong>Margarita Zavala</strong></h3>
-                                            <small>Comentarios positivos</small>
-                                            <div class="stat-percent">94% <i class="fa fa-level-up text-navy"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div style="width: 94%;" class="progress-bar"></div>
-                                            </div>
-                                            
-                                             <small>Comentarios negativos</small>
-                                            <div class="stat-percent ">6% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div style="width: 6%;" class="progress-bar"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3 class="no-margins ">
-                                            <small class="label label-purple">&nbsp;</small>
-                                            <strong>Rafael Moreno Valle</strong></h3>
-                                            <small>Comentarios positivos</small>
-                                            <div class="stat-percent">97% <i class="fa fa-level-up text-navy"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div style="width: 97%;" class="progress-bar"></div>
-                                            </div>
-                                            
-                                             <small>Comentarios negativos</small>
-                                            <div class="stat-percent ">3% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div style="width: 3%;" class="progress-bar"></div>
+                                                <div style="width: 7%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- content row -->
+               
+                            	
+                            	
+                            	
                             </div>
-			
-		
+                        </div>
+                    </div>
+                </div>
+               
+               </div>
+                
+                
+	         </div>                 	
+	                                </div>
+                             
+                             		
+                              
 			  <!-- /. row -->
 			</div> 
-            
-           </div>
-           </div> 
-           
-       
-    </div>
+        </div>
 	
 <div th:replace="fragments/layout :: footer"></div>
 
@@ -116,10 +160,13 @@
 
 <div th:replace="fragments/layout :: script-general"></div>
 	
- <script src="resources/js/demo/chartjs-demo.js"
-    	th:href="@{/resources/js/demo/chartjs-demo.js}"></script>	
+ <script src="resources/js/demo/video-demo.js"
+    	th:href="@{/resources/js/demo/post-demo.js}"></script>	
     	
 	
+	
+	 
+	 
 	  
 	 
 </body>

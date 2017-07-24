@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
-public class PublicationsController {
+public class VideoController {
 	
 	@ModelAttribute("module")
 	String module() {
@@ -16,12 +16,12 @@ public class PublicationsController {
 	
 	@ModelAttribute("page")
 	String page() {
-		return "publications";
+		return "video";
 	}
 
-	@GetMapping("publications")
+	@GetMapping("video")
 	String publications(Principal principal) {
-		return "publications/publications";
+		return "publications/video";
 	}
 
 }
