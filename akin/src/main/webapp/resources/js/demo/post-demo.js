@@ -4,7 +4,7 @@ Chart.defaults.global = {
 }*/
 
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
-
+/**************   DATA ******************/
 var reactionsData1Mensual = {
         labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
@@ -159,8 +159,8 @@ var reactionsData3Semestral = {
     };
 
 
-var periodData = {
-        labels: [  "Semana 1" , "Semana 2","Semana 3", "Semana4"],
+var periodDataMonthly = {
+        labels: [  "Semana 1" , "Semana 2","Semana 3", "Semana 4"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -195,6 +195,78 @@ var periodData = {
         ]
     };
 
+var periodDataQuarterly = {
+        labels: [  "Mes 1" , "Mes 2","Mes 3"],
+        datasets: [
+            {
+                label: "Ricando Anaya Cort\u00e9s",
+                fillColor: "rgba(28,132,198,0.2)",
+                strokeColor: "rgba(28,132,198,1)",
+                pointColor: "rgba(28,132,198,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(28,132,198,1)",
+                data: [	8,	3,11]
+            },
+            {
+                label: "Margarita Zavala",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [9,12,5]
+            },
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [13,16,19]
+            }
+        ]
+    };
+var periodDataBiannual = {
+        labels: [  "Mes 1" , "Mes 2","Mes 3", "Mes 4","Mes 5","Mes 6"],
+        datasets: [
+            {
+                label: "Ricando Anaya Cort\u00e9s",
+                fillColor: "rgba(28,132,198,0.2)",
+                strokeColor: "rgba(28,132,198,1)",
+                pointColor: "rgba(28,132,198,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(28,132,198,1)",
+                data: [	8,	3,11,16,8,	3]
+            },
+            {
+                label: "Margarita Zavala",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [9,12,5,5,9,12 ]
+            },
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [13,16,19,12 ,13,16]
+            }
+        ]
+    };
+
+/**************   OPTIONS OF GRAPHICS ******************/
 var options = {
 		scaleBeginAtZero: true,
         scaleShowGridLines: false,
@@ -214,6 +286,7 @@ var options = {
        
 }
 
+/**************   DEFAULT GRAFIC ******************/
 var ctxPost1 = document.getElementById("reactionsChart1").getContext("2d");
 var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
 
@@ -224,7 +297,11 @@ var ctxPost3 = document.getElementById("reactionsChart3").getContext("2d");
 var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
 
 var ctx = document.getElementById("periodChart").getContext("2d");
-var myNewChart = new Chart(ctx).Line(periodData, options);
+var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
+
+
+
+/**************   ON CLICK BOTTOM CHANGE ******************/
 
 $(document).ready(function() {
 	$("#btnMensual").click(function() {
@@ -236,6 +313,7 @@ $(document).ready(function() {
 		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
 		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
 		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
+		var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
 	});
 	$("#btnTrimestral").click(function() {
 		
@@ -246,6 +324,7 @@ $(document).ready(function() {
 		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
 		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
 		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
+		var myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
 	});
 	$("#btnSemestral").click(function() {
 		
@@ -256,6 +335,7 @@ $(document).ready(function() {
 		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
 		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
 		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
+		var myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
 	});
 	
 });
