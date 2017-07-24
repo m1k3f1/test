@@ -11,9 +11,14 @@ class HomeController {
 
 	@ModelAttribute("module")
 	String module() {
-		return "home";
+		return "followers";
 	}
-
+	
+	@ModelAttribute("page")
+	String page() {
+		return "followers";
+	}
+	
 	@GetMapping("/")
 	String index(Principal principal) {
 		return principal != null ? "followers/followers" : "signin/signin";
