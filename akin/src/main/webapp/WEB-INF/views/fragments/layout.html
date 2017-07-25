@@ -76,11 +76,6 @@
                             <li th:classappend="${page == 'video' ? 'active' : ''}"><a href="#" th:href="@{video}">Videos</a></li>
                         </ul>
                     </li>
-                    <li th:classappend="${module == 'benchmark' ? 'active' : ''}">
-                      	<a href="#" th:href="@{benchmark}" >
-                      		<i class="fa fa-tasks"></i> <span class="nav-label" th:text="#{menu.benchmark}" ></span> <span class="fa arrow"></span>
-        				</a>
-                    </li>
                     <li>
                     	<a href="/logout" th:href="@{#}" onclick="$('#form').submit();" >
                     		<i class="fa fa-sign-out"></i> <span class="nav-label" th:text="#{layout.logout}" ></span>
