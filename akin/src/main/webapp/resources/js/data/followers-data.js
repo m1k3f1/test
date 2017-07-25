@@ -403,27 +403,22 @@ $(document).ready(function() {
 });		       
 		 
 $("#btnMensual").click(function() {
+	
+	$('#btnMensual').addClass('active');
+	$('#btnTrimestral').removeClass('active');
+	$('#btnSemestral').removeClass('active');
 				    		 
 				    		 $('#percCuenta1_a').text("48%") ;
 				    		 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numa').css('width', '48%');
-				    		 $('#percCuenta1_b').text("5%") ;
-				    		 $('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta1_numb').css('width', '5%');
 				    		 
 				    		 $('#percCuenta2_a').text("60%") ;
 				    		 $('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numa').css('width', '60%');
-				    		 $('#percCuenta2_b').text("10%") ;
-				    		 $('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta2_numb').css('width', '10%');
 				    		 
 				    		 $('#percCuenta3_a').text("40%") ;
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '40%');
-				    		 $('#percCuenta3_b').text("7%") ;
-				    		 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta3_numb').css('width', '7%');
 				    		 
 				    		 $('#percCuenta1_h').text("45%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -504,26 +499,22 @@ $("#btnMensual").click(function() {
 				    	 
 				    	 
 $("#btnTrimestral").click(function() {
+	
+	$('#btnMensual').removeClass('active');
+	$('#btnTrimestral').addClass('active');
+	$('#btnSemestral').removeClass('active');
+	
 				    		 $('#percCuenta1_a').text("62%") ;
 				    		 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numa').css('width', '62%');
-				    		 $('#percCuenta1_b').text("15%") ;
-				    		 $('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta1_numb').css('width', '15%');
 				    		 
 				    		 $('#percCuenta2_a').text("15%") ;
 				    		 $('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numa').css('width', '15%');
-				    		 $('#percCuenta2_b').text("1%") ;
-				    		 $('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta2_numb').css('width', '1%');
 				    		 
 				    		 $('#percCuenta3_a').text("23%") ;
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '23%');
-				    		 $('#percCuenta3_b').text("3%") ;
-				    		 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta3_numb').css('width', '3%');
 				    		 
 				    		 $('#percCuenta1_h').text("75%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -602,26 +593,23 @@ $("#btnTrimestral").click(function() {
 });
 				    	 
 $("#btnSemestral").click(function() {
+	
+	$('#btnMensual').removeClass('active');
+	$('#btnTrimestral').removeClass('active');
+	$('#btnSemestral').addClass('active');
+	
+	
 				    		 $('#percCuenta1_a').text("25%") ;
 				    		 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numa').css('width', '25%');
-				    		 $('#percCuenta1_b').text("11%") ;
-				    		 $('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta1_numb').css('width', '11%');
 				    		 
 				    		 $('#percCuenta2_a').text("57%") ;
 				    		 $('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numa').css('width', '57%');
-				    		 $('#percCuenta2_b').text("13%") ;
-				    		 $('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta2_numb').css('width', '13%');
 				    		 
 				    		 $('#percCuenta3_a').text("31%") ;
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '31%');
-				    		 $('#percCuenta3_b').text("5%") ;
-				    		 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta3_numb').css('width', '5%');
 				    		 
 				    		 $('#percCuenta1_h').text("45%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
