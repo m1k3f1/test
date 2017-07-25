@@ -6,7 +6,7 @@ Chart.defaults.global = {
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 /**************   DATA ******************/
 var reactionsData1Mensual = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: [ "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -16,12 +16,12 @@ var reactionsData1Mensual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	43135,	2041,		1798,	26,	241,	9,108]
+                data: [2041,		1798,	26,	241,	9,108]
             }
         ]
     };
 var reactionsData1Trimestral = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: [ "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -31,12 +31,12 @@ var reactionsData1Trimestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	380513,	19058,		13595,	542,	3683,	0,2614]
+                data: [		19058,		13595,	542,	3683,	0,2614]
             }
         ]
     };
 var reactionsData1Semestral = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: [ "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -46,13 +46,13 @@ var reactionsData1Semestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	643698,30877	,	38934,	882,	12363,	0,3712]
+                data: [	30877	,	38934,	882,	12363,	0,3712]
             }
         ]
     };
 
 var reactionsData2Mensual = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -64,13 +64,13 @@ var reactionsData2Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [59078,	5226,	1496,	26	,266,	901,155]
+                data: [	5226,	1496,	26	,266,	901,155]
             }
         ]
     };
 
 var reactionsData2Trimestral = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -82,12 +82,12 @@ var reactionsData2Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [134054,	12571,	3635	,242	,2292,	0,	401]
+                data: [	12571,	3635	,242	,2292,	0,	401]
             }
         ]
     };
 var reactionsData2Semestral = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -99,14 +99,14 @@ var reactionsData2Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [242592,	22512,	14356	,433,	6208,	1	,854]
+                data: [	22512,	14356	,433,	6208,	1	,854]
             }
         ]
     };
 
 
 var reactionsData3Mensual = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -118,12 +118,12 @@ var reactionsData3Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	529482,	17560,	15370,	360	,5481,	2000	,9004]
+                data: [	17560,	15370,	360	,5481,	2000	,9004]
             }
         ]
     };
 var reactionsData3Trimestral = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -135,13 +135,13 @@ var reactionsData3Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	943938,	42341,	5640,	1533	,6751,	0,	7437]
+                data: [	42341,	5640,	1533	,6751,	0,	7437]
             }
         ]
     };
 
 var reactionsData3Semestral = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -153,7 +153,7 @@ var reactionsData3Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	2685121,	107200	,23049,	2921	,21335	,4,	34220]
+                data: [107200	,23049,	2921	,21335	,4,	34220]
             }
         ]
     };
@@ -266,6 +266,64 @@ var periodDataBiannual = {
         ]
     };
 
+//LIKED
+
+var likedDataMonthly = {
+		labels: ["Ricando Anaya Cort\u00e9s",  "Margarita Zavala", "Rafael Moreno Valle"],
+        datasets: [
+           
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,0.2)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,0.2)",
+                
+                data: [	43135,	59078,	529482	]
+            }
+        ]
+    };
+    
+
+var likedDataQuarterly = {
+		labels: ["Ricando Anaya Cort\u00e9s",  "Margarita Zavala", "Rafael Moreno Valle"],
+        datasets: [
+           
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,0.2)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,0.2)",
+                
+                data: [	380513,	134054,	943938	]
+            }
+        ]   
+    };
+var likedDataBiannual = {
+		labels: ["Ricando Anaya Cort\u00e9s",  "Margarita Zavala", "Rafael Moreno Valle"],
+        datasets: [
+           
+            {
+                label: "Rafael Moreno Valle",
+                fillColor: "rgba(108,116,238,0.2)",
+                strokeColor: "rgba(108,116,238,1)",
+                pointColor: "rgba(108,116,238,0.2)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,0.2)",
+                
+                data: [	643698,	242592,	2685121	]
+            }
+        ]   
+    };
+
+//END LIKED
+
 /**************   OPTIONS OF GRAPHICS ******************/
 var options = {
 		scaleBeginAtZero: true,
@@ -299,6 +357,8 @@ var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
 var ctx = document.getElementById("periodChart").getContext("2d");
 var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
 
+var ctxLiked = document.getElementById("likedChart").getContext("2d");
+var likedChart = new Chart(ctxLiked).Radar(likedDataMonthly, options);
 
 
 /**************   ON CLICK BOTTOM CHANGE ******************/
@@ -330,10 +390,16 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
+		if(likedChart != null)
+		 {
+			likedChart.destroy();
+		 }
+		
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
 		 myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
+		 likedChart = new Chart(ctxLiked).Radar(likedDataMonthly, options);
 	});
 	$("#btnTrimestral").click(function() {
 		
@@ -361,10 +427,15 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
+		if(likedChart != null)
+		 {
+			likedChart.destroy();
+		 }
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
 		 myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
+		 likedChart = new Chart(ctxLiked).Radar(likedDataQuarterly, options);
 	});
 	$("#btnSemestral").click(function() {
 		
@@ -391,10 +462,16 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
+		if(likedChart != null)
+		 {
+			likedChart.destroy();
+		 }
+		
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
 		 myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
+		 likedChart = new Chart(ctxLiked).Radar(likedDataBiannual, options);
 	});
 	
 });
