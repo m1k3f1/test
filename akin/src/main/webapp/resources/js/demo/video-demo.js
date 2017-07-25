@@ -16,7 +16,7 @@ var reactionsData1Mensual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	43135,	2041,		1798,	26,	241,	9,108]
+                data: [	101887	,23795,	6049,	389	,778,	4344,	466]
             }
         ]
     };
@@ -31,7 +31,7 @@ var reactionsData1Trimestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	43135,	43135,		1798,	26,	241,	9,108]
+                data: [181166,	11754	,13012	,280,	3140,	0	,2332]
             }
         ]
     };
@@ -46,7 +46,7 @@ var reactionsData1Semestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	43135,1798	,	3135,	26,	43135,	9,43135]
+                data: [	348173	,25047	,25523	,490	,14511,	1,	3732]
             }
         ]
     };
@@ -64,7 +64,7 @@ var reactionsData2Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [59078,	5226,	1496,	26	,266,	901,155]
+                data: [31858	,3591	,2019,	52	,420,	332,	111]
             }
         ]
     };
@@ -82,7 +82,7 @@ var reactionsData2Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [59078,	5226,	59078,	26	,266,	901,59078]
+                data: [134054,	12571	,3635	,242,	2292,	0	,401]
             }
         ]
     };
@@ -99,7 +99,7 @@ var reactionsData2Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [59078,	5226,	1496,	26	,59078,	901,155]
+                data: [242592	,22512	,14356	,433	,6208	,1	,854]
             }
         ]
     };
@@ -118,7 +118,7 @@ var reactionsData3Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	529482,	2000,	15370,	360	,5481, 17560,9004]
+                data: [113021,	7360,	2929,	204,	2336,	309	,5795]
             }
         ]
     };
@@ -135,7 +135,7 @@ var reactionsData3Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	529482,	2000,	529482,	360	,5481, 17560,9004]
+                data: [	412618	,27691,	5367	,560	,7972	,0	,5250]
             }
         ]
     };
@@ -153,7 +153,7 @@ var reactionsData3Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	529482,	2000,	15370,	360	,5481, 17560,529482]
+                data: [	994528,	69888,	13001,	1553	,21787	,2	,26990]
             }
         ]
     };
@@ -170,7 +170,7 @@ var periodDataMonthly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [	8,	3,11,16]
+                data: [	3	,5,	3	,3]
             },
             {
                 label: "Margarita Zavala",
@@ -180,7 +180,7 @@ var periodDataMonthly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [9,12,5,5 ]
+                data: [2,	6,	5,	1]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -190,7 +190,7 @@ var periodDataMonthly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [13,16,19,12 ]
+                data: [8	,7,	9	,10]
             }
         ]
     };
@@ -206,7 +206,7 @@ var periodDataQuarterly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [	8,	3,11]
+                data: [7	,12	,10]
             },
             {
                 label: "Margarita Zavala",
@@ -216,7 +216,7 @@ var periodDataQuarterly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [9,12,5]
+                data: [4	,14	,14]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -226,7 +226,7 @@ var periodDataQuarterly = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [13,16,19]
+                data: [42	,69	,65]
             }
         ]
     };
@@ -241,7 +241,7 @@ var periodDataBiannual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [	8,	3,11,16,8,	3]
+                data: [7,	12	,10	,5	,7,	9]
             },
             {
                 label: "Margarita Zavala",
@@ -251,7 +251,7 @@ var periodDataBiannual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [9,12,5,5,9,12 ]
+                data: [42,	69	,65	,128,	19,	35]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -261,7 +261,7 @@ var periodDataBiannual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [13,16,19,12 ,13,16]
+                data: [4	,14	,14,	6,	4,	10]
             }
         ]
     };
@@ -310,10 +310,30 @@ $(document).ready(function() {
 		$('#btnTrimestral').removeClass('active');
 		$('#btnSemestral').removeClass('active');
 		
-		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
-		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
-		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
-		var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
+		if(myNewChart1 != null)
+		 {
+			myNewChart1.destroy();
+		 }
+
+		if(myNewChart2 != null)
+		 {
+			myNewChart2.destroy();
+		 }
+
+		if(myNewChart3 != null)
+		 {
+			myNewChart3.destroy();
+		 }
+
+		if(myNewChart != null)
+		 {
+			myNewChart.destroy();
+		 }
+
+		myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
+		myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
+		myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
+		myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
 	});
 	$("#btnTrimestral").click(function() {
 		
@@ -321,10 +341,30 @@ $(document).ready(function() {
 		$('#btnTrimestral').addClass('active');
 		$('#btnSemestral').removeClass('active');
 		
-		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
-		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
-		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
-		var myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
+		if(myNewChart1 != null)
+		 {
+			myNewChart1.destroy();
+		 }
+
+		if(myNewChart2 != null)
+		 {
+			myNewChart2.destroy();
+		 }
+
+		if(myNewChart3 != null)
+		 {
+			myNewChart3.destroy();
+		 }
+
+		if(myNewChart != null)
+		 {
+			myNewChart.destroy();
+		 }
+		
+		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
+		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
+		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
+		 myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
 	});
 	$("#btnSemestral").click(function() {
 		
@@ -332,10 +372,30 @@ $(document).ready(function() {
 		$('#btnTrimestral').removeClass('active');
 		$('#btnSemestral').addClass('active');
 		
-		var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
-		var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
-		var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
-		var myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
+		if(myNewChart1 != null)
+		 {
+			myNewChart1.destroy();
+		 }
+
+		if(myNewChart2 != null)
+		 {
+			myNewChart2.destroy();
+		 }
+
+		if(myNewChart3 != null)
+		 {
+			myNewChart3.destroy();
+		 }
+
+		if(myNewChart != null)
+		 {
+			myNewChart.destroy();
+		 }
+		
+		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
+		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
+		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
+		 myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
 	});
 	
 });
