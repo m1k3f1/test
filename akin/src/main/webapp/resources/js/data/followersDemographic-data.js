@@ -17,18 +17,22 @@ var radarEducationData1Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,67,89]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [56,67,78]
             }
         ]
@@ -49,18 +53,22 @@ var radarEducationData2Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [44,37,59]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,2378,1)",
                 data: [36,37,58]
             }
         ]
@@ -81,18 +89,22 @@ var radarEducationData3Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [45,60,40]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,2378,1)",
                 data: [32,70,60]
             }
         ]
@@ -117,18 +129,22 @@ var radarOccupationData1Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [25,46,63]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [42,34,75]
             }
         ]
@@ -149,18 +165,23 @@ var radarOccupationData2Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [48,64,36]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                fillColor: "rgba(181,84,237,0.2)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [36,75,35]
             }
         ]
@@ -181,18 +202,22 @@ var radarOccupationData3Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [47,26,37]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [27,37,47]
             }
         ]
@@ -217,18 +242,22 @@ var radarCivilStatusData1Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [25,36,35]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [36,34,57]
             }
         ]
@@ -249,18 +278,22 @@ var radarCivilStatusData2Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [48,76,36]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [37,34,46]
             }
         ]
@@ -281,18 +314,22 @@ var radarCivilStatusData3Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [37,27,49]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [16,27,18]
             }
         ]
@@ -317,18 +354,22 @@ var radarReligionData1Monthly = {
                    },
                    {
                        label: "Mujer",
-                       fillColor: "rgba(26,179,148,0.5)",
-                       strokeColor: "rgba(26,179,148,0.8)",
-                       highlightFill: "rgba(26,179,148,0.75)",
-                       highlightStroke: "rgba(26,179,148,1)",
+                       fillColor: "rgba(26,179,148,0.2)",
+                       strokeColor: "rgba(26,179,148,1)",
+                       pointColor: "rgba(26,179,148,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(26,179,148,1)",
                        data: [34,47,39]
                    },
                    {
                        label: "Otro",
                        fillColor: "rgba(181,84,237,0.2)",
-                       strokeColor: "rgba(181,84,237,0.8)",
-                       highlightFill: "rgba(181,84,237,0.75)",
-                       highlightStroke: "rgba(181,84,237,1)",
+                       strokeColor: "rgba(181,84,237,1)",
+                       pointColor: "rgba(181,84,237,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(181,84,237,1)",
                        data: [66,37,38]
                    }
         ]
@@ -349,18 +390,22 @@ var radarReligionData2Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fifillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [54,37,50]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [16,47,18]
             }
         ]
@@ -381,18 +426,22 @@ var radarReligionData3Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [53,38,53]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [42,26,53]
             }
         ]
@@ -418,18 +467,22 @@ var radarPoliticalData1Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [22,44,33]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [24,34,11]
             }
         ]
@@ -450,18 +503,22 @@ var radarPoliticalData2Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [11,22,9]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [5,3,8]
             }
         ]
@@ -482,18 +539,22 @@ var radarPoliticalData3Monthly = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [55,33,21]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [45,73,15]
             }
         ]
@@ -524,18 +585,22 @@ var radarEducationData1Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [86,32,34]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [23,45,45]
             }
         ]
@@ -556,18 +621,22 @@ var radarEducationData2Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [23,68,34]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [67,23,12]
             }
         ]
@@ -588,18 +657,22 @@ var radarEducationData3Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [30,12,45]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [65,32,23]
             }
         ]
@@ -624,18 +697,22 @@ var radarOccupationData1Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [27,34,24]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [17,45,13]
             }
         ]
@@ -656,18 +733,22 @@ var radarOccupationData2Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [36,23,45]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [23,56,12]
             }
         ]
@@ -688,18 +769,22 @@ var radarOccupationData3Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,12,32]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [15,25,38]
             }
         ]
@@ -724,18 +809,22 @@ var radarCivilStatusData1Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [38,16,26]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [27,16,46]
             }
         ]
@@ -756,18 +845,22 @@ var radarCivilStatusData2Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [26,11,16]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [34,27,12]
             }
         ]
@@ -788,18 +881,22 @@ var radarCivilStatusData3Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,23,11]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [24,64,11]
             }
         ]
@@ -824,18 +921,22 @@ var radarReligionData1Trimester = {
                    },
                    {
                        label: "Mujer",
-                       fillColor: "rgba(26,179,148,0.5)",
-                       strokeColor: "rgba(26,179,148,0.8)",
-                       highlightFill: "rgba(26,179,148,0.75)",
-                       highlightStroke: "rgba(26,179,148,1)",
+                       fillColor: "rgba(26,179,148,0.2)",
+                       strokeColor: "rgba(26,179,148,1)",
+                       pointColor: "rgba(26,179,148,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(26,179,148,1)",
                        data: [26,12,16]
                    },
                    {
                        label: "Otro",
                        fillColor: "rgba(181,84,237,0.2)",
-                       strokeColor: "rgba(181,84,237,0.8)",
-                       highlightFill: "rgba(181,84,237,0.75)",
-                       highlightStroke: "rgba(181,84,237,1)",
+                       strokeColor: "rgba(181,84,237,1)",
+                       pointColor: "rgba(181,84,237,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(181,84,237,1)",
                        data: [16,27,42]
                    }
         ]
@@ -856,18 +957,22 @@ var radarReligionData2Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [43,54,23]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [14,26,25]
             }
         ]
@@ -888,18 +993,22 @@ var radarReligionData3Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,11,21]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [21,13,2]
             }
         ]
@@ -925,18 +1034,22 @@ var radarPoliticalData1Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [43,22,21]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [23,17,11]
             }
         ]
@@ -957,18 +1070,22 @@ var radarPoliticalData2Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [12,34,22]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [54,23,23]
             }
         ]
@@ -989,18 +1106,22 @@ var radarPoliticalData3Trimester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [46,11,22]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [67,23,34]
             }
         ]
@@ -1030,18 +1151,22 @@ var radarEducationData1Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [78,56,45]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [89,34,23]
             }
         ]
@@ -1062,18 +1187,22 @@ var radarEducationData2Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [52,42,25]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [34,46,53]
             }
         ]
@@ -1094,18 +1223,22 @@ var radarEducationData3Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [46,51,57]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [25,47,34]
             }
         ]
@@ -1130,18 +1263,22 @@ var radarOccupationData1Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,23,34]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [34,23,53]
             }
         ]
@@ -1162,18 +1299,22 @@ var radarOccupationData2Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,45,23]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [25,12,30]
             }
         ]
@@ -1194,18 +1335,22 @@ var radarOccupationData3Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [12,23,23]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [12,11,36]
             }
         ]
@@ -1230,18 +1375,22 @@ var radarCivilStatusData1Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [11,25,41]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [36,33,23]
             }
         ]
@@ -1262,18 +1411,22 @@ var radarCivilStatusData2Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [11,21,36]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [36,11,23]
             }
         ]
@@ -1294,18 +1447,22 @@ var radarCivilStatusData3Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [46,26,53]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [11,28,35]
             }
         ]
@@ -1330,18 +1487,22 @@ var radarReligionData1Semester = {
                    },
                    {
                        label: "Mujer",
-                       fillColor: "rgba(26,179,148,0.5)",
-                       strokeColor: "rgba(26,179,148,0.8)",
-                       highlightFill: "rgba(26,179,148,0.75)",
-                       highlightStroke: "rgba(26,179,148,1)",
+                       fillColor: "rgba(26,179,148,0.2)",
+                       strokeColor: "rgba(26,179,148,1)",
+                       pointColor: "rgba(26,179,148,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(26,179,148,1)",
                        data: [45,11,24]
                    },
                    {
                        label: "Otro",
                        fillColor: "rgba(181,84,237,0.2)",
-                       strokeColor: "rgba(181,84,237,0.8)",
-                       highlightFill: "rgba(181,84,237,0.75)",
-                       highlightStroke: "rgba(181,84,237,1)",
+                       strokeColor: "rgba(181,84,237,1)",
+                       pointColor: "rgba(181,84,237,1)",
+                       pointStrokeColor: "#fff",
+                       pointHighlightFill: "#fff",
+                       pointHighlightStroke: "rgba(181,84,237,1)",
                        data: [33,46,23]
                    }
         ]
@@ -1362,18 +1523,22 @@ var radarReligionData2Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [12,4,2]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [66,54,33]
             }
         ]
@@ -1394,18 +1559,22 @@ var radarReligionData3Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [56,36,89]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [37,53,23]
             }
         ]
@@ -1431,18 +1600,22 @@ var radarPoliticalData1Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [34,23,23]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [34,46,23]
             }
         ]
@@ -1463,18 +1636,22 @@ var radarPoliticalData2Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [32,62,12]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [27,11,34]
             }
         ]
@@ -1495,18 +1672,22 @@ var radarPoliticalData3Semester = {
             },
             {
                 label: "Mujer",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
+                fillColor: "rgba(26,179,148,0.2)",
+                strokeColor: "rgba(26,179,148,1)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [23,35,54]
             },
             {
                 label: "Otro",
                 fillColor: "rgba(181,84,237,0.2)",
-                strokeColor: "rgba(181,84,237,0.8)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
+                strokeColor: "rgba(181,84,237,1)",
+                pointColor: "rgba(181,84,237,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(181,84,237,1)",
                 data: [35,28,74]
             }
         ]
@@ -1579,6 +1760,11 @@ var radarPoliticalData3Semester = {
     
     
 $("#btnDemMensual").click(function() {
+	
+	$('#btnDemMensual').addClass('active');
+	$('#btnDemTrimestral').removeClass('active');
+	$('#btnDemSemestral').removeClass('active');
+ 	
 	
 	$('#percEdCuenta1_h').text("62%") ;
 	$('#percEdCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -1799,6 +1985,12 @@ $("#btnDemMensual").click(function() {
       
       
 $("#btnDemTrimestral").click(function() {
+	
+	
+	$('#btnDemMensual').removeClass('active');
+	$('#btnDemTrimestral').addClass('active');
+	$('#btnDemSemestral').removeClass('active');
+ 	
     
 	$('#percEdCuenta1_h').text("62%") ;
 	$('#percEdCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -2018,6 +2210,10 @@ $("#btnDemTrimestral").click(function() {
 });
 
  $("#btnDemSemestral").click(function() {
+	 
+	 $('#btnDemMensual').removeClass('active');
+	 $('#btnDemTrimestral').removeClass('active');
+	 $('#btnDemSemestral').addClass('active');
   	
 	 $('#percEdCuenta1_h').text("62%") ;
 		$('#percEdCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");

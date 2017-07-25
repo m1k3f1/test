@@ -273,6 +273,11 @@ Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 //END TOP TEN FOLLOWERS
 
 $("#btnTopMensual").click(function() {
+	
+	$('#btnTopMensual').addClass('active');
+	$('#btnTopTrimestral').removeClass('active');
+	$('#btnTopSemestral').removeClass('active');
+	
 	 $('#percCuenta1_a').text("62%") ;
 	 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
 	 $('#percCuenta1_numa').css('width', '62%');
@@ -294,9 +299,6 @@ $("#btnTopMensual").click(function() {
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '15%');
 	 
-	 $('#btnMensual').addClass('active');
-	 $('#btnTrimestral').removeClass('active');
-	 $('#btnSemestral').removeClass('active');
 	
 	 if(toptenChart != null){
 		toptenChart.destroy();
@@ -305,6 +307,10 @@ $("#btnTopMensual").click(function() {
  });	 	    
 
 $("#btnTopTrimestral").click(function() {
+	
+	 $('#btnTopMensual').removeClass('active');
+	 $('#btnTopTrimestral').addClass('active');
+	 $('#btnTopSemestral').removeClass('active');
 	
 	$('#percCuenta1_a').text("31%") ;
 	 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
@@ -327,16 +333,16 @@ $("#btnTopTrimestral").click(function() {
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '44%');
 	
-	 $('#btnMensual').addClass('active');
-	 $('#btnTrimestral').removeClass('active');
-	 $('#btnSemestral').removeClass('active');
-		
 	 if(toptenChart != null){
 		toptenChart.destroy();
 	}
 	    toptenChart = new Chart(ctxTopten).Bar(barToptenDataTrimester, barToptenOptions);
 });
 $("#btnTopSemestral").click(function() {
+	
+	 $('#btnTopMensual').removeClass('active');
+	 $('#btnTopTrimestral').removeClass('active');
+	 $('#btnTopSemestral').addClass('active');
 	
 	$('#percCuenta1_a').text("12%") ;
 	 $('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
@@ -358,10 +364,6 @@ $("#btnTopSemestral").click(function() {
 	 $('#percCuenta3_b').text("5%") ;
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '5%');
-	
-	 $('#btnMensual').addClass('active');
-	 $('#btnTrimestral').removeClass('active');
-	 $('#btnSemestral').removeClass('active');
 	 
 	if(toptenChart != null){
 		toptenChart.destroy();
