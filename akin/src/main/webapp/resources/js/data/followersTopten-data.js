@@ -299,6 +299,16 @@ $("#btnTopMensual").click(function() {
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '15%');
 	 
+	 if($('#selMeses').children('option')!=null)
+		{
+			$('#selMeses').children('option').remove();
+		}
+	if($('#selMeses').children('optgroup') !=null)
+		{
+		$('#selMeses').children('optgroup').remove();
+		}
+	$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
+
 	
 	 if(toptenChart != null){
 		toptenChart.destroy();
@@ -333,6 +343,17 @@ $("#btnTopTrimestral").click(function() {
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '44%');
 	
+	 if($('#selMeses').children('option')!=null)
+		{
+			$('#selMeses').children('option').remove();
+		}
+	if($('#selMeses').children('optgroup') !=null)
+		{
+		$('#selMeses').children('optgroup').remove();
+		}
+	$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option><option>Abr/May/Jun</option><option>Jul/Ags/Sep</option><option>Oct/Nov/Dic</option></optgroup>");
+
+	 
 	 if(toptenChart != null){
 		toptenChart.destroy();
 	}
@@ -365,6 +386,17 @@ $("#btnTopSemestral").click(function() {
 	 $('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 	 $('#percCuenta3_numb').css('width', '5%');
 	 
+	 if($('#selMeses').children('option')!=null)
+		{
+			$('#selMeses').children('option').remove();
+		}
+	if($('#selMeses').children('optgroup') !=null)
+		{
+		$('#selMeses').children('optgroup').remove();
+		}
+	$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option><option>Jul - Dic</option></optgroup>");
+
+	
 	if(toptenChart != null){
 		toptenChart.destroy();
 	}

@@ -1916,6 +1916,17 @@ $("#btnDemMensual").click(function() {
 	$('#percPolCuenta3_o').append("<i class='fa fa-level-up text-navy'></i>");
 	$('#percPolCuenta3_numo').css('width', '38%');
 	
+	 if($('#selMeses').children('option')!=null)
+		{
+			$('#selMeses').children('option').remove();
+		}
+	if($('#selMeses').children('optgroup') !=null)
+		{
+		$('#selMeses').children('optgroup').remove();
+		}
+	$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
+
+	
 	if(radarEducation1Chart != null){
 		radarEducation1Chart.destroy();
 	}
@@ -2142,6 +2153,17 @@ $("#btnDemTrimestral").click(function() {
 	$('#percPolCuenta3_o').append("<i class='fa fa-level-up text-navy'></i>");
 	$('#percPolCuenta3_numo').css('width', '31%');
 	
+	if($('#selMeses').children('option')!=null)
+	{
+		$('#selMeses').children('option').remove();
+	}
+	if($('#selMeses').children('optgroup') !=null)
+		{
+		$('#selMeses').children('optgroup').remove();
+		}
+	$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option><option>Abr/May/Jun</option><option>Jul/Ags/Sep</option><option>Oct/Nov/Dic</option></optgroup>");
+
+	
 	if(radarEducation1Chart != null){
 		radarEducation1Chart.destroy();
 	}
@@ -2364,6 +2386,17 @@ $("#btnDemTrimestral").click(function() {
 		$('#percPolCuenta3_o').text("38%") ;
 		$('#percPolCuenta3_o').append("<i class='fa fa-level-up text-navy'></i>");
 		$('#percPolCuenta3_numo').css('width', '38%');
+		
+		if($('#selMeses').children('option')!=null)
+		{
+			$('#selMeses').children('option').remove();
+		}
+		if($('#selMeses').children('optgroup') !=null)
+		{
+			$('#selMeses').children('optgroup').remove();
+		}
+		$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option><option>Jul - Dic</option></optgroup>");
+
 	 
 	 if(radarEducation1Chart != null){
 			radarEducation1Chart.destroy();
