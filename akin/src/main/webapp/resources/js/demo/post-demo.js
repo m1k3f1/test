@@ -357,13 +357,12 @@ var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
 var ctx = document.getElementById("periodChart").getContext("2d");
 var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
 
-var ctxLiked = document.getElementById("likedChart").getContext("2d");
-var likedChart = new Chart(ctxLiked).Radar(likedDataMonthly, options);
 
 
 /**************   ON CLICK BOTTOM CHANGE ******************/
 
 $(document).ready(function() {
+	
 	$("#btnMensual").click(function() {
 		
 		$('#btnMensual').addClass('active');
@@ -413,7 +412,6 @@ $(document).ready(function() {
 				$('#selMeses').children('optgroup').remove();
 				}
 			$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
-		
 		if(myNewChart1 != null)
 		 {
 			myNewChart1.destroy();
@@ -434,16 +432,11 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
-		if(likedChart != null)
-		 {
-			likedChart.destroy();
-		 }
-		
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
 		 myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
-		 likedChart = new Chart(ctxLiked).Radar(likedDataMonthly, options);
+
 	});
 	$("#btnTrimestral").click(function() {
 		
@@ -514,15 +507,10 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
-		if(likedChart != null)
-		 {
-			likedChart.destroy();
-		 }
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
 		 myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
-		 likedChart = new Chart(ctxLiked).Radar(likedDataQuarterly, options);
 	});
 	$("#btnSemestral").click(function() {
 		
@@ -594,16 +582,10 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
-		if(likedChart != null)
-		 {
-			likedChart.destroy();
-		 }
-		
 		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
 		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
 		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
 		 myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
-		 likedChart = new Chart(ctxLiked).Radar(likedDataBiannual, options);
 	});
 	
 });

@@ -10,7 +10,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style type="text/css">
+	optgroup { font-size:12px !important;  text-align:center !important;}
+	option { font-size:12px !important;  text-align:center !important; padding: 0px !important; }
+	select { font-size:12px !important;  text-align:center !important; padding: 0px !important;
+			width:auto !important; height: auto !important; }
+	
+</style>
 </head>
 <body>
 <div th:replace="fragments/layout :: header"></div>
@@ -29,13 +35,13 @@
                                 &nbsp;
                                 <span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                               
-                                <div class="pull-right">
-                                	 <div class="input-group date" >
-                                	  	<select class="form-control selectpicker input-sm" style="width:auto;">
+                                <div class="pull-right ">
+                                	 <div class="input-group date " >
+                                	  	<select class="form-control selectpicker input-sm" >
 											  <option>2016</option>
 											  <option selected>2017</option>
 											</select>
-										   <select id="selMeses" class="form-control selectpicker input-sm" style="width:auto;">
+										   <select id="selMeses" class="form-control input-sm" >
 											  <option>Enero</option>
 											  <option>Febrero</option>
 											  <option>Marzo</option>
@@ -51,7 +57,7 @@
 											</select>
 
 										</div>
-                                    <div class="btn-group form-inline">
+                                    <div class="btn-group ">
                                         <button type="button" id="btnMensual"  class="btn btn-xs btn-white active">Mensual</button>
                                         <button type="button" id="btnTrimestral" class="btn btn-xs btn-white">Trimestral</button>
                                         <button type="button" id="btnSemestral" class="btn btn-xs btn-white">Semestral</button>
