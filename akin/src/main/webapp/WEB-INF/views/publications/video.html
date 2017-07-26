@@ -10,7 +10,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+ <link href="../../../resources/css/akin.css" rel="stylesheet"
+    	th:href="@{resources/css/akin.css}"> 
 </head>
 <body>
 <div th:replace="fragments/layout :: header"></div>
@@ -31,11 +32,11 @@
                                 
                                 <div class="pull-right">
                                  <div class="input-group date" >
-                                	  	<select class="form-control selectpicker input-sm" style="width:auto;">
+                                	  	<select class="form-control selectpicker input-sm" >
 											  <option>2016</option>
 											  <option selected>2017</option>
 											</select>
-										   <select id="selMeses" class="form-control selectpicker input-sm" style="width:auto;">
+										   <select id="selMeses" class="form-control selectpicker input-sm" >
 											  <option>Enero</option>
 											  <option>Febrero</option>
 											  <option>Marzo</option>
@@ -65,7 +66,8 @@
                         <div >
                             <h5>Reacciones</h5>
                         </div>
-                        <div class="ibox-content text-center">
+                        <div class="ibox-content ">
+                        <div class="col-lg-9 text-center">
                             <div class="col-lg-4 ">
                             	<canvas id="reactionsChart1" height="200" ></canvas>
                             	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -78,6 +80,47 @@
                             	<canvas id="reactionsChart3"  height="200"></canvas>
                             	<strong><small th:text="#{demo.cuenta3}"></small></strong>
                             </div>
+                         </div>
+                           <div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                        	<h3 class="no-margins"  th:text="#{demo.cuenta1}" >
+                                            <small class="label label-blue">&nbsp;</small>
+                                            </h3>
+                                            <small>Me Gusta </small>
+                                            <div id="percCuenta1" class="stat-percent">73.98% </div>
+                                            <div class="progress progress-mini">
+                                                <div id="percCuenta1_num" style="width: 73.98%;" class="progress-bar label-blue"></div>
+                                            </div>
+                                            
+                                            
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins"  th:text="#{demo.cuenta2}" >
+                                            <small class="label label-primary" >&nbsp;</small>
+                                            </h3>
+                                            <small>Me Gusta </small>
+                                            <div id="percCuenta2" class="stat-percent">83.00% </div>
+                                            <div class="progress progress-mini">
+                                                <div id="percCuenta2_num" style="width:83.00%;" class="progress-bar"></div>
+                                            </div>
+                                            
+                                           
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins"  th:text="#{demo.cuenta3}">
+                                            <small class="label label-purple">&nbsp;</small>
+                                            </h3>
+                                            <small>Me Gusta </small>
+                                            <div id="percCuenta3" class="stat-percent">85.65% </div>
+                                            <div class="progress progress-mini">
+                                                <div id="percCuenta3_num" style="width: 85.65%;" class="progress-bar label-purple"></div>
+                                            </div>
+                                            
+                                             
+                                        </li>
+                                        </ul>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -108,15 +151,15 @@
                                             <small class="label label-blue">&nbsp;</small>
                                             </h3>
                                             <small>Comentarios positivos</small>
-                                            <div class="stat-percent">92% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta1_a" class="stat-percent">99.12% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 92%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta1_numa" style="width: 99.12%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
                                             <small>Comentarios negativos</small>
-                                            <div class="stat-percent ">8% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta1_b" class="stat-percent ">0.87% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 8%;" class="progress-bar label-blue"></div>
+                                                <div id="percCuenta1_numb" style="width: 0.87%;" class="progress-bar label-blue"></div>
                                             </div>
                                         </li>
                                         <li>
@@ -124,15 +167,15 @@
                                             <small class="label label-primary" >&nbsp;</small>
                                             </h3>
                                             <small>Comentarios positivos</small>
-                                            <div class="stat-percent">98% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta2_a" class="stat-percent">98.75% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 98%;" class="progress-bar"></div>
+                                                <div id="percCuenta2_numa" style="width: 98.75%;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small>Comentarios negativos</small>
-                                            <div class="stat-percent ">2% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta2_b" class="stat-percent ">1.24% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 2%;" class="progress-bar"></div>
+                                                <div id="percCuenta2_numb" style="width: 1.24%;" class="progress-bar"></div>
                                             </div>
                                         </li>
                                         <li>
@@ -140,15 +183,15 @@
                                             <small class="label label-purple">&nbsp;</small>
                                             </h3>
                                             <small>Comentarios positivos</small>
-                                            <div class="stat-percent">93% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div id="percCuenta3_a" class="stat-percent">97.98% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 93%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta3_numa" style="width: 97.98%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
                                              <small>Comentarios negativos</small>
-                                            <div class="stat-percent ">7% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div id="percCuenta3_b" class="stat-percent ">2.01% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div style="width: 7%;" class="progress-bar label-purple"></div>
+                                                <div id="percCuenta3_numb" style="width: 2.01%;" class="progress-bar label-purple"></div>
                                             </div>
                                         </li>
                                         </ul>

@@ -34,3 +34,20 @@
   overflow-y:scroll;
   width:100%;
 }
+
+optgroup { 
+	font-size:12px !important;  
+	text-align:center !important;
+	}
+option { 
+	font-size:12px !important;  
+	text-align:center !important; 
+	padding: 0px !important; 
+	}
+select { 
+	font-size:12px !important;  
+	text-align:center !important; 
+	padding: 0px !important;
+	width:auto !important; 
+	height: auto !important; 
+	}

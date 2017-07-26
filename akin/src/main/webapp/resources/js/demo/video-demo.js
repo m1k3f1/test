@@ -6,7 +6,7 @@ Chart.defaults.global = {
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 /**************   DATA ******************/
 var reactionsData1Mensual = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: ["Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -16,12 +16,12 @@ var reactionsData1Mensual = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	101887	,23795,	6049,	389	,778,	4344,	466]
+                data: [	23795,	6049,	389	,778,	4344,	466]
             }
         ]
     };
 var reactionsData1Trimestral = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: [ "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -31,12 +31,12 @@ var reactionsData1Trimestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [181166,	11754	,13012	,280,	3140,	0	,2332]
+                data: [	11754	,13012	,280,	3140,	0	,2332]
             }
         ]
     };
 var reactionsData1Semestral = {
-        labels: ["Me gusta", "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
+        labels: ["Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
         datasets: [
             {
                 label: "Ricando Anaya Cort\u00e9s",
@@ -46,13 +46,13 @@ var reactionsData1Semestral = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	348173	,25047	,25523	,490	,14511,	1,	3732]
+                data: [	25047	,25523	,490	,14511,	1,	3732]
             }
         ]
     };
 
 var reactionsData2Mensual = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -64,13 +64,13 @@ var reactionsData2Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [31858	,3591	,2019,	52	,420,	332,	111]
+                data: [3591	,2019,	52	,420,	332,	111]
             }
         ]
     };
 
 var reactionsData2Trimestral = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: ["Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -82,12 +82,12 @@ var reactionsData2Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [134054,	12571	,3635	,242,	2292,	0	,401]
+                data: [	12571	,3635	,242,	2292,	0	,401]
             }
         ]
     };
 var reactionsData2Semestral = {
-		labels: ["Me gusta", "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
+		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
         datasets: [
            
             {
@@ -99,14 +99,14 @@ var reactionsData2Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [242592	,22512	,14356	,433	,6208	,1	,854]
+                data: [22512	,14356	,433	,6208	,1	,854]
             }
         ]
     };
 
 
 var reactionsData3Mensual = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -118,12 +118,12 @@ var reactionsData3Mensual = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [113021,	7360,	2929,	204,	2336,	309	,5795]
+                data: [	7360,	2929,	204,	2336,	309	,5795]
             }
         ]
     };
 var reactionsData3Trimestral = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -135,13 +135,13 @@ var reactionsData3Trimestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	412618	,27691,	5367	,560	,7972	,0	,5250]
+                data: [	27691,	5367	,560	,7972	,0	,5250]
             }
         ]
     };
 
 var reactionsData3Semestral = {
-		labels: ["Me gusta","Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
+		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
         datasets: [
            
             {
@@ -153,7 +153,7 @@ var reactionsData3Semestral = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,0.2)",
                 
-                data: [	994528,	69888,	13001,	1553	,21787	,2	,26990]
+                data: [	69888,	13001,	1553	,21787	,2	,26990]
             }
         ]
     };
@@ -319,6 +319,39 @@ $(document).ready(function() {
 			$('#selMeses').children('optgroup').remove();
 			}
 		$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
+		
+		 $('#percCuenta1').text("73.98%") ;
+		 $('#percCuenta1_num').css('width', '73.98%');
+		 
+		 $('#percCuenta3').text("85.65%") ;
+		 $('#percCuenta3_num').css('width', '85.65%');
+		 
+		 $('#percCuenta2').text("83.00%") ;
+		 $('#percCuenta2_num').css('width', '83.00%');
+		//##################################//
+		$('#percCuenta1_a').text("99.12%") ;
+		$('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
+		$('#percCuenta1_numa').css('width', '99.12%');
+		 
+		$('#percCuenta1_b').text("0.87%") ;
+		$('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+		$('#percCuenta1_numb').css('width', '0.87%');
+		
+		$('#percCuenta2_a').text("98.75%") ;
+		$('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
+		$('#percCuenta2_numa').css('width', '98.75%');
+		 
+		$('#percCuenta2_b').text("1.24%") ;
+		$('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+		$('#percCuenta2_numb').css('width', '1.24%');
+		
+		$('#percCuenta3_a').text("97.98%") ;
+		$('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
+		$('#percCuenta3_numa').css('width', '97.98%');
+		 
+		$('#percCuenta3_b').text("2.01%") ;
+		$('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+		$('#percCuenta3_numb').css('width', '2.01%');
 	
 		if(myNewChart1 != null)
 		 {
@@ -361,6 +394,38 @@ $(document).ready(function() {
 		}
 	$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option><option>Abr/May/Jun</option><option>Jul/Ags/Sep</option><option>Oct/Nov/Dic</option></optgroup>");
 
+	$('#percCuenta1').text("85.58%") ;
+	$('#percCuenta1_num').css('width', '85.58%');
+	 
+	$('#percCuenta3').text("89.80%") ;
+	$('#percCuenta3_num').css('width', '89.80%');
+	 
+	$('#percCuenta2').text("87.50%") ;
+	$('#percCuenta2_num').css('width', '87.50%');
+	//##################################//
+	$('#percCuenta1_a').text("98.36%") ;
+	$('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta1_numa').css('width', '98.36%');
+	 
+	$('#percCuenta1_b').text("1.63%") ;
+	$('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta1_numb').css('width', '1.63%');
+	
+	$('#percCuenta2_a').text("98.34%") ;
+	$('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta2_numa').css('width', '98.34%');
+	 
+	$('#percCuenta2_b').text("1.65%") ;
+	$('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta2_numb').css('width', '1.65%');
+	
+	$('#percCuenta3_a').text("98.12%") ;
+	$('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta3_numa').css('width', '98.12%');
+	 
+	$('#percCuenta3_b').text("1.87%") ;
+	$('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta3_numb').css('width', '1.87%');
 	
 		if(myNewChart1 != null)
 		 {
@@ -403,6 +468,38 @@ $(document).ready(function() {
 		}
 	$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option><option>Jul - Dic</option></optgroup>");
 
+	$('#percCuenta1').text("83.39%") ;
+	$('#percCuenta1_num').css('width', '83.39%');
+	 
+	$('#percCuenta3').text("88.18%") ;
+	$('#percCuenta3_num').css('width', '88.18%');
+	 
+	$('#percCuenta2').text("84.53%") ;
+	$('#percCuenta2_num').css('width', '84.53%');
+	//##################################//
+	$('#percCuenta1_a').text("96.37%") ;
+	$('#percCuenta1_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta1_numa').css('width', '96.37%');
+	 
+	$('#percCuenta1_b').text("3.62%") ;
+	$('#percCuenta1_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta1_numb').css('width', '3.62%');
+	
+	$('#percCuenta3_a').text("97.87%") ;
+	$('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta3_numa').css('width', '97.87%');
+	 
+	$('#percCuenta3_b').text("2.12%") ;
+	$('#percCuenta3_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta3_numb').css('width', '2.12%');
+	
+	$('#percCuenta2_a').text("97.67%") ;
+	$('#percCuenta2_a').append("<i class='fa fa-level-up text-navy'></i>");
+	$('#percCuenta2_numa').css('width', '97.67%');
+	 
+	$('#percCuenta2_b').text("2.32%") ;
+	$('#percCuenta2_b').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+	$('#percCuenta2_numb').css('width', '2.32%');
 	
 		if(myNewChart1 != null)
 		 {
