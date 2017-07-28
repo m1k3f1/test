@@ -49,7 +49,8 @@ var lineDataTrimester = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(70,72,232,1)",
                 data: [1882	,1215	,2017]
-      {
+            },
+            {
                 label: "Margarita Zavala",
                 fillColor: "rgba(26,179,148,0.5)",
                 strokeColor: "green",
@@ -58,7 +59,8 @@ var lineDataTrimester = {
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(26,179,148,1)",
                 data: [3835	,3521	,6345]
-
+            },
+            {
                 label: "Rafael Moreno Valle",
                 fillColor: "rgba(181,84,237,0.7)",
                 strokeColor: "purple",
