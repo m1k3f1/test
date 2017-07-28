@@ -21,8 +21,8 @@ var lineDataMontly = {
 	                pointStrokeColor: "#fff",
 	                pointHighlightFill: "#fff",
 	                pointHighlightStroke: "rgba(26,179,148,1)",
-	    	        data: [172,	424	,603,	891]
-        },
+	                data: [172,	424	,603,	891]
+	            },
 	            {
 	                label: "Rafael Moreno Valle",
 	                fillColor: "rgba(181,84,237,0.7)",
@@ -31,8 +31,8 @@ var lineDataMontly = {
 	                pointStrokeColor: "#fff",
 	                pointHighlightFill: "#fff",
 	                pointHighlightStroke: "rgba(181,84,237,1)",
-	          	    data: [1493	,1996	,4068	,2920]
-  }
+	                data: [1493	,1996	,4068	,2920]
+	            }
 	        ]
 	    };
 
