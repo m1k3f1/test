@@ -11,7 +11,7 @@ var lineDataMontly = {
 	                pointStrokeColor: "#fff",
 	                pointHighlightFill: "#fff",
 	                pointHighlightStroke: "rgba(70,72,232,1)",
-	                data: [21, 30,45,65]
+	                data: [169	,75	,363	,549]
 	            },
 	            {
 	                label: "Margarita Zavala",
@@ -21,8 +21,8 @@ var lineDataMontly = {
 	                pointStrokeColor: "#fff",
 	                pointHighlightFill: "#fff",
 	                pointHighlightStroke: "rgba(26,179,148,1)",
-	                data: [15, 26,35,28]
-	            },
+	    	        data: [172,	424	,603,	891]
+        },
 	            {
 	                label: "Rafael Moreno Valle",
 	                fillColor: "rgba(181,84,237,0.7)",
@@ -31,8 +31,8 @@ var lineDataMontly = {
 	                pointStrokeColor: "#fff",
 	                pointHighlightFill: "#fff",
 	                pointHighlightStroke: "rgba(181,84,237,1)",
-	                data: [11,15,28,15]
-	            }
+	          	    data: [1493	,1996	,4068	,2920]
+  }
 	        ]
 	    };
 
@@ -48,9 +48,8 @@ var lineDataTrimester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(70,72,232,1)",
-                data: [10, 13,32]
-            },
-            {
+                data: [1882	,1215	,2017]
+      {
                 label: "Margarita Zavala",
                 fillColor: "rgba(26,179,148,0.5)",
                 strokeColor: "green",
@@ -58,9 +57,8 @@ var lineDataTrimester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [7, 26,15]
-            },
-            {
+                data: [3835	,3521	,6345]
+
                 label: "Rafael Moreno Valle",
                 fillColor: "rgba(181,84,237,0.7)",
                 strokeColor: "purple",
@@ -68,7 +66,7 @@ var lineDataTrimester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(181,84,237,1)",
-                data: [21,35,8]
+                data: [18857,	6027	,5619]
             }
         ]
     };
@@ -84,7 +82,7 @@ var lineDataSemester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(70,72,232,1)",
-                data: [12, 11,5,23, 20, 14]
+                data: [1882,	1215,	2017	,2371	,3312	,2907]
             },
             {
                 label: "Margarita Zavala",
@@ -94,7 +92,7 @@ var lineDataSemester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [7, 10,18,9, 14, 18]
+                data: [3835	,3521	,6345	,6345	,8515	,23223]
             },
             {
                 label: "Rafael Moreno Valle",
@@ -104,7 +102,7 @@ var lineDataSemester = {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(181,84,237,1)",
-                data: [12,5,8,25 ,18 ,16]
+                data: [18857,	6027,	5619	,6476	,9849	,8018]
             }
         ]
     };
@@ -458,7 +456,7 @@ $("#btnMensual").click(function() {
 								{
 								$('#selMeses').children('optgroup').remove();
 								}
-							$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
+							$('#selMeses').append("<option>Enero</option>");
 						
 				    			 if(mainChart != null)
 				    			 {
@@ -565,7 +563,7 @@ $("#btnTrimestral").click(function() {
 								{
 								$('#selMeses').children('optgroup').remove();
 								}
-							$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option><option>Abr/May/Jun</option><option>Jul/Ags/Sep</option><option>Oct/Nov/Dic</option></optgroup>");
+							$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option></optgroup>");
 						
 				    		 if(mainChart != null)
 				    		 {
@@ -671,7 +669,7 @@ $("#btnSemestral").click(function() {
 								{
 								$('#selMeses').children('optgroup').remove();
 								}
-							$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option><option>Jul - Dic</option></optgroup>");
+							$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option></optgroup>");
 						
 				    		 
 				    		 if(mainChart != null)

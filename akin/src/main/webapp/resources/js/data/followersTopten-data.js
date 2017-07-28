@@ -791,7 +791,7 @@ $("#btnTopMensual").click(function() {
 		{
 		$('#selMeses').children('optgroup').remove();
 		}
-	$('#selMeses').append("<option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option><option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option><option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>");
+	$('#selMeses').append("<option>Enero</option>");
 
 	
 	 if(toptenChartAccount1 != null){
@@ -822,7 +822,7 @@ $("#btnTopTrimestral").click(function() {
 		{
 		$('#selMeses').children('optgroup').remove();
 		}
-	$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option><option>Abr/May/Jun</option><option>Jul/Ags/Sep</option><option>Oct/Nov/Dic</option></optgroup>");
+	$('#selMeses').append("<optgroup label='Trimestre'><option>Ene/Feb/Mar</option></optgroup>");
 
 	if(toptenChartAccount1 != null){
 		 toptenChartAccount1.destroy();
@@ -851,7 +851,7 @@ $("#btnTopSemestral").click(function() {
 		{
 		$('#selMeses').children('optgroup').remove();
 		}
-	$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option><option>Jul - Dic</option></optgroup>");
+	$('#selMeses').append("<optgroup label='Semestre'><option>Ene - Jun</option></optgroup>");
 
 	if(toptenChartAccount1 != null){
 		 toptenChartAccount1.destroy();
