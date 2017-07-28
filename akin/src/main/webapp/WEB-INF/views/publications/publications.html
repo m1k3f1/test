@@ -26,36 +26,36 @@
                     <div class="col-lg-12">
                     	 <div class="ibox float-e-margins">
                             <div class="ibox-title form-inline">
-                                <h5>Publicaciones - Post</h5>
+                                <h5 th:text="#{publications.publicationsTitle}"></h5>
                                 &nbsp;
                                 <span class = "fa fa-facebook-square fa-2x" style="color: #3b5998;"></span>
                               
                                 <div class="pull-right ">
                                 	 <div class="input-group date " >
                                 	  	<select class="form-control selectpicker input-sm" >
-											  <option>2016</option>
-											  <option selected>2017</option>
+											  <option th:text="#{general.anio1}"></option>
+											  <option selected th:text="#{general.anio2}"></option>
 											</select>
 										   <select id="selMeses" class="form-control input-sm" >
-											  <option>Enero</option>
-											  <option>Febrero</option>
-											  <option>Marzo</option>
-											  <option>Abril</option>
-											  <option>Mayo</option>
-											  <option>Junio</option>
-											  <option selected>Julio</option>
-											  <option>Agosto</option>
-											  <option>Septiembre</option>
-											  <option>Octubre</option>
-											  <option>Noviembre</option>
-											  <option>Diciembre</option>
+											  <option th:text="#{general.january}"></option>
+											  <option th:text="#{general.february}"></option>
+											  <option th:text="#{general.march}"></option>
+											  <option th:text="#{general.april}"></option>
+											  <option th:text="#{general.may}"></option>
+											  <option th:text="#{general.june}"></option>
+											  <option selected th:text="#{general.july}"></option>
+											  <option th:text="#{general.august}"></option>
+											  <option th:text="#{general.september}"></option>
+											  <option th:text="#{general.october}"></option>
+											  <option th:text="#{general.november}"></option>
+											  <option th:text="#{general.december}"></option>
 											</select>
 
 										</div>
                                     <div class="btn-group ">
-                                        <button type="button" id="btnMensual"  class="btn btn-xs btn-white active">Mensual</button>
-                                        <button type="button" id="btnTrimestral" class="btn btn-xs btn-white">Trimestral</button>
-                                        <button type="button" id="btnSemestral" class="btn btn-xs btn-white">Semestral</button>
+                                        <button type="button" id="btnMensual"  class="btn btn-xs btn-white active" th:text="#{general.montly}"></button>
+                                        <button type="button" id="btnTrimestral" class="btn btn-xs btn-white" th:text="#{general.trimester}"></button>
+                                        <button type="button" id="btnSemestral" class="btn btn-xs btn-white" th:text="#{general.semester}"></button>
                                     </div>
                                       
                                 </div>
@@ -65,12 +65,12 @@
 	            <div class="col-lg-12">
                     <div class="ibox">
                         <div >
-                            <h5>Reacciones</h5>
+                            <h5 th:text="#{publications.reactions}"></h5>
                         </div>
                         <div class="ibox-content ">
                             <div class="col-lg-9 ">
                             	<!-- <canvas id="likedChart" height="80px" ></canvas>	 -->
-			                        <div class="ibox-content text-center">
+			                        <div class="text-center">
 			                            <div class="col-lg-4 ">
 			                            	<canvas id="reactionsChart1" height="200" ></canvas>
 			                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -88,11 +88,11 @@
                             </div>
                            <div class="col-lg-3">
                                     <ul class="stat-list">
+                                    	<h5 class="no-margins" th:text="#{general.liked}" ></h5>
                                         <li>
                                         	<h3 class="no-margins"  th:text="#{demo.cuenta1}" >
                                             <small class="label label-blue">&nbsp;</small>
                                             </h3>
-                                            <small>Me Gusta </small>
                                             <div id="percCuenta1" class="stat-percent">91% </div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta1_num" style="width: 91%;" class="progress-bar label-blue"></div>
@@ -104,7 +104,6 @@
                                             <h3 class="no-margins"  th:text="#{demo.cuenta2}" >
                                             <small class="label label-primary" >&nbsp;</small>
                                             </h3>
-                                            <small>Me Gusta </small>
                                             <div id="percCuenta2" class="stat-percent">87% </div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta2_num" style="width:87%;" class="progress-bar"></div>
@@ -116,7 +115,6 @@
                                             <h3 class="no-margins"  th:text="#{demo.cuenta3}">
                                             <small class="label label-purple">&nbsp;</small>
                                             </h3>
-                                            <small>Me Gusta </small>
                                             <div id="percCuenta3" class="stat-percent">91% </div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta3_num" style="width: 91%;" class="progress-bar label-purple"></div>
@@ -141,7 +139,7 @@
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div>
-                            <h5>Publicaciones por semana</h5>
+                            <h5 th:text="#{publications.perWeek}"></h5>
                         </div>
                         <div class="ibox-content">
                             <div>
@@ -156,13 +154,13 @@
                                         	<h3 class="no-margins"  th:text="#{demo.cuenta1}" >
                                             <small class="label label-blue">&nbsp;</small>
                                             </h3>
-                                            <small>Comentarios positivos</small>
+                                            <small th:text="#{general.positiveComments}"></small>
                                             <div id="percCuenta1_a" class="stat-percent">99.4% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta1_numa" style="width: 99.4%;" class="progress-bar label-blue"></div>
                                             </div>
                                             
-                                            <small>Comentarios negativos</small>
+                                            <small th:text="#{general.negativeComments}"></small>
                                             <div id="percCuenta1_b" class="stat-percent ">0.5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta1_numb" style="width: 0.5%;" class="progress-bar label-blue"></div>
@@ -172,13 +170,13 @@
                                             <h3 class="no-margins"  th:text="#{demo.cuenta2}" >
                                             <small class="label label-primary" >&nbsp;</small>
                                             </h3>
-                                            <small>Comentarios positivos</small>
+                                            <small th:text="#{general.positiveComments}"></small>
                                             <div id="percCuenta2_a" class="stat-percent">99.5% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta2_numa" style="width: 99.5%;" class="progress-bar"></div>
                                             </div>
                                             
-                                             <small>Comentarios negativos</small>
+                                             <small th:text="#{general.negativeComments}"></small>
                                             <div id="percCuenta2_b" class="stat-percent ">0.4% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta2_numb" style="width: 0.4%;" class="progress-bar"></div>
@@ -188,13 +186,13 @@
                                             <h3 class="no-margins"  th:text="#{demo.cuenta3}">
                                             <small class="label label-purple">&nbsp;</small>
                                             </h3>
-                                            <small>Comentarios positivos</small>
+                                            <small th:text="#{general.positiveComments}"></small>
                                             <div id="percCuenta3_a" class="stat-percent">98.9% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta3_numa" style="width: 98.9%;" class="progress-bar label-purple"></div>
                                             </div>
                                             
-                                             <small>Comentarios negativos</small>
+                                             <small th:text="#{general.negativeComments}"></small>
                                             <div id="percCuenta3_b" class="stat-percent ">1.0% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
                                                 <div id="percCuenta3_numb" style="width: 1.0%;" class="progress-bar label-purple"></div>
