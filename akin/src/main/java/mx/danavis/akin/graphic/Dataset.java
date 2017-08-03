@@ -6,7 +6,31 @@ public class Dataset {
 	private String strokeColor;
 	private String highlightFill;
 	private String highlightStroke;
+	private String pointColor;
+	private String pointStrokeColor;
+	private String pointHighlightFill;
+	private String pointHighlightStroke;
 	private int[] data;
+	
+	public Dataset(){}
+	
+	public Dataset(String label, String fillColor, String strokeColor, String highlightFill, String highlightStroke,
+			int[] data) {
+		super();
+		this.label = label;
+		this.fillColor = fillColor;
+		this.strokeColor = strokeColor;
+		this.highlightFill = highlightFill;
+		this.highlightStroke = highlightStroke;
+		this.data = data;
+	}
+	
+	public Dataset(String label, int[] data) {
+		super();
+		this.label = label;
+		this.data = data;
+	}
+
 	public String getLabel() {
 		return label;
 	}
@@ -43,6 +67,39 @@ public class Dataset {
 	public void setData(int[] data) {
 		this.data = data;
 	}
+
+	public String getPointColor() {
+		return pointColor;
+	}
+
+	public void setPointColor(String pointColor) {
+		this.pointColor = pointColor;
+	}
+
+	public String getPointStrokeColor() {
+		return pointStrokeColor;
+	}
+
+	public void setPointStrokeColor(String pointStrokeColor) {
+		this.pointStrokeColor = pointStrokeColor;
+	}
+
+	public String getPointHighlightFill() {
+		return pointHighlightFill;
+	}
+
+	public void setPointHighlightFill(String pointHighlightFill) {
+		this.pointHighlightFill = pointHighlightFill;
+	}
+
+	public String getPointHighlightStroke() {
+		return pointHighlightStroke;
+	}
+
+	public void setPointHighlightStroke(String pointHighlightStroke) {
+		this.pointHighlightStroke = pointHighlightStroke;
+	}
+	
 	
 	
 }

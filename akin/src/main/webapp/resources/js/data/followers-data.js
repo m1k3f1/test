@@ -1,206 +1,8 @@
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 //Start Data for main line chart
-var lineDataMontly = {
-	        labels: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"],
-	        datasets: [
-	            {
-	                label: "Ricardo Anaya Cortés",
-	                fillColor: "rgba(70,72,232,0.5)",
-	                strokeColor: "gray",
-	                pointColor: "rgba(70,72,232,1)",
-	                pointStrokeColor: "#fff",
-	                pointHighlightFill: "#fff",
-	                pointHighlightStroke: "rgba(70,72,232,1)",
-	                data: [169	,75	,363	,549]
-	            },
-	            {
-	                label: "Margarita Zavala",
-	                fillColor: "rgba(26,179,148,0.5)",
-	                strokeColor: "green",
-	                pointColor: "rgba(26,179,148,1)",
-	                pointStrokeColor: "#fff",
-	                pointHighlightFill: "#fff",
-	                pointHighlightStroke: "rgba(26,179,148,1)",
-	                data: [172,	424	,603,	891]
-	            },
-	            {
-	                label: "Rafael Moreno Valle",
-	                fillColor: "rgba(181,84,237,0.7)",
-	                strokeColor: "purple",
-	                pointColor: "rgba(181,84,237,1)",
-	                pointStrokeColor: "#fff",
-	                pointHighlightFill: "#fff",
-	                pointHighlightStroke: "rgba(181,84,237,1)",
-	                data: [1493	,1996	,4068	,2920]
-	            }
-	        ]
-	    };
-
-
-var lineDataTrimester = {
-        labels: ["Mes 1", "Mes 2", "Mes 3"],
-        datasets: [
-            {
-                label: "Ricardo Anaya Cortés",
-                fillColor: "rgba(70,72,232,0.5)",
-                strokeColor: "gray",
-                pointColor: "rgba(70,72,232,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(70,72,232,1)",
-                data: [1882	,1215	,2017]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "green",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [3835	,3521	,6345]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(181,84,237,0.7)",
-                strokeColor: "purple",
-                pointColor: "rgba(181,84,237,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(181,84,237,1)",
-                data: [18857,	6027	,5619]
-            }
-        ]
-    };
-
-var lineDataSemester = {
-        labels: ["Mes 1", "Mes 2", "Mes 3", "Mes 4", "Mes 5", "Mes 6"],
-        datasets: [
-            {
-                label: "Ricardo Anaya Cortés",
-                fillColor: "rgba(70,72,232,0.5)",
-                strokeColor: "gray",
-                pointColor: "rgba(70,72,232,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(70,72,232,1)",
-                data: [1882,	1215,	2017	,2371	,3312	,2907]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "green",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [3835	,3521	,6345	,6345	,8515	,23223]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(181,84,237,0.7)",
-                strokeColor: "purple",
-                pointColor: "rgba(181,84,237,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(181,84,237,1)",
-                data: [18857,	6027,	5619	,6476	,9849	,8018]
-            }
-        ]
-    };
-
 //End Data for main line chart
 
 //START DEMOGRAPHIC DATA
-var barDataMonthly = {
-        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
-        datasets: [
-            {
-                label: "Hombres",
-                fillColor: "rgba(70,72,232,0.5)",
-                strokeColor: "rgba(70,72,232,0.8)",
-                highlightFill: "rgba(70,72,232,0.75)",
-                highlightStroke: "rgba(70,72,232,1)",
-                data: [65, 59, 80]
-            },
-            {
-                label: "Mujeres",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
-                data: [28, 48, 40]
-            },
-            {
-                label: "Otros",
-                fillColor: "rgba(181,84,237,0.7)",
-                strokeColor: "rgba(181,84,237,0.7)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
-                data: [35, 68, 60]
-            }
-        ]
-    };
-
-var barDataTrimester = {
-        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
-        datasets: [
-            {
-                label: "Hombres",
-                fillColor: "rgba(70,72,232,0.5)",
-                strokeColor: "rgba(70,72,232,0.8)",
-                highlightFill: "rgba(70,72,232,0.75)",
-                highlightStroke: "rgba(70,72,232,1)",
-                data: [10, 34, 54]
-            },
-            {
-                label: "Mujeres",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
-                data: [44,22,48]
-            },
-            {
-                label: "Otros",
-                fillColor: "rgba(181,84,237,0.7)",
-                strokeColor: "rgba(181,84,237,0.7)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
-                data: [12, 27, 47]
-            }
-        ]
-    };
-
-var barDataSemester = {
-        labels: ["Ricardo Anaya Cortés", "Margarita Zavala", "Rafael Moreno Valle"],
-        datasets: [
-            {
-                label: "Hombres",
-                fillColor: "rgba(70,72,232,0.5)",
-                strokeColor: "rgba(70,72,232,0.8)",
-                highlightFill: "rgba(70,72,232,0.75)",
-                highlightStroke: "rgba(70,72,232,1)",
-                data: [2, 24, 15]
-            },
-            {
-                label: "Mujeres",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.8)",
-                highlightFill: "rgba(26,179,148,0.75)",
-                highlightStroke: "rgba(26,179,148,1)",
-                data: [5, 11, 8]
-            },
-            {
-                label: "Otros",
-                fillColor: "rgba(181,84,237,0.7)",
-                strokeColor: "rgba(181,84,237,0.7)",
-                highlightFill: "rgba(181,84,237,0.75)",
-                highlightStroke: "rgba(181,84,237,1)",
-                data: [3, 31, 18]
-            }
-        ]
-    };
 
 //END DEMOGRAPHIC DATA
 	    var lineOptions = {
@@ -232,11 +34,16 @@ var barDataSemester = {
 		       multiTooltipTemplate: "<%= datasetLabel%>: <%= value %>"
 		    }
 
-	 
+var mainChart = null; 	
+var demographicChart = null; 
 var ctxMain = document.getElementById("lineChart").getContext("2d");
 var ctxDemographic = document.getElementById("barChart").getContext("2d");
-var mainChart = new Chart(ctxMain).Line(lineDataMontly, lineOptions);
-var demographicChart = new Chart(ctxDemographic).Bar(barDataMonthly, barOptions);
+$.getJSON('rest/drawFollowersGraphic',function(data)
+	{
+	mainChart = new Chart(ctxMain).Line(data[0], lineOptions);
+	demographicChart = new Chart(ctxDemographic).Bar(data[3], barOptions);
+});
+
 
 
 //Main function
@@ -470,9 +277,14 @@ $("#btnMensual").click(function() {
 				    			 }
 				    			 
 				    			 //DEMOGRAPHIC DATA
-				    			 demographicChart = new Chart(ctxDemographic).Bar(barDataMonthly, barOptions);
+				    			 
 				    			//Data for main line chart
-				    			 mainChart = new Chart(ctxMain).Line(lineDataMontly, lineOptions);
+				    			 $.getJSON('rest/drawFollowersGraphic',function(data)
+				    						{
+				    						mainChart = new Chart(ctxMain).Line(data[0], lineOptions);
+				    						demographicChart = new Chart(ctxDemographic).Bar(data[3], barOptions);
+				    					});
+				    			// mainChart = new Chart(ctxMain).Line(lineDataMontly, lineOptions);
 				    			 
 				    			 $("#que1").text("85");
 				    			 $("#que2").text("45");
@@ -576,9 +388,11 @@ $("#btnTrimestral").click(function() {
 				    			 demographicChart.destroy();
 				    		 }
 				    		  //START WOMEN AND MEN DEMOGRAPHIC
-				    		 
-				    		    demographicChart = new Chart(ctxDemographic).Bar(barDataTrimester, barOptions);
-				    		    mainChart = new Chart(ctxMain).Line(lineDataTrimester, lineOptions);
+				    		    $.getJSON('rest/drawFollowersGraphic',function(data)
+				    		    		{
+				    		    		mainChart = new Chart(ctxMain).Line(data[1], lineOptions);
+				    		    		demographicChart = new Chart(ctxDemographic).Bar(data[4], barOptions);
+				    		    	});
 				    		    document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
 
 				    		    	
@@ -684,8 +498,11 @@ $("#btnSemestral").click(function() {
 				    		 }
 				    		 
 				    		  //START WOMEN AND MEN DEMOGRAPHIC
-				    		 mainChart = new Chart(ctxMain).Line(lineDataSemester, lineOptions);
-				    		 demographicChart = new Chart(ctxDemographic).Bar(barDataSemester, barOptions);
+				    		 $.getJSON('rest/drawFollowersGraphic',function(data)
+				    					{
+				    					mainChart = new Chart(ctxMain).Line(data[2], lineOptions);
+				    					demographicChart = new Chart(ctxDemographic).Bar(data[5], barOptions);
+				    				});
 				    		 document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
 				    		
 });

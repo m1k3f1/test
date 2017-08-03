@@ -4,267 +4,6 @@ Chart.defaults.global = {
 }*/
 
 Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
-/**************   DATA ******************/
-var reactionsData1Mensual = {
-        labels: ["Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	23795,	6049,	389	,778,	4344,	466]
-            }
-        ]
-    };
-var reactionsData1Trimestral = {
-        labels: [ "Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	11754	,13012	,280,	3140,	0	,2332]
-            }
-        ]
-    };
-var reactionsData1Semestral = {
-        labels: ["Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,0,2)",
-                data: [	25047	,25523	,490	,14511,	1,	3732]
-            }
-        ]
-    };
-
-var reactionsData2Mensual = {
-		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
-        datasets: [
-           
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [3591	,2019,	52	,420,	332,	111]
-            }
-        ]
-    };
-
-var reactionsData2Trimestral = {
-		labels: ["Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
-        datasets: [
-           
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [	12571	,3635	,242,	2292,	0	,401]
-            }
-        ]
-    };
-var reactionsData2Semestral = {
-		labels: [ "Me encanta" , "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra" ],
-        datasets: [
-           
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [22512	,14356	,433	,6208	,1	,854]
-            }
-        ]
-    };
-
-
-var reactionsData3Mensual = {
-		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
-        datasets: [
-           
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [	7360,	2929,	204,	2336,	309	,5795]
-            }
-        ]
-    };
-var reactionsData3Trimestral = {
-		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
-        datasets: [
-           
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [	27691,	5367	,560	,7972	,0	,5250]
-            }
-        ]
-    };
-
-var reactionsData3Semestral = {
-		labels: ["Me encanta",  "Me divierte", "Me entristece", "Me enoja", "Otra", "Me asombra"],
-        datasets: [
-           
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,0.2)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,0.2)",
-                
-                data: [	69888,	13001,	1553	,21787	,2	,26990]
-            }
-        ]
-    };
-
-
-var periodDataMonthly = {
-        labels: [  "Semana 1" , "Semana 2","Semana 3", "Semana 4"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [	3	,5,	3	,3]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [2,	6,	5,	1]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [8	,7,	9	,10]
-            }
-        ]
-    };
-
-var periodDataQuarterly = {
-        labels: [  "Mes 1" , "Mes 2","Mes 3"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [7	,12	,10]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [4	,14	,14]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [42	,69	,65]
-            }
-        ]
-    };
-var periodDataBiannual = {
-        labels: [  "Mes 1" , "Mes 2","Mes 3", "Mes 4","Mes 5","Mes 6"],
-        datasets: [
-            {
-                label: "Ricando Anaya Cort\u00e9s",
-                fillColor: "rgba(28,132,198,0.2)",
-                strokeColor: "rgba(28,132,198,1)",
-                pointColor: "rgba(28,132,198,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(28,132,198,1)",
-                data: [7,	12	,10	,5	,7,	9]
-            },
-            {
-                label: "Margarita Zavala",
-                fillColor: "rgba(26,179,148,0.2)",
-                strokeColor: "rgba(26,179,148,1)",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [42,	69	,65	,128,	19,	35]
-            },
-            {
-                label: "Rafael Moreno Valle",
-                fillColor: "rgba(108,116,238,0.2)",
-                strokeColor: "rgba(108,116,238,1)",
-                pointColor: "rgba(108,116,238,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [4	,14	,14,	6,	4,	10]
-            }
-        ]
-    };
 
 /**************   OPTIONS OF GRAPHICS ******************/
 var options = {
@@ -288,16 +27,26 @@ var options = {
 
 /**************   DEFAULT GRAFIC ******************/
 var ctxPost1 = document.getElementById("reactionsChart1").getContext("2d");
-var myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
-
 var ctxPost2 = document.getElementById("reactionsChart2").getContext("2d");
-var myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
-
 var ctxPost3 = document.getElementById("reactionsChart3").getContext("2d");
-var myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
-
 var ctx = document.getElementById("periodChart").getContext("2d");
-var myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
+var myNewChart1 = null;
+var myNewChart2 = null;
+var myNewChart3 = null;
+var myNewChart = null;
+
+$.getJSON('rest/drawVideoReactionsGraphics',function(data)
+		{
+		 
+		 myNewChart1 = new Chart(ctxPost1).Radar(data[0], options);
+		 myNewChart2 = new Chart(ctxPost2).Radar(data[1], options);
+		 myNewChart3 = new Chart(ctxPost3).Radar(data[2], options);
+		});
+$.getJSON('rest/drawVideoPerWeekGraphic',function(data)
+		{
+			 myNewChart = new Chart(ctx).Line(data[0], options);
+		});
+
 
 
 
@@ -373,10 +122,19 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 
-		myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Mensual, options);
-		myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Mensual, options);
-		myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Mensual, options);
-		myNewChart = new Chart(ctx).Line(periodDataMonthly, options);
+		
+		$.getJSON('rest/drawVideoReactionsGraphics',function(data)
+				{
+				 
+				 myNewChart1 = new Chart(ctxPost1).Radar(data[0], options);
+				 myNewChart2 = new Chart(ctxPost2).Radar(data[1], options);
+				 myNewChart3 = new Chart(ctxPost3).Radar(data[2], options);
+				});
+		$.getJSON('rest/drawVideoPerWeekGraphic',function(data)
+				{
+					 myNewChart = new Chart(ctx).Line(data[0], options);
+				});
+		
 	});
 	$("#btnTrimestral").click(function() {
 		
@@ -447,10 +205,19 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
-		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Trimestral, options);
-		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Trimestral, options);
-		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Trimestral, options);
-		 myNewChart = new Chart(ctx).Line(periodDataQuarterly, options);
+		
+		$.getJSON('rest/drawVideoReactionsGraphics',function(data)
+				{
+				 
+				 myNewChart1 = new Chart(ctxPost1).Radar(data[3], options);
+				 myNewChart2 = new Chart(ctxPost2).Radar(data[4], options);
+				 myNewChart3 = new Chart(ctxPost3).Radar(data[5], options);
+				});
+			 $.getJSON('rest/drawVideoPerWeekGraphic',function(data)
+			{
+				 myNewChart = new Chart(ctx).Line(data[1], options);
+			});
+		
 	});
 	$("#btnSemestral").click(function() {
 		
@@ -521,10 +288,18 @@ $(document).ready(function() {
 			myNewChart.destroy();
 		 }
 		
-		 myNewChart1 = new Chart(ctxPost1).Radar(reactionsData1Semestral, options);
-		 myNewChart2 = new Chart(ctxPost2).Radar(reactionsData2Semestral, options);
-		 myNewChart3 = new Chart(ctxPost3).Radar(reactionsData3Semestral, options);
-		 myNewChart = new Chart(ctx).Line(periodDataBiannual, options);
+		
+		$.getJSON('rest/drawVideoReactionsGraphics',function(data)
+				{
+				 
+				 myNewChart1 = new Chart(ctxPost1).Radar(data[6], options);
+				 myNewChart2 = new Chart(ctxPost2).Radar(data[7], options);
+				 myNewChart3 = new Chart(ctxPost3).Radar(data[8], options);
+				});
+			 $.getJSON('rest/drawVideoPerWeekGraphic',function(data)
+			{
+				 myNewChart = new Chart(ctx).Line(data[2], options);
+			});
 	});
 	
 });
