@@ -97,23 +97,22 @@
 
 <div class="row">
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                             	<span class="pull-right no-top-border">
                             		<img alt="image" class="img-circle" src="resources/images/cuenta_1.jpg" style="width: 30px;size: 20px;" />
                             	</span>
-                                <h5>Ricardo Anaya Cortes</h5>
+                                <h5 th:text="#{demo.cuenta1}"></h5>
                             </div>
                             <div class="ibox-content" style="height: 85px; " >
                             	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">715,765</h1>
-                                	<small>Seguidores</small>
+                                	<small>Total de Seguidores</small>
                                 </div>
                                 <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins text-center">669</h1>
                                 	<small>Total de Publicaciones</small>
-                                	<div><small>31/12/2015 - 11/07/2017</small></div>
                             	</div>
                             	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">22 285,400</h1>
@@ -124,24 +123,23 @@
                             
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="pull-right no-top-border">
                             		<img alt="image" class="img-circle" src="resources/images/cuenta_2.jpg" style="width: 30px;size: 20px;" />
                             	</span>
-                                <h5>Margarita Zavala</h5>
+                                <h5 th:text="#{demo.cuenta2}"></h5>
                             </div>
                             
                             <div class="ibox-content" style="height: 85px; " >
                             	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">531,549</h1>
-                                <small >Seguidores</small>
+                                <small >Total de Seguidores</small>
                                 </div>
                                 <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins text-center">558</h1>
                                 	<small>Total de Publicaciones</small>
-                                	<div><small>31/12/2015 - 11/07/2017</small></div>
                             	</div>
                             	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">60 420,6000</h1>
@@ -152,24 +150,51 @@
                             
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="pull-right no-top-border">
                             		<img alt="image" class="img-circle" src="resources/images/cuenta_3.jpg" style="width: 30px;size: 20px;" />
                             	</span>
-                                <h5>Rafael Moreno Valle</h5>
+                                <h5 th:text="#{demo.cuenta3}"></h5>
                             </div>
                             
                             <div class="ibox-content" style="height: 85px; " >
                             	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">2,092,725</h1>
-                                <small >Seguidores</small>
+                                <small >Total de Seguidores</small>
                                 </div>
                                 <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins text-center">2,339</h1>
                                 	<small>Total de Publicaciones</small>
-                                	<div><small>31/12/2015 - 11/07/2017</small></div>
+                            	</div>
+                            	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">60 420,6000</h1>
+                                	<div class="stat-percent font-bold text-warning">16% <i class="fa fa-level-up"></i></div>
+                                	<small>Popularidad</small>
+                            	</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                     <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="pull-right no-top-border">
+                            		<img alt="image" class="img-circle" src="resources/images/cuenta_4.jpg" style="width: 30px;size: 20px;" />
+                            	</span>
+                                <h5 th:text="#{demo.cuenta4}"></h5>
+                            </div>
+                            
+                            <div class="ibox-content" style="height: 85px; " >
+                            	<div  th:classappend="${module == 'followers' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins">2,092,725</h1>
+                                <small >Total de Seguidores</small>
+                                </div>
+                                <div th:classappend="${module == 'publications' ? 'div-visible' : 'div-hidden'}">
+                                	<h1 class="no-margins text-center">2,339</h1>
+                                	<small>Total de Publicaciones</small>
                             	</div>
                             	 <div th:classappend="${module == 'benchmark' ? 'div-visible' : 'div-hidden'}">
                                 	<h1 class="no-margins">60 420,6000</h1>
