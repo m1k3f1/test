@@ -28,20 +28,31 @@ Chart.defaults.global.tooltipTemplate= "<%=label%>: <%= value %>";
 		        scaleGridLineWidth: 1,
 		        barShowStroke: true,
 		        barStrokeWidth: 2,
-		        barValueSpacing: 25,
-		        barDatasetSpacing: 5,
+		        barValueSpacing: 60,
+		        barDatasetSpacing: 15,
 		        responsive: true,
 		       multiTooltipTemplate: "<%= datasetLabel%>: <%= value %>"
-		    }
+		    };
 
+	    
 var mainChart = null; 	
-var demographicChart = null; 
+var demographicChart = null;
+var demographicChart2 = null; 
+var demographicChart3 = null;
+var demographicChart4 = null; 
 var ctxMain = document.getElementById("lineChart").getContext("2d");
 var ctxDemographic = document.getElementById("barChart").getContext("2d");
+var ctxDemographic2 = document.getElementById("barChart2").getContext("2d");
+var ctxDemographic3 = document.getElementById("barChart3").getContext("2d");
+var ctxDemographic4 = document.getElementById("barChart4").getContext("2d");
+
 $.getJSON('rest/drawFollowersGraphic',function(data)
 	{
 	mainChart = new Chart(ctxMain).Line(data[0], lineOptions);
-	demographicChart = new Chart(ctxDemographic).Bar(data[3], barOptions);
+	demographicChart = new Chart(ctxDemographic).Bar(data[1], barOptions);
+	demographicChart2 = new Chart(ctxDemographic2).Bar(data[2], barOptions);
+	demographicChart3 = new Chart(ctxDemographic3).Bar(data[3], barOptions);
+	demographicChart4= new Chart(ctxDemographic4).Bar(data[4], barOptions);
 });
 
 
@@ -81,37 +92,57 @@ $(document).ready(function() {
 				 latlong["MX-CHP-PR"] = {"latitude":16.7569318,"longitude":-93.3292353};			//Chiapas
 				 latlong["MX-MIC-PR"] = {"latitude":19.5665192,"longitude":-101.9068294};			//Michoacan
 				 latlong["MX-JAL-PR"] = {"latitude":20.6595382,"longitude":-103.54943759999999};	//Jalisco
-				 //################### #4648E8 azul / #1AB394 green / #B554ED purple
+				 
+				 latlong["MX-QUE-V"] = {"latitude":20.4888184,"longitude":-100.0898876000};		//Queretaro
+				 latlong["MX-VER-V"] = {"latitude":19.073773,"longitude":-96.23422409999998};		//Veracruz
+				 latlong["MX-HID-V"] = {"latitude":20.0810963,"longitude":-98.46238739999997};		//Hidalgo
+				 latlong["MX-CHH-V"] = {"latitude":28.5329957,"longitude":-106.16910040000002};	//Chihuahua
+				 latlong["MX-COL-V"] = {"latitude":19.0222634,"longitude":-104.10723479999999};	//Colima
+				 latlong["MX-COA-V"] = {"latitude":27.048676,"longitude":-101.8068294};			//Coahuila
+				 latlong["MX-CHP-V"] = {"latitude":16.6569318,"longitude":-93.2292353};			//Chiapas
+				 latlong["MX-MIC-V"] = {"latitude":19.4665192,"longitude":-101.8068294};			//Michoacan
+				 latlong["MX-JAL-V"] = {"latitude":20.5595382,"longitude":-103.44943759999999};	//Jalisco
+				 //################### #b5261e vino / #3B5998 azul / #ffcb01 amarillo / #00a650 verde
 				 var mapData = [
-				                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#4648E8"},
-				                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#4648E8"},
-				                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#4648E8"},
-				                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#4648E8"},
-				                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#4648E8"},
-				                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#4648E8"},
-				                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#4648E8"},
-				                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#4648E8"},
-				                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#4648E8"},
+				                {"code":"MX-QUE-G" , "name":"Queretaro", "value":9938444, "color":"#b5261e"},
+				                {"code":"MX-VER-G" , "name":"Veracruz", "value":8414350, "color":"#b5261e"},
+				                {"code":"MX-HID-G" , "name":"Hidalgo", "value":12419293, "color":"#b5261e"},
+				                {"code":"MX-CHH-G" , "name":"Chihuahua", "value":4301261, "color":"#b5261e"},
+				                {"code":"MX-COL-G" , "name":"Colima", "value":783600, "color":"#b5261e"},
+				                {"code":"MX-COA-G" , "name":"Coahuila", "value":3405565, "color":"#b5261e"},
+				                {"code":"MX-CHP-G" , "name":"Chiapas", "value":33871648, "color":"#b5261e"},
+				                {"code":"MX-MIC-G" , "name":"Michoacan", "value":2688418, "color":"#b5261e"},
+				                {"code":"MX-JAL-G" , "name":"Jalisco", "value":6080485, "color":"#b5261e"},
 				                
-				                {"code":"MX-QUE-GR" , "name":"Queretaro", "value":9938444, "color":"#1AB394"},
-				                {"code":"MX-VER-GR" , "name":"Veracruz", "value":8414350, "color":"#1AB394"},
-				                {"code":"MX-HID-GR" , "name":"Hidalgo", "value":12419293, "color":"#1AB394"},
-				                {"code":"MX-CHH-GR" , "name":"Chihuahua", "value":4301261, "color":"#1AB394"},
-				                {"code":"MX-COL-GR" , "name":"Colima", "value":783600, "color":"#1AB394"},
-				                {"code":"MX-COA-GR" , "name":"Coahuila", "value":3405565, "color":"#1AB394"},
-				                {"code":"MX-CHP-GR" , "name":"Chiapas", "value":33871648, "color":"#1AB394"},
-				                {"code":"MX-MIC-GR" , "name":"Michoacan", "value":2688418, "color":"#1AB394"},
-				                {"code":"MX-JAL-GR" , "name":"Jalisco", "value":6080485, "color":"#1AB394"},
+				                {"code":"MX-QUE-GR" , "name":"Queretaro", "value":9938444, "color":"#3B5998"},
+				                {"code":"MX-VER-GR" , "name":"Veracruz", "value":8414350, "color":"#3B5998"},
+				                {"code":"MX-HID-GR" , "name":"Hidalgo", "value":12419293, "color":"#3B5998"},
+				                {"code":"MX-CHH-GR" , "name":"Chihuahua", "value":4301261, "color":"#3B5998"},
+				                {"code":"MX-COL-GR" , "name":"Colima", "value":783600, "color":"#3B5998"},
+				                {"code":"MX-COA-GR" , "name":"Coahuila", "value":3405565, "color":"#3B5998"},
+				                {"code":"MX-CHP-GR" , "name":"Chiapas", "value":33871648, "color":"#3B5998"},
+				                {"code":"MX-MIC-GR" , "name":"Michoacan", "value":2688418, "color":"#3B5998"},
+				                {"code":"MX-JAL-GR" , "name":"Jalisco", "value":6080485, "color":"#3B5998"},
 				                
-				                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#B554ED"},
-				                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#B554ED"},
-				                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#B554ED"},
-				                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#B554ED"},
-				                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#B554ED"},
-				                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#B554ED"},
-				                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#B554ED"},
-				                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#B554ED"},
-				                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#B554ED"}
+				                {"code":"MX-QUE-PR" , "name":"Queretaro", "value":9938444, "color":"#ffcb01"},
+				                {"code":"MX-VER-PR" , "name":"Veracruz", "value":8414350, "color":"#ffcb01"},
+				                {"code":"MX-HID-PR" , "name":"Hidalgo", "value":12419293, "color":"#ffcb01"},
+				                {"code":"MX-CHH-PR" , "name":"Chihuahua", "value":4301261, "color":"#ffcb01"},
+				                {"code":"MX-COL-PR" , "name":"Colima", "value":783600, "color":"#ffcb01"},
+				                {"code":"MX-COA-PR" , "name":"Coahuila", "value":3405565, "color":"#ffcb01"},
+				                {"code":"MX-CHP-PR" , "name":"Chiapas", "value":33871648, "color":"#ffcb01"},
+				                {"code":"MX-MIC-PR" , "name":"Michoacan", "value":2688418, "color":"#ffcb01"},
+				                {"code":"MX-JAL-PR" , "name":"Jalisco", "value":6080485, "color":"#ffcb01"},
+				                
+				                {"code":"MX-QUE-V" , "name":"Queretaro", "value":9938444, "color":"#00a650"},
+				                {"code":"MX-VER-V" , "name":"Veracruz", "value":8414350, "color":"#00a650"},
+				                {"code":"MX-HID-V" , "name":"Hidalgo", "value":12419293, "color":"#00a650"},
+				                {"code":"MX-CHH-V" , "name":"Chihuahua", "value":4301261, "color":"#00a650"},
+				                {"code":"MX-COL-V" , "name":"Colima", "value":783600, "color":"#00a650"},
+				                {"code":"MX-COA-V" , "name":"Coahuila", "value":3405565, "color":"#00a650"},
+				                {"code":"MX-CHP-V" , "name":"Chiapas", "value":33871648, "color":"#00a650"},
+				                {"code":"MX-MIC-V" , "name":"Michoacan", "value":2688418, "color":"#00a650"},
+				                {"code":"MX-JAL-V" , "name":"Jalisco", "value":6080485, "color":"#00a650"}
 				                ];
 				 
 				// get min and max values
@@ -194,15 +225,18 @@ $(document).ready(function() {
 				     		    "left": 0,
 				     		    "horizontalGap": 10,
 				     		    "data": [{
-				     		      "title": "Ricardo Anaya Cortés",
-				     		      "color": "#4648E8"
-				     		    }, {
-				     		      "title": "Margarita Zavala",
-				     		      "color": "#1AB394"
+				     		      "title": "Andrés Manuel López Obrador",
+				     		      "color": "#b5261e"
 				     		    }, {
 				     		      "title": "Rafael Moreno Valle",
-				     		      "color": "#B554ED"
-				     		    }]
+				     		      "color": "#3B5998"
+				     		    }, {
+				     		      "title": "Miguel Ángel Mancera",
+				     		      "color": "#ffcb01"
+				     		    }, {
+					     		  "title": "Eruviel Ávila Villegas",
+					     		  "color": "#00a650"
+					     		    }]
 				     	  }
 				     	  });
 				     	 
@@ -227,15 +261,16 @@ $("#btnMensual").click(function() {
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '90%');
 				    		 
+				    		 $('#percCuenta4_a').text("90%") ;
+				    		 $('#percCuenta4_a').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numa').css('width', '90%');
+				    		 
 				    		 $('#percCuenta1_h').text("45%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numh').css('width', '45%');
 				    		 $('#percCuenta1_m').text("65%") ;
 				    		 $('#percCuenta1_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numm').css('width', '65%');
-				    		 $('#percCuenta1_o').text("45%") ;
-				    		 $('#percCuenta1_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta1_numo').css('width', '45%');
 				    		 
 				    		 $('#percCuenta2_h').text("36%") ;
 				    		 $('#percCuenta2_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -243,9 +278,7 @@ $("#btnMensual").click(function() {
 				    		 $('#percCuenta2_m').text("29%") ;
 				    		 $('#percCuenta2_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numm').css('width', '29%');
-				    		 $('#percCuenta2_o').text("31%") ;
-				    		 $('#percCuenta2_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta2_numo').css('width', '31%');
+				    		
 				    		 
 				    		 $('#percCuenta3_h').text("25%") ;
 				    		 $('#percCuenta3_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -253,9 +286,15 @@ $("#btnMensual").click(function() {
 				    		 $('#percCuenta3_m').text("23%") ;
 				    		 $('#percCuenta3_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numm').css('width', '23%');
-				    		 $('#percCuenta3_o').text("22%") ;
-				    		 $('#percCuenta3_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta3_numo').css('width', '22%');
+				    		 
+				    		 
+				    		 $('#percCuenta4_h').text("25%") ;
+				    		 $('#percCuenta4_h').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numh').css('width', '25%');
+				    		 $('#percCuenta4_m').text("23%") ;
+				    		 $('#percCuenta4_m').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numm').css('width', '23%');
+				    		
 				    		 
 				    		 if($('#selMeses').children('option')!=null)
 								{
@@ -275,6 +314,19 @@ $("#btnMensual").click(function() {
 				    			 {
 				    				 demographicChart.destroy();
 				    			 }
+				    			 if(demographicChart2 != null)
+				    			 {
+				    				 demographicChart2.destroy();
+				    			 }
+				    			 if(demographicChart3 != null)
+				    			 {
+				    				 demographicChart3.destroy();
+				    			 }
+				    			 if(demographicChart4 != null)
+				    			 {
+				    				 demographicChart4.destroy();
+				    			 }
+				    			 
 				    			 
 				    			 //DEMOGRAPHIC DATA
 				    			 
@@ -282,7 +334,10 @@ $("#btnMensual").click(function() {
 				    			 $.getJSON('rest/drawFollowersGraphic',function(data)
 				    						{
 				    						mainChart = new Chart(ctxMain).Line(data[0], lineOptions);
-				    						demographicChart = new Chart(ctxDemographic).Bar(data[3], barOptions);
+				    						demographicChart = new Chart(ctxDemographic).Bar(data[1], barOptions);
+				    						demographicChart2 = new Chart(ctxDemographic2).Bar(data[2], barOptions);
+				    						demographicChart3 = new Chart(ctxDemographic3).Bar(data[3], barOptions);
+				    						demographicChart4= new Chart(ctxDemographic4).Bar(data[4], barOptions);
 				    					});
 				    			// mainChart = new Chart(ctxMain).Line(lineDataMontly, lineOptions);
 				    			 
@@ -338,15 +393,17 @@ $("#btnTrimestral").click(function() {
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '90%');
 				    		 
+				    		 $('#percCuenta4_a').text("90%") ;
+				    		 $('#percCuenta4_a').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numa').css('width', '90%');
+				    		 
 				    		 $('#percCuenta1_h').text("75%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numh').css('width', '75%');
 				    		 $('#percCuenta1_m').text("56%") ;
 				    		 $('#percCuenta1_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numm').css('width', '56%');
-				    		 $('#percCuenta1_o').text("60%") ;
-				    		 $('#percCuenta1_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta1_numo').css('width', '60%');
+				    	
 				    		 
 				    		 $('#percCuenta2_h').text("64%") ;
 				    		 $('#percCuenta2_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -354,9 +411,7 @@ $("#btnTrimestral").click(function() {
 				    		 $('#percCuenta2_m').text("59%") ;
 				    		 $('#percCuenta2_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numm').css('width', '59%');
-				    		 $('#percCuenta2_o').text("49%") ;
-				    		 $('#percCuenta2_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta2_numo').css('width', '49%');
+				    		 
 				    		 
 				    		 $('#percCuenta3_h').text("41%") ;
 				    		 $('#percCuenta3_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -364,9 +419,15 @@ $("#btnTrimestral").click(function() {
 				    		 $('#percCuenta3_m').text("35%") ;
 				    		 $('#percCuenta3_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numm').css('width', '35%');
-				    		 $('#percCuenta3_o').text("21%") ;
-				    		 $('#percCuenta3_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta3_numo').css('width', '21%');
+				    		
+				    		 
+				    		 $('#percCuenta4_h').text("41%") ;
+				    		 $('#percCuenta4_h').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numh').css('width', '41%');
+				    		 $('#percCuenta4_m').text("35%") ;
+				    		 $('#percCuenta4_m').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numm').css('width', '35%');
+				    	
 				    		 
 				    		 
 				    		 if($('#selMeses').children('option')!=null)
@@ -387,13 +448,28 @@ $("#btnTrimestral").click(function() {
 				    		 {
 				    			 demographicChart.destroy();
 				    		 }
+				    		 if(demographicChart2 != null)
+				    		 {
+				    			 demographicChart2.destroy();
+				    		 }
+				    		 if(demographicChart3 != null)
+			    			 {
+			    				 demographicChart3.destroy();
+			    			 }
+			    			 if(demographicChart4 != null)
+			    			 {
+			    				 demographicChart4.destroy();
+			    			 }
 				    		  //START WOMEN AND MEN DEMOGRAPHIC
 				    		    $.getJSON('rest/drawFollowersGraphic',function(data)
 				    		    		{
-				    		    		mainChart = new Chart(ctxMain).Line(data[1], lineOptions);
-				    		    		demographicChart = new Chart(ctxDemographic).Bar(data[4], barOptions);
+				    		    		mainChart = new Chart(ctxMain).Line(data[5], lineOptions);
+				    		    		demographicChart = new Chart(ctxDemographic).Bar(data[6], barOptions);
+				    		    		demographicChart2 = new Chart(ctxDemographic2).Bar(data[7], barOptions);
+				    		    		demographicChart3 = new Chart(ctxDemographic3).Bar(data[8], barOptions);
+				    		    		demographicChart4 = new Chart(ctxDemographic4).Bar(data[9], barOptions);
 				    		    	});
-				    		    document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
+				    		    //document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
 
 				    		    	
 				    		    $("#que1").text("45");
@@ -446,15 +522,17 @@ $("#btnSemestral").click(function() {
 				    		 $('#percCuenta3_a').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta3_numa').css('width', '90%');
 				    		 
+				    		 $('#percCuenta4_a').text("90%") ;
+				    		 $('#percCuenta4_a').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numa').css('width', '90%');
+				    		 
 				    		 $('#percCuenta1_h').text("45%") ;
 				    		 $('#percCuenta1_h').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numh').css('width', '45%');
 				    		 $('#percCuenta1_m').text("65%") ;
 				    		 $('#percCuenta1_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta1_numm').css('width', '65%');
-				    		 $('#percCuenta1_o').text("45%") ;
-				    		 $('#percCuenta1_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta1_numo').css('width', '45%');
+				    		 
 				    		 
 				    		 $('#percCuenta2_h').text("21%") ;
 				    		 $('#percCuenta2_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -462,9 +540,7 @@ $("#btnSemestral").click(function() {
 				    		 $('#percCuenta2_m').text("26%") ;
 				    		 $('#percCuenta2_m').append("<i class='fa fa-level-up text-navy'></i>");
 				    		 $('#percCuenta2_numm').css('width', '26%');
-				    		 $('#percCuenta2_o').text("31%") ;
-				    		 $('#percCuenta2_o').append("<i class='fa fa-level-up text-navy'></i>");
-				    		 $('#percCuenta2_numo').css('width', '31%');
+				    		
 				    		 
 				    		 $('#percCuenta3_h').text("19%") ;
 				    		 $('#percCuenta3_h').append("<i class='fa fa-level-up text-navy'></i>");
@@ -472,9 +548,15 @@ $("#btnSemestral").click(function() {
 				    		 $('#percCuenta3_m').text("12%") ;
 				    		 $('#percCuenta3_m').append("<i class='fa fa-level-down text-navy text-warning'></i>");
 				    		 $('#percCuenta3_numm').css('width', '12%');
-				    		 $('#percCuenta3_o').text("2%") ;
-				    		 $('#percCuenta3_o').append("<i class='fa fa-level-down text-navy text-warning'></i>");
-				    		 $('#percCuenta3_numo').css('width', '2%');
+				    		 
+				    		 
+				    		 $('#percCuenta4_h').text("19%") ;
+				    		 $('#percCuenta4_h').append("<i class='fa fa-level-up text-navy'></i>");
+				    		 $('#percCuenta4_numh').css('width', '19%');
+				    		 $('#percCuenta4_m').text("12%") ;
+				    		 $('#percCuenta4_m').append("<i class='fa fa-level-down text-navy text-warning'></i>");
+				    		 $('#percCuenta4_numm').css('width', '12%');
+				    		 
 				    		 
 				    		 
 				    		 if($('#selMeses').children('option')!=null)
@@ -496,14 +578,29 @@ $("#btnSemestral").click(function() {
 				    		 {
 				    			 demographicChart.destroy();
 				    		 }
+				    		 if(demographicChart2 != null)
+				    		 {
+				    			 demographicChart2.destroy();
+				    		 }
+				    		 if(demographicChart3 != null)
+			    			 {
+			    				 demographicChart3.destroy();
+			    			 }
+			    			 if(demographicChart4 != null)
+			    			 {
+			    				 demographicChart4.destroy();
+			    			 }
 				    		 
 				    		  //START WOMEN AND MEN DEMOGRAPHIC
 				    		 $.getJSON('rest/drawFollowersGraphic',function(data)
 				    					{
-				    					mainChart = new Chart(ctxMain).Line(data[2], lineOptions);
-				    					demographicChart = new Chart(ctxDemographic).Bar(data[5], barOptions);
+				    					mainChart = new Chart(ctxMain).Line(data[10], lineOptions);
+				    					demographicChart = new Chart(ctxDemographic).Bar(data[11], barOptions);
+				    					demographicChart2 = new Chart(ctxDemographic2).Bar(data[12], barOptions);
+				    					demographicChart3 = new Chart(ctxDemographic3).Bar(data[13], barOptions);
+				    					demographicChart4 = new Chart(ctxDemographic4).Bar(data[14], barOptions);
 				    				});
-				    		 document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
+				    		// document.getElementById('js-legend').innerHTML = mainChart.generateLegend();
 				    		
 });
 

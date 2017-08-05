@@ -66,7 +66,7 @@
                                         	<div class="col-lg-9">
 			                                   		<!-- iconos 
 							                        <canvas id="barEducation" height="80"></canvas>-->
-							                        <div class="ibox-content text-center">
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="educationChart1" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -75,9 +75,15 @@
 							                            	<canvas id="educationChart2" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
 							                            </div>
+							                       </div>
+							                       <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="educationChart3"  height="200"></canvas>
 							                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+							                            </div>
+							                            <div class="col-lg-4 ">
+							                            	<canvas id="educationChart4"  height="200"></canvas>
+							                            	<strong><small th:text="#{demo.cuenta4}"></small></strong>
 							                            </div>
 							                        </div>
 	                                		</div>
@@ -90,20 +96,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percEdCuenta1_h" class="stat-percent font-bold">62% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta1_numh" style="width: 62%;" class="progress-bar label-blue"></div>
+                                                <div id="percEdCuenta1_numh" style="width: 62%;background-color: #9C1F18;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small th:text="#{followers.women}"></small>
                                             <div id="percEdCuenta1_m" class="stat-percent font-bold">15% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta1_numm" style="width: 15%;" class="progress-bar"></div>
+                                                <div id="percEdCuenta1_numm" style="width: 15%;background-color: #FA7B74;" class="progress-bar"></div>
                                             </div>
                                             
-                                            <small th:text="#{followers.others}"></small>
-                                            <div id="percEdCuenta1_o" class="stat-percent font-bold">62% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percEdCuenta1_numo" style="width: 62%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                        
                                             
                                         </li>
                                         <li>
@@ -112,20 +114,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percEdCuenta2_h" class="stat-percent font-bold">23% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta2_numh" style="width: 23%;" class="progress-bar label-blue"></div>
+                                                <div id="percEdCuenta2_numh" style="width: 23%;background-color: #1D469F;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percEdCuenta2_m" class="stat-percent font-bold">11% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta2_numm" style="width: 11%;" class="progress-bar"></div>
+                                                <div id="percEdCuenta2_numm" style="width: 11%;background-color: #5C8DF7;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percEdCuenta2_o" class="stat-percent font-bold">34% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percEdCuenta2_numo" style="width: 34%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                            
                                         </li>
                                         <li>
                                             <h3 class="no-margins " th:text="#{demo.cuenta3}"></h3>
@@ -133,20 +131,34 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percEdCuenta3_h" class="stat-percent font-bold">53% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta3_numh" style="width: 53%;" class="progress-bar label-blue"></div>
+                                                <div id="percEdCuenta3_numh" style="width: 53%;background-color: #DCB107;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percEdCuenta3_m" class="stat-percent font-bold">2% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta3_numm" style="width: 2%;" class="progress-bar"></div>
+                                                <div id="percEdCuenta3_numm" style="width: 2%;background-color: #FADE6E;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percEdCuenta3_o" class="stat-percent font-bold">37% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                             
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta4}"></h3>
+                                            
+                                            <small th:text="#{followers.men}"></small>
+                                            <div id="percEdCuenta4_h" class="stat-percent font-bold">53% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percEdCuenta3_numo" style="width: 37%;" class="progress-bar label-purple"></div>
+                                                <div id="percEdCuenta4_numh" style="width: 53%;background-color: #31C177;" class="progress-bar"></div>
                                             </div>
+                                            
+                                             <small th:text="#{followers.women}"></small>
+                                            <div id="percEdCuenta4_m" class="stat-percent font-bold">2% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div id="percEdCuenta4_numm" style="width: 2%;background-color: #86F8BD;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                             
                                         </li>
                                         </ul>
                                     </div>
@@ -173,7 +185,7 @@
 							                        <canvas id=barOccupation height="80"></canvas>
 							                        -->
 							                        
-							                        <div class="ibox-content text-center">
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="occupationChart1" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -182,9 +194,15 @@
 							                            	<canvas id="occupationChart2" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
 							                            </div>
+							                          </div>
+							                          <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="occupationChart3"  height="200"></canvas>
 							                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+							                            </div>
+							                             <div class="col-lg-4 ">
+							                            	<canvas id="occupationChart4"  height="200"></canvas>
+							                            	<strong><small th:text="#{demo.cuenta4}"></small></strong>
 							                            </div>
 							                        </div>
 	                                		</div>
@@ -197,20 +215,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percProfCuenta1_h" class="stat-percent font-bold">23% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta1_numh" style="width: 23%;" class="progress-bar label-blue"></div>
+                                                <div id="percProfCuenta1_numh" style="width: 23%;background-color: #9C1F18;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small th:text="#{followers.women}"></small>
                                             <div id="percProfCuenta1_m" class="stat-percent font-bold">1% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta1_numm" style="width: 1%;" class="progress-bar"></div>
+                                                <div id="percProfCuenta1_numm" style="width: 1%;background-color: #FA7B74;" class="progress-bar"></div>
                                             </div>
                                             
-                                            <small th:text="#{followers.others}"></small>
-                                            <div id="percProfCuenta1_o" class="stat-percent font-bold">15% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percProfCuenta1_numo" style="width: 15%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                           
                                             
                                         </li>
                                         <li>
@@ -219,20 +233,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percProfCuenta2_h" class="stat-percent font-bold">45% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta2_numh" style="width: 45%;" class="progress-bar label-blue"></div>
+                                                <div id="percProfCuenta2_numh" style="width: 45%;background-color: #1D469F;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percProfCuenta2_m" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta2_numm" style="width: 5%;" class="progress-bar"></div>
+                                                <div id="percProfCuenta2_numm" style="width: 5%;background-color: #5C8DF7;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percProfCuenta2_o" class="stat-percent font-bold">36% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percProfCuenta2_numo" style="width: 36%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                            
                                         </li>
                                         <li>
                                             <h3 class="no-margins " th:text="#{demo.cuenta3}"></h3>
@@ -240,20 +250,34 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percProfCuenta3_h" class="stat-percent font-bold">69% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta3_numh" style="width: 69%;" class="progress-bar label-blue"></div>
+                                                <div id="percProfCuenta3_numh" style="width: 69%;background-color: #DCB107;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percProfCuenta3_m" class="stat-percent font-bold">11% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta3_numm" style="width: 11%;" class="progress-bar"></div>
+                                                <div id="percProfCuenta3_numm" style="width: 11%;background-color: #FADE6E;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percProfCuenta3_o" class="stat-percent font-bold">34% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta4}"></h3>
+                                            
+                                            <small th:text="#{followers.men}"></small>
+                                            <div id="percProfCuenta4_h" class="stat-percent font-bold">69% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percProfCuenta3_numo" style="width: 34%;" class="progress-bar label-purple"></div>
+                                                <div id="percProfCuenta4_numh" style="width: 69%;background-color: #31C177;" class="progress-bar"></div>
                                             </div>
+                                            
+                                             <small th:text="#{followers.women}"></small>
+                                            <div id="percProfCuenta4_m" class="stat-percent font-bold">11% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div id="percProfCuenta4_numm" style="width: 11%;background-color: #86F8BD;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                            
                                         </li>
                                         </ul>
                                     </div>
@@ -283,7 +307,7 @@
 			                                   		<!-- iconos 
 							                        <canvas id="barCivilStatus" height="80"></canvas>
 							                        -->
-							                        <div class="ibox-content text-center">
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="civilStatusChart1" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -292,9 +316,15 @@
 							                            	<canvas id="civilStatusChart2" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
 							                            </div>
+							                       </div>
+							                       <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="civilStatusChart3"  height="200"></canvas>
 							                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+							                            </div>
+							                            <div class="col-lg-4 ">
+							                            	<canvas id="civilStatusChart4"  height="200"></canvas>
+							                            	<strong><small th:text="#{demo.cuenta4}"></small></strong>
 							                            </div>
 							                        </div>
 	                                		</div>
@@ -307,20 +337,15 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percCivilCuenta1_h" class="stat-percent font-bold">53% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta1_numh" style="width: 53%;" class="progress-bar label-blue"></div>
+                                                <div id="percCivilCuenta1_numh" style="width: 53%;background-color: #9C1F18;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small th:text="#{followers.women}"></small>
                                             <div id="percCivilCuenta1_m" class="stat-percent font-bold">13% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta1_numm" style="width: 13%;" class="progress-bar"></div>
+                                                <div id="percCivilCuenta1_numm" style="width: 13%;background-color: #FA7B74;" class="progress-bar"></div>
                                             </div>
-                                            
-                                            <small th:text="#{followers.others}"></small>
-                                            <div id="percCivilCuenta1_o" class="stat-percent font-bold">42% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percCivilCuenta1_numo" style="width: 42%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                           
                                             
                                         </li>
                                         <li>
@@ -329,20 +354,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percCivilCuenta2_h" class="stat-percent font-bold">62% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta2_numh" style="width: 62%;" class="progress-bar label-blue"></div>
+                                                <div id="percCivilCuenta2_numh" style="width: 62%;background-color: #1D469F;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percCivilCuenta2_m" class="stat-percent font-bold">15% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta2_numm" style="width: 15%;" class="progress-bar"></div>
+                                                <div id="percCivilCuenta2_numm" style="width: 15%;background-color: #5C8DF7;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percCivilCuenta2_o" class="stat-percent font-bold">62% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percCivilCuenta2_numo" style="width: 62%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                            
                                         </li>
                                         <li>
                                             <h3 class="no-margins " th:text="#{demo.cuenta3}"></h3>
@@ -350,20 +371,33 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percCivilCuenta3_h" class="stat-percent font-bold">41% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta3_numh" style="width: 41%;" class="progress-bar label-blue"></div>
+                                                <div id="percCivilCuenta3_numh" style="width: 41%;background-color: #DCB107;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percCivilCuenta3_m" class="stat-percent font-bold">3% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta3_numm" style="width: 3%;" class="progress-bar"></div>
+                                                <div id="percCivilCuenta3_numm" style="width: 3%;background-color: #FADE6E;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percCivilCuenta3_o" class="stat-percent font-bold">27% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta4}"></h3>
+                                            
+                                            <small th:text="#{followers.men}"></small>
+                                            <div id="percCivilCuenta4_h" class="stat-percent font-bold">41% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percCivilCuenta3_numo" style="width: 27%;" class="progress-bar label-purple"></div>
+                                                <div id="percCivilCuenta4_numh" style="width: 41%;background-color: #31C177;" class="progress-bar"></div>
                                             </div>
+                                            
+                                             <small th:text="#{followers.women}"></small>
+                                            <div id="percCivilCuenta4_m" class="stat-percent font-bold">3% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div id="percCivilCuenta4_numm" style="width: 3%;background-color: #86F8BD;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                            
                                         </li>
                                         </ul>
                                     </div>
@@ -394,7 +428,7 @@
 							                        <canvas id="barReligion" height="80"></canvas>
 							                        -->
 							                        
-							                        <div class="ibox-content text-center">
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="religionChart1" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -403,9 +437,15 @@
 							                            	<canvas id="religionChart2" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
 							                            </div>
+							                        </div>
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="religionChart3"  height="200"></canvas>
 							                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+							                            </div>
+							                            <div class="col-lg-4 ">
+							                            	<canvas id="religionChart4"  height="200"></canvas>
+							                            	<strong><small th:text="#{demo.cuenta4}"></small></strong>
 							                            </div>
 							                        </div>
 	                                		</div>
@@ -418,20 +458,15 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percRelCuenta1_h" class="stat-percent font-bold">31% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta1_numh" style="width: 31%;" class="progress-bar label-blue"></div>
+                                                <div id="percRelCuenta1_numh" style="width: 31%;background-color: #9C1F18;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small th:text="#{followers.women}"></small>
                                             <div id="percRelCuenta1_m" class="stat-percent font-bold">5% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta1_numm" style="width: 5%;" class="progress-bar"></div>
+                                                <div id="percRelCuenta1_numm" style="width: 5%;background-color: #FA7B74;" class="progress-bar"></div>
                                             </div>
                                             
-                                            <small th:text="#{followers.others}"></small>
-                                            <div id="percRelCuenta1_o" class="stat-percent font-bold">29% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percRelCuenta1_numo" style="width: 29%;" class="progress-bar label-purple"></div>
-                                            </div>
                                             
                                         </li>
                                         <li>
@@ -440,20 +475,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percRelCuenta2_h" class="stat-percent font-bold">32% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta2_numh" style="width: 32%;" class="progress-bar label-blue"></div>
+                                                <div id="percRelCuenta2_numh" style="width: 32%;background-color: #1D469F;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percRelCuenta2_m" class="stat-percent font-bold">14% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta2_numm" style="width: 14%;" class="progress-bar"></div>
+                                                <div id="percRelCuenta2_numm" style="width: 14%;background-color: #5C8DF7;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percRelCuenta2_o" class="stat-percent font-bold">37% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percRelCuenta2_numo" style="width: 37%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                          
                                         </li>
                                         <li>
                                             <h3 class="no-margins " th:text="#{demo.cuenta3}"></h3>
@@ -461,20 +492,34 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percRelCuenta3_h" class="stat-percent font-bold">49% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta3_numh" style="width: 49%;" class="progress-bar label-blue"></div>
+                                                <div id="percRelCuenta3_numh" style="width: 49%;background-color: #DCB107;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percRelCuenta3_m" class="stat-percent font-bold">3% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta3_numm" style="width: 3%;" class="progress-bar"></div>
+                                                <div id="percRelCuenta3_numm" style="width: 3%;background-color: #FADE6E;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percRelCuenta3_o" class="stat-percent font-bold">27% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                             
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta4}"></h3>
+                                            
+                                            <small th:text="#{followers.men}"></small>
+                                            <div id="percRelCuenta4_h" class="stat-percent font-bold">49% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percRelCuenta3_numo" style="width: 27%;" class="progress-bar label-purple"></div>
+                                                <div id="percRelCuenta4_numh" style="width: 49%;background-color: #31C177;" class="progress-bar"></div>
                                             </div>
+                                            
+                                             <small th:text="#{followers.women}"></small>
+                                            <div id="percRelCuenta4_m" class="stat-percent font-bold">3% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div id="percRelCuenta4_numm" style="width: 3%;background-color: #86F8BD;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                           
                                         </li>
                                         </ul>
                                     </div>
@@ -504,7 +549,7 @@
 			                                   		<!-- iconos
 							                        <canvas id="barPolitics" height="80"></canvas>
 							                         -->
-							                        <div class="ibox-content text-center">
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="politicalChart1" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta1}"></small></strong>
@@ -513,9 +558,15 @@
 							                            	<canvas id="politicalChart2" height="200" ></canvas>
 							                            	<strong><small th:text="#{demo.cuenta2}"></small></strong>
 							                            </div>
+							                        </div>
+							                        <div class="row text-center">
 							                            <div class="col-lg-4 ">
 							                            	<canvas id="politicalChart3"  height="200"></canvas>
 							                            	<strong><small th:text="#{demo.cuenta3}"></small></strong>
+							                            </div>
+							                            <div class="col-lg-4 ">
+							                            	<canvas id="politicalChart4"  height="200"></canvas>
+							                            	<strong><small th:text="#{demo.cuenta4}"></small></strong>
 							                            </div>
 							                        </div>
 	                                		</div>
@@ -528,20 +579,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percPolCuenta1_h" class="stat-percent font-bold">35% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta1_numh" style="width: 35%;" class="progress-bar label-blue"></div>
+                                                <div id="percPolCuenta1_numh" style="width: 35%;background-color: #9C1F18;" class="progress-bar"></div>
                                             </div>
                                             
                                             <small th:text="#{followers.women}"></small>
                                             <div id="percPolCuenta1_m" class="stat-percent font-bold">18% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta1_numm" style="width: 18%;" class="progress-bar"></div>
+                                                <div id="percPolCuenta1_numm" style="width: 18%;background-color: #FA7B74;" class="progress-bar"></div>
                                             </div>
                                             
-                                            <small th:text="#{followers.others}"></small>
-                                            <div id="percPolCuenta1_o" class="stat-percent font-bold">26% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percPolCuenta1_numo" style="width: 26%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                            
                                             
                                         </li>
                                         <li>
@@ -550,20 +597,16 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percPolCuenta2_h" class="stat-percent font-bold">67% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta2_numh" style="width: 67%;" class="progress-bar label-blue"></div>
+                                                <div id="percPolCuenta2_numh" style="width: 67%;background-color: #1D469F;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percPolCuenta2_m" class="stat-percent font-bold">13% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta2_numm" style="width: 13%;" class="progress-bar"></div>
+                                                <div id="percPolCuenta2_numm" style="width: 13%;background-color: #5C8DF7;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percPolCuenta2_o" class="stat-percent font-bold">34% <i class="fa fa-level-down text-navy text-warning"></i></div>
-                                            <div class="progress progress-mini">
-                                                <div id="percPolCuenta2_numo" style="width: 34%;" class="progress-bar label-purple"></div>
-                                            </div>
+                                            
                                         </li>
                                         <li>
                                             <h3 class="no-margins " th:text="#{demo.cuenta3}"></h3>
@@ -571,20 +614,34 @@
                                             <small th:text="#{followers.men}"></small>
                                             <div id="percPolCuenta3_h" class="stat-percent font-bold">45% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta3_numh" style="width: 45%;" class="progress-bar label-blue"></div>
+                                                <div id="percPolCuenta3_numh" style="width: 45%;background-color: #DCB107;" class="progress-bar"></div>
                                             </div>
                                             
                                              <small th:text="#{followers.women}"></small>
                                             <div id="percPolCuenta3_m" class="stat-percent font-bold">8% <i class="fa fa-level-down text-navy text-warning"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta3_numm"  style="width: 8%;" class="progress-bar"></div>
+                                                <div id="percPolCuenta3_numm"  style="width: 8%;background-color: #FADE6E;" class="progress-bar"></div>
                                             </div>
                                              
-                                             <small th:text="#{followers.others}"></small>
-                                            <div id="percPolCuenta3_o" class="stat-percent font-bold">38% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                             
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="no-margins " th:text="#{demo.cuenta4}"></h3>
+                                            
+                                            <small th:text="#{followers.men}"></small>
+                                            <div id="percPolCuenta4_h" class="stat-percent font-bold">45% <i class="fa fa-level-up text-navy"></i></div>
                                             <div class="progress progress-mini">
-                                                <div id="percPolCuenta3_numo" style="width: 38%;" class="progress-bar label-purple"></div>
+                                                <div id="percPolCuenta4_numh" style="width: 45%;background-color: #31C177;" class="progress-bar"></div>
                                             </div>
+                                            
+                                             <small th:text="#{followers.women}"></small>
+                                            <div id="percPolCuenta4_m" class="stat-percent font-bold">8% <i class="fa fa-level-down text-navy text-warning"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div id="percPolCuenta4_numm"  style="width: 8%;background-color: #86F8BD;" class="progress-bar"></div>
+                                            </div>
+                                             
+                                            
                                         </li>
                                         </ul>
                                     </div>
