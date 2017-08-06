@@ -144,24 +144,24 @@ public class GeneralGraphicRestController {
 		
 		dataMontlyLineChart.setLabels(Arrays.asList("Semana 1", "Semana 2", "Semana 3", "Semana 4"));
 		dataMontlyLineChart = fillingData(dataMontlyLineChart, Arrays.asList("Andrés Manuel López Obrador","Rafael Moreno Valle","Miguel Ángel Mancera","Eruviel Ávila Villegas"), 
-				Arrays.asList(new int[]{169	,75	,363	,549},
-							new int[]{172,	424	,603,	891},
-							new int[]{1493	,1996, 4068	,2920},
-							new int[]{1493	,1996, 4068	,2920}));
+				Arrays.asList(new int[]{219	,288	,286	,533},
+							new int[]{1493,	1996	,4068,	2920},
+							new int[]{183	,451, 502	,606},
+							new int[]{222	,486, 564	,397}));
 	
 		dataTrimesterLineChart.setLabels(Arrays.asList("Mes 1", "Mes 2", "Mes 3"));
 		dataTrimesterLineChart = fillingData(dataTrimesterLineChart, Arrays.asList("Andrés Manuel López Obrador","Rafael Moreno Valle","Miguel Ángel Mancera","Eruviel Ávila Villegas"), 
-				Arrays.asList(new int[]{1882	,1215	,2017},
-						new int[]{3835	,3521	,6345},
-						new int[]{18857,	6027	,5619},
-						new int[]{18857,	6027	,5619}));
+				Arrays.asList(new int[]{2619	,3122	,4251},
+						new int[]{18857	,6027	,5619},
+						new int[]{2874,	2383	,2560},
+						new int[]{3559,	4141	,4053}));
 		
 		dataSemesterLineChart.setLabels(Arrays.asList("Mes 1", "Mes 2", "Mes 3", "Mes 4", "Mes 5", "Mes 6"));
 		dataSemesterLineChart = fillingData(dataSemesterLineChart, Arrays.asList("Andrés Manuel López Obrador","Rafael Moreno Valle","Miguel Ángel Mancera","Eruviel Ávila Villegas"),
-				Arrays.asList(new int[]{1882,	1215,	2017	,2371	,3312	,2907},
-						new int[]{3835	,3521	,6345	,6345	,8515	,23223},
-						new int[]{18857,	6027,	5619	,6476	,9849	,8018},
-						new int[]{18857,	6027,	5619	,6476	,9849	,8018}));
+				Arrays.asList(new int[]{2619,	3122,	4251	,3058	,4815	,2877},
+						new int[]{18857	,6027	,5619	,6476	,9849	,8018},
+						new int[]{2874,	2383,	2560	,2135	,2415	,3904},
+						new int[]{3559,	4141,	4053	,2457	,2054	,2759}));
 		
 		dataMontly1BarChart.setLabels(Arrays.asList("Andrés Manuel López Obrador"));
 		dataMontly1BarChart = fillingDataDemographic(dataMontly1BarChart, Arrays.asList("Hombres","Mujeres"), 
