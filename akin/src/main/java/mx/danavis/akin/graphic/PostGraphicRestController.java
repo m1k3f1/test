@@ -13,32 +13,47 @@ import mx.danavis.akin.enums.Accounts;
 @RestController
 public class PostGraphicRestController {
 
-	private final String ACCOUNT1_FILL_COLOR="rgba(70,72,232,0.5)";
-	private final String ACCOUNT1_STROKE_COLOR="gray";
-	private final String ACCOUNT1_POINT_COLOR="rgba(70,72,232,1)";
+	private final String ACCOUNT1_FILL_COLOR="rgba(181, 38, 30,0.2)";
+	private final String ACCOUNT1_STROKE_COLOR="rgba(181, 38, 30,0.1)";
+	private final String ACCOUNT1_POINT_COLOR="rgba(181, 38, 30,1)";
 	private final String ACCOUNT1_POINT_STROKE_COLOR="#fff";
 	private final String ACCOUNT1_POINT_HIGHTLIGHT_FILL="#fff";
-	private final String ACCOUNT1_POINT_HIGHTLIGHT_STROKE="rgba(70,72,232,1)";
-	private final String ACCOUNT1_HIGHTLIGHT_FILL="rgba(70,72,232,0.75)";
-	private final String ACCOUNT1_HIGHTLIGHT_STROKE="rgba(70,72,232,1)";
+	private final String ACCOUNT1_POINT_HIGHTLIGHT_STROKE="rgba(181, 38, 30,1)";
+	private final String ACCOUNT1_HIGHTLIGHT_FILL="rgba(181, 38, 30,0.75)";
+	private final String ACCOUNT1_HIGHTLIGHT_STROKE="rgba(181, 38, 30,1)";
 	
-	private final String ACCOUNT2_FILL_COLOR="rgba(26,179,148,0.5)";
-	private final String ACCOUNT2_STROKE_COLOR="green";
-	private final String ACCOUNT2_POINT_COLOR="rgba(26,179,148,1)";
+	private final String ACCOUNT2_FILL_COLOR="rgba(59, 89, 152,0.2)";
+	private final String ACCOUNT2_STROKE_COLOR="rgba(59, 89, 152,1)";
+	private final String ACCOUNT2_POINT_COLOR="rgba(59, 89, 152,1)";
 	private final String ACCOUNT2_POINT_STROKE_COLOR="#fff";
 	private final String ACCOUNT2_POINT_HIGHTLIGHT_FILL="#fff";
-	private final String ACCOUNT2_POINT_HIGHTLIGHT_STROKE="rgba(26,179,148,1)";
-	private final String ACCOUNT2_HIGHTLIGHT_FILL="rgba(26,179,148,0.75)";
-	private final String ACCOUNT2_HIGHTLIGHT_STROKE="rgba(26,179,148,1)";
+	private final String ACCOUNT2_POINT_HIGHTLIGHT_STROKE="rgba(59, 89, 152,1)";
+	private final String ACCOUNT2_HIGHTLIGHT_FILL="rgba(59, 89, 152,0.75)";
+	private final String ACCOUNT2_HIGHTLIGHT_STROKE="rgba(59, 89, 152,1)";
 	
-	private final String ACCOUNT3_FILL_COLOR="rgba(181,84,237,0.7)";
-	private final String ACCOUNT3_STROKE_COLOR="purple";
-	private final String ACCOUNT3_POINT_COLOR="rgba(181,84,237,1)";
+	private final String ACCOUNT3_FILL_COLOR="rgba(255, 203, 1,0.2)";
+	private final String ACCOUNT3_STROKE_COLOR="rgba(255, 203, 1,1)";
+	private final String ACCOUNT3_POINT_COLOR="rgba(255, 203, 1,1)";
 	private final String ACCOUNT3_POINT_STROKE_COLOR="#fff";
 	private final String ACCOUNT3_POINT_HIGHTLIGHT_FILL="#fff";
-	private final String ACCOUNT3_POINT_HIGHTLIGHT_STROKE="rgba(181,84,237,1)";
-	private final String ACCOUNT3_HIGHTLIGHT_FILL="rgba(181,84,237,0.75)";
-	private final String ACCOUNT3_HIGHTLIGHT_STROKE="rgba(181,84,237,1)";
+	private final String ACCOUNT3_POINT_HIGHTLIGHT_STROKE="rgba(255, 203, 1,1)";
+	private final String ACCOUNT3_HIGHTLIGHT_FILL="rgba(255, 203, 1,0.75)";
+	private final String ACCOUNT3_HIGHTLIGHT_STROKE="rgba(255, 203, 1,1)";
+	
+	private final String ACCOUNT4_FILL_COLOR="rgba(0, 166, 80 ,0.2)";
+	private final String ACCOUNT4_STROKE_COLOR="rg0, 166, 80 ,71,1)";
+	private final String ACCOUNT4_POINT_COLOR="rgba(0, 166, 80 ,1)";
+	private final String ACCOUNT4_POINT_STROKE_COLOR="#fff";
+	private final String ACCOUNT4_POINT_HIGHTLIGHT_FILL="#fff";
+	private final String ACCOUNT4_POINT_HIGHTLIGHT_STROKE="rgba(0, 166, 80 ,1)";
+	private final String ACCOUNT4_HIGHTLIGHT_FILL="rgba(0, 166, 80 ,0.75)";
+	private final String ACCOUNT4_HIGHTLIGHT_STROKE="rgba(0, 166, 80 ,1)";
+	
+	private final String NAME_CUENTA1="Andrés Manuel López Obrador";
+	private final String NAME_CUENTA2="Rafael Moreno Valle";
+	private final String NAME_CUENTA3="Miguel Ángel Mancera";
+	private final String NAME_CUENTA4="Eruviel Ávila Villegas";
+	
 	
 	@RequestMapping("/rest/drawPostGraphic")
 	public List<Data> graphics(@RequestParam(value="period",defaultValue="MONTHLY") String period)
@@ -47,59 +62,83 @@ public class PostGraphicRestController {
 		Data dataAccount1MontlyReations = new Data();
 		Data dataAccount2MontlyReations = new Data();
 		Data dataAccount3MontlyReations = new Data();
+		Data dataAccount4MontlyReations = new Data();
+		
 		Data dataAccount1TrimesterReations = new Data();
 		Data dataAccount2TrimesterReations = new Data();
 		Data dataAccount3TrimesterReations = new Data();
+		Data dataAccount4TrimesterReations = new Data();
+		
 		Data dataAccount1SemesterReations = new Data();
 		Data dataAccount2SemesterReations = new Data();
 		Data dataAccount3SemesterReations = new Data();
+		Data dataAccount4SemesterReations = new Data();
 		
 		dataAccount1MontlyReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount1MontlyReations = fillingData(dataAccount1MontlyReations, Arrays.asList("Ricardo Anaya Cort\u00e9s"), 
-				Arrays.asList(new int[]{2041,		1798,	26,	241,	9,108}), Accounts.ACCOUNT1);
+		dataAccount1MontlyReations = fillingData(dataAccount1MontlyReations, Arrays.asList(NAME_CUENTA1), 
+				Arrays.asList(new int[]{3473,	429,	115	,871,	0	,306}), Accounts.ACCOUNT1);
 		
 		dataAccount2MontlyReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount2MontlyReations = fillingData(dataAccount2MontlyReations, Arrays.asList("Margarita Zavala"), 
-				Arrays.asList(new int[]{5226,	1496,	26	,266,	901,155}), Accounts.ACCOUNT2);
+		dataAccount2MontlyReations = fillingData(dataAccount2MontlyReations, Arrays.asList(NAME_CUENTA2), 
+				Arrays.asList(new int[]{37379,	5361,	477,	4763,	2,	14956}), Accounts.ACCOUNT2);
 		
 		dataAccount3MontlyReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount3MontlyReations = fillingData(dataAccount3MontlyReations, Arrays.asList("Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{17560,	15370,	360	,5481,	2000	,9004}), Accounts.ACCOUNT3);
+		dataAccount3MontlyReations = fillingData(dataAccount3MontlyReations, Arrays.asList(NAME_CUENTA3), 
+				Arrays.asList(new int[]{2028,	243	,43,	2044,	0,	307}), Accounts.ACCOUNT3);
+		
+		dataAccount4MontlyReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
+		dataAccount4MontlyReations = fillingData(dataAccount4MontlyReations, Arrays.asList(NAME_CUENTA4), 
+				Arrays.asList(new int[]{2017,	797	,333	,11973	,0	,355}), Accounts.ACCOUNT4);
+		
+		
 		
 		dataAccount1TrimesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount1TrimesterReations = fillingData(dataAccount1TrimesterReations, Arrays.asList("Ricardo Anaya Cort\u00e9s"), 
-				Arrays.asList(new int[]{19058,		13595,	542,	3683,	0,2614}), Accounts.ACCOUNT1);
+		dataAccount1TrimesterReations = fillingData(dataAccount1TrimesterReations, Arrays.asList(NAME_CUENTA1), 
+				Arrays.asList(new int[]{23945,	4040,	274	,11313	,1,	3957}), Accounts.ACCOUNT1);
 		
 		dataAccount2TrimesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount2TrimesterReations = fillingData(dataAccount2TrimesterReations, Arrays.asList("Margarita Zavala"), 
-				Arrays.asList(new int[]{12571,	3635	,242	,2292,	0,	401}), Accounts.ACCOUNT2);
+		dataAccount2TrimesterReations = fillingData(dataAccount2TrimesterReations, Arrays.asList(NAME_CUENTA2), 
+				Arrays.asList(new int[]{64908,	17458,	1376,	14206,	4,	26917}), Accounts.ACCOUNT2);
 		
 		dataAccount3TrimesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount3TrimesterReations = fillingData(dataAccount3TrimesterReations, Arrays.asList("Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{42341,	5640,	1533	,6751,	0,	7437}),Accounts.ACCOUNT3);
+		dataAccount3TrimesterReations = fillingData(dataAccount3TrimesterReations, Arrays.asList(NAME_CUENTA3),
+				Arrays.asList(new int[]{6792,	1736,	169,	4947,	6,	1012}),Accounts.ACCOUNT3);
+		
+		dataAccount4TrimesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
+		dataAccount4TrimesterReations = fillingData(dataAccount4TrimesterReations, Arrays.asList(NAME_CUENTA4), 
+				Arrays.asList(new int[]{12829,	7349,	2849,	7157,	0,	2514}),Accounts.ACCOUNT4);
+		
 		
 		
 		dataAccount1SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount1SemesterReations = fillingData(dataAccount1SemesterReations, Arrays.asList("Ricardo Anaya Cort\u00e9s"), 
-				Arrays.asList(new int[]{30877	,	38934,	882,	12363,	0,3712}), Accounts.ACCOUNT1);
+		dataAccount1SemesterReations = fillingData(dataAccount1SemesterReations, Arrays.asList(NAME_CUENTA1), 
+				Arrays.asList(new int[]{37153,	179299,	516132,	44356	,7973,	5999}), Accounts.ACCOUNT1);
 		
 		dataAccount2SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount2SemesterReations = fillingData(dataAccount2SemesterReations, Arrays.asList("Margarita Zavala"), 
-				Arrays.asList(new int[]{22512,	14356	,433,	6208,	1	,854}), Accounts.ACCOUNT2);
+		dataAccount2SemesterReations = fillingData(dataAccount2SemesterReations, Arrays.asList(NAME_CUENTA2), 
+				Arrays.asList(new int[]{108615,	276660,	3124178	,112695,	51830,	68184}), Accounts.ACCOUNT2);
 		
 		dataAccount3SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
-		dataAccount3SemesterReations = fillingData(dataAccount3SemesterReations, Arrays.asList("Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{107200	,23049,	2921	,21335	,4,	34220}), Accounts.ACCOUNT3);
+		dataAccount3SemesterReations = fillingData(dataAccount3SemesterReations, Arrays.asList(NAME_CUENTA3), 
+				Arrays.asList(new int[]{23028,	26609	,125042	,12146	,1903	,2414}), Accounts.ACCOUNT3);
+		
+		dataAccount4SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
+		dataAccount4SemesterReations = fillingData(dataAccount4SemesterReations, Arrays.asList(NAME_CUENTA4), 
+				Arrays.asList(new int[]{108615,	276660	,3124178,	112695	,51830	,68184}), Accounts.ACCOUNT4);
+		
 		
 		lstData.add(dataAccount1MontlyReations);
 		lstData.add(dataAccount2MontlyReations);
 		lstData.add(dataAccount3MontlyReations);
+		lstData.add(dataAccount4MontlyReations);
 		lstData.add(dataAccount1TrimesterReations);
 		lstData.add(dataAccount2TrimesterReations);
 		lstData.add(dataAccount3TrimesterReations);
+		lstData.add(dataAccount4TrimesterReations);
 		lstData.add(dataAccount1SemesterReations);
 		lstData.add(dataAccount2SemesterReations);
 		lstData.add(dataAccount3SemesterReations);
+		lstData.add(dataAccount4SemesterReations);
 		
 		return lstData;
 	}
@@ -114,23 +153,26 @@ public class PostGraphicRestController {
 		Data dataSemesterReations = new Data();
 		
 		dataMontlyReations.setLabels(Arrays.asList("Semana 1" , "Semana 2","Semana 3", "Semana 4"));
-		dataMontlyReations = fillingData(dataMontlyReations, Arrays.asList("Ricardo Anaya Cort\u00e9s","Margarita Zavala","Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{8,	3,11,16},
-						new int[]{9,12,5,5},
-						new int[]{13,16,19,12}),null);
+		dataMontlyReations = fillingData(dataMontlyReations, Arrays.asList(NAME_CUENTA1,NAME_CUENTA2,NAME_CUENTA3,NAME_CUENTA4), 
+				Arrays.asList(new int[]{0,	0,	1,	1},
+						new int[]{6,	10,	23,	24},
+						new int[]{10,	14,	7,	6},
+						new int[]{1,	6,	8,	5}),null);
 		
 		dataTrimesterReations.setLabels(Arrays.asList("Mes 1" , "Mes 2","Mes 3"));
-		dataTrimesterReations = fillingData(dataTrimesterReations, Arrays.asList("Ricardo Anaya Cort\u00e9s","Margarita Zavala","Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{23,	23,19},
-						new int[]{18,	28	,19},
-						new int[]{114	,106	,57}),null);
+		dataTrimesterReations = fillingData(dataTrimesterReations, Arrays.asList(NAME_CUENTA1,NAME_CUENTA2,NAME_CUENTA3,NAME_CUENTA4), 
+				Arrays.asList(new int[]{3,	9,	12},
+						new int[]{119,	47,	54},
+						new int[]{62,	38,	59},
+						new int[]{34,	47,	40}),null);
 		
 		
 		dataSemesterReations.setLabels(Arrays.asList("Mes 1" , "Mes 2","Mes 3", "Mes 4","Mes 5","Mes 6"));
-		dataSemesterReations = fillingData(dataSemesterReations, Arrays.asList("Ricardo Anaya Cort\u00e9s","Margarita Zavala","Rafael Moreno Valle"), 
-				Arrays.asList(new int[]{23	,23	,19,	13,	9	,22},
-						new int[]{18,	28	,19	,20	,17	,25},
-						new int[]{114	,106,	57	,123	,47	,52}),null);
+		dataSemesterReations = fillingData(dataSemesterReations, Arrays.asList(NAME_CUENTA1,NAME_CUENTA2,NAME_CUENTA3,NAME_CUENTA4), 
+				Arrays.asList(new int[]{3,	9,	12,	6,	4,	8},
+						new int[]{119,	47,	54,	54,	80,	68},
+						new int[]{62,	38,	59,	57,	54,	60},
+						new int[]{34,	47,	40,	16,	16,	41}),null);
 		
 		
 		lstData.add(dataMontlyReations);
@@ -199,6 +241,16 @@ public class PostGraphicRestController {
 		
 			dataset.setHighlightFill(ACCOUNT3_HIGHTLIGHT_FILL);
 			dataset.setHighlightStroke(ACCOUNT3_HIGHTLIGHT_STROKE);
+		}else if(Accounts.valueOf(account) == Accounts.ACCOUNT4){
+			dataset.setFillColor(ACCOUNT4_FILL_COLOR);
+			dataset.setStrokeColor(ACCOUNT4_STROKE_COLOR);
+			dataset.setPointColor(ACCOUNT4_POINT_COLOR);
+			dataset.setPointStrokeColor(ACCOUNT4_POINT_STROKE_COLOR);
+			dataset.setPointHighlightFill(ACCOUNT4_POINT_HIGHTLIGHT_FILL);
+			dataset.setPointHighlightStroke(ACCOUNT4_POINT_HIGHTLIGHT_STROKE);
+		
+			dataset.setHighlightFill(ACCOUNT4_HIGHTLIGHT_FILL);
+			dataset.setHighlightStroke(ACCOUNT4_HIGHTLIGHT_STROKE);
 		}
 			
 			return dataset;
