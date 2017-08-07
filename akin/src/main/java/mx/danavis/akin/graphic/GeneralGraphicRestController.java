@@ -14,7 +14,7 @@ import mx.danavis.akin.enums.Gender;
 @RestController
 public class GeneralGraphicRestController {
 
-	private final String ACCOUNT1_FILL_COLOR="rgba(181, 38, 30,0.5)";
+	private final String ACCOUNT1_FILL_COLOR="rgba(181, 38, 30,0.2)";
 	private final String ACCOUNT1_STROKE_COLOR="rgba(181, 38, 30,0.1)";
 	private final String ACCOUNT1_POINT_COLOR="rgba(181, 38, 30,1)";
 	private final String ACCOUNT1_POINT_STROKE_COLOR="#fff";
@@ -23,7 +23,7 @@ public class GeneralGraphicRestController {
 	private final String ACCOUNT1_HIGHTLIGHT_FILL="rgba(181, 38, 30,0.75)";
 	private final String ACCOUNT1_HIGHTLIGHT_STROKE="rgba(181, 38, 30,1)";
 	
-	private final String ACCOUNT2_FILL_COLOR="rgba(59, 89, 152,0.5)";
+	private final String ACCOUNT2_FILL_COLOR="rgba(59, 89, 152,0.2)";
 	private final String ACCOUNT2_STROKE_COLOR="rgba(59, 89, 152,1)";
 	private final String ACCOUNT2_POINT_COLOR="rgba(59, 89, 152,1)";
 	private final String ACCOUNT2_POINT_STROKE_COLOR="#fff";
@@ -32,7 +32,7 @@ public class GeneralGraphicRestController {
 	private final String ACCOUNT2_HIGHTLIGHT_FILL="rgba(59, 89, 152,0.75)";
 	private final String ACCOUNT2_HIGHTLIGHT_STROKE="rgba(59, 89, 152,1)";
 	
-	private final String ACCOUNT3_FILL_COLOR="rgba(255, 203, 1,0.7)";
+	private final String ACCOUNT3_FILL_COLOR="rgba(255, 203, 1,0.2)";
 	private final String ACCOUNT3_STROKE_COLOR="rgba(255, 203, 1,1)";
 	private final String ACCOUNT3_POINT_COLOR="rgba(255, 203, 1,1)";
 	private final String ACCOUNT3_POINT_STROKE_COLOR="#fff";
@@ -41,7 +41,7 @@ public class GeneralGraphicRestController {
 	private final String ACCOUNT3_HIGHTLIGHT_FILL="rgba(255, 203, 1,0.75)";
 	private final String ACCOUNT3_HIGHTLIGHT_STROKE="rgba(255, 203, 1,1)";
 	
-	private final String ACCOUNT4_FILL_COLOR="rgba(0, 166, 80 ,0.7)";
+	private final String ACCOUNT4_FILL_COLOR="rgba(0, 166, 80 ,0.2)";
 	private final String ACCOUNT4_STROKE_COLOR="rg0, 166, 80 ,71,1)";
 	private final String ACCOUNT4_POINT_COLOR="rgba(0, 166, 80 ,1)";
 	private final String ACCOUNT4_POINT_STROKE_COLOR="#fff";
