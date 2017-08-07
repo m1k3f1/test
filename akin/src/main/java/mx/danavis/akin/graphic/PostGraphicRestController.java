@@ -112,19 +112,19 @@ public class PostGraphicRestController {
 		
 		dataAccount1SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
 		dataAccount1SemesterReations = fillingData(dataAccount1SemesterReations, Arrays.asList(NAME_CUENTA1), 
-				Arrays.asList(new int[]{37153,	179299,	516132,	44356	,7973,	5999}), Accounts.ACCOUNT1);
+				Arrays.asList(new int[]{44356,	5999,	453,	17434,	2248,	7973}), Accounts.ACCOUNT1);
 		
 		dataAccount2SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
 		dataAccount2SemesterReations = fillingData(dataAccount2SemesterReations, Arrays.asList(NAME_CUENTA2), 
-				Arrays.asList(new int[]{108615,	276660,	3124178	,112695,	51830,	68184}), Accounts.ACCOUNT2);
+				Arrays.asList(new int[]{112695,	68184,	2397,	30332,	2575,	51830}), Accounts.ACCOUNT2);
 		
 		dataAccount3SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
 		dataAccount3SemesterReations = fillingData(dataAccount3SemesterReations, Arrays.asList(NAME_CUENTA3), 
-				Arrays.asList(new int[]{23028,	26609	,125042	,12146	,1903	,2414}), Accounts.ACCOUNT3);
+				Arrays.asList(new int[]{12146,	2414,	263,	7407,	2093,	1903}), Accounts.ACCOUNT3);
 		
 		dataAccount4SemesterReations.setLabels(Arrays.asList("Me encanta" ,  "Me divierte", "Me entristece", "Me enoja", "Otra","Me asombra"));
 		dataAccount4SemesterReations = fillingData(dataAccount4SemesterReations, Arrays.asList(NAME_CUENTA4), 
-				Arrays.asList(new int[]{108615,	276660	,3124178,	112695	,51830	,68184}), Accounts.ACCOUNT4);
+				Arrays.asList(new int[]{25430,	12438,	3076,	9555,	528,	6020}), Accounts.ACCOUNT4);
 		
 		
 		lstData.add(dataAccount1MontlyReations);
